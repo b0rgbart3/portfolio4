@@ -51,11 +51,6 @@ header {
   position: relative;
 }
 
-.Home {
-  border:4px solid green;
-  display:inline-block;
-  box-sizing: border-box;
-}
 
 
 /*  ClearFix  */

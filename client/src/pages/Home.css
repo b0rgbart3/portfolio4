@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+.Home {
+  
+    display:inline-block;
+    box-sizing: border-box;
+    width:calc(100% - 110px);
+    max-width:900px;
+  }
+
+.homelogo {
+  font-size:54px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align:left;
+  margin-top:120px;
+  line-height:1em;
+}
+.homeColumn1 {
+  
+  width:100%;
+  box-sizing: border-box;
+  display:block;
+  vertical-align: top;
+}
+
+.homeColumn2 {
+
+  width:100%;
+  box-sizing: border-box;
+  display:block;
+  vertical-align: top;
+  margin-top:0px;
+}
+
+.mugContainer {
+    min-height:300px;
+    overflow: hidden;
+    margin-top:40px;
+}
+
+.mug {
+  width:100%;
+  min-height:300px;
+  min-width:300px;
+}
+.hometag {
+  font-size:24px;
+  text-align:left;
+  font-family: futura-pt, sans-serif;
+  margin-top:18px;
+}
+
+.homebody{
+  display:none;
+}
+
+.homebio {
+  text-align:left;
+  font-size:18px;
+  font-family: futura-pt, sans-serif;
+  line-height:30px;
+  padding-right:20px;
+  padding-top:20px;
+}
+
+.homebodyMobile {
+  display:block;
+}
+
+@media only screen and (min-width:800px) {
+
+  .homeColumn1 {
+ 
+    width:55%;
+    box-sizing: border-box;
+    display:inline-block;
+    vertical-align: top;
+  }
+  
+  .homeColumn2 {
+  
+    width:45%;
+    box-sizing: border-box;
+    display:inline-block;
+    vertical-align: top;
+    margin-top:80px;
+  }
+
+  .homebody{
+    display:block;
+  }
+  .homebodyMobile {
+    display:none;
+  }
+  
+
+}

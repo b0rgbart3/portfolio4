@@ -57,10 +57,10 @@ color:black;
 .handle {
     display:inline-block;
     position: absolute;
-    top:40px;
+    top:0px;
     left:300px;
-    width:100px;
-    height:100px;
+    width:90px;
+    height:90px;
     background-color:#6f98a8;
     box-sizing: border-box;
     color:black;

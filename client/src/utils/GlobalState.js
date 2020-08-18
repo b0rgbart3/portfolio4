@@ -14,8 +14,8 @@ const PortfolioContext = createContext(
     }
   ],
 
-  menuOpen: true,
-  menuClass: "MenuPanel group m_stage1"
+  menuOpen: false,
+  menuClass: "MenuPanel group m_stage2"
 
 }
 
@@ -60,7 +60,7 @@ const reducer = (state, action) => {
   };
 
   const PortfolioProvider = ({ value = {}, ...props }) => {
-    const [state, dispatch] = useReducer(reducer, {portfolio:[], menuOpen:true, menuClass:"MenuPanel group m_stage1" });
+    const [state, dispatch] = useReducer(reducer, {portfolio:[], menuOpen:false, menuClass:"MenuPanel group m_stage2" });
   
     //portfolio:[], menuOpen:true, menuClass:"MenuPanel group m_stage1"
     return <Provider value={[state, dispatch]} {...props} />;
