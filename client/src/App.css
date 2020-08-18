@@ -1,0 +1,73 @@
+@import url("https://use.typekit.net/eoa5mqu.css");
+
+html {
+  background-color: #282c34;
+  margin:0;
+  padding:0;
+
+}
+body {
+  margin:0;
+  padding:0;
+}
+
+.medium {
+font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.book {
+  font-family: futura-pt, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.demi {
+  font-family: futura-pt, sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+
+.futBold {
+  font-family: futura-pt-bold, sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+header {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:44px;
+}
+
+.App {
+  text-align: center;
+  color:white;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Home {
+  border:4px solid green;
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+
+/*  ClearFix  */
+/*  The ClearFix by Tony Aslett and Nicholas Gallagher */
+.group:before,
+.group:after {
+content: "";
+display: table; }
+
+.group:after {
+clear: both; }
+
+.group {
+zoom: 1;
+/* IE6&7 */ }

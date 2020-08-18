@@ -1,0 +1,94 @@
+.MenuPanel {
+    position: absolute;
+    margin:0;
+    padding:0;
+    border:none;
+    height:100vh;
+    box-sizing: border-box;
+    left:0;
+    display:inline-block;
+ 
+}
+.Menu {
+    background-color:rgba(200,200,200,.25);
+    width:300px;
+    height:100vh;
+    box-shadow:2px 2px 8px rgba(0,0,0,.4);
+    box-sizing: border-box;
+    background: rgb(44,104,128);
+background: linear-gradient(360deg, rgba(44,104,128,1) 0%, rgba(111,152,168,1) 83%);
+color:black;
+}
+
+.logo {
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-size:50px;
+    text-align:left;
+    line-height:1em;
+    padding-left:28px;
+    padding-top:50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.menuList {
+    list-style:none;
+    text-align:left;
+    font-family: futura-pt, sans-serif;
+    font-size:28px;
+    line-height:2em;
+    font-weight: 600;
+    letter-spacing:-1px;
+    user-select: none;
+    padding:0;
+    margin:0;
+    padding-top:20px;
+}
+
+.menuList li {
+    padding-left:30px;
+    cursor: pointer;
+    user-select: none;
+}
+.menuList li:hover {
+    background-color:#7ebcd4;
+}
+
+.handle {
+    display:inline-block;
+    position: absolute;
+    top:40px;
+    left:300px;
+    width:100px;
+    height:100px;
+    background-color:#6f98a8;
+    box-sizing: border-box;
+    color:black;
+    vertical-align: top;
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size:46px;
+    letter-spacing: -10px;
+    box-shadow:6px 2px 8px rgba(0,0,0,.4);
+    border-radius:0 8px 8px 0;
+    cursor: pointer;
+}
+
+.handle:hover {
+    background-color:#7ebcd4;
+}
+
+.handle:active {
+    background-color:#84d5f5;
+}
+
+.slashes {
+    width:50px;
+    padding-top:18px;
+  
+}
+/* font-family: futura-pt-bold, sans-serif;
+font-weight: 700;
+font-style: italic; */
