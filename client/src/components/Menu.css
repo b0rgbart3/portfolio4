@@ -5,9 +5,8 @@
     border:none;
     height:100vh;
     box-sizing: border-box;
-    left:0;
     display:inline-block;
- 
+    transition: all .3s;
 }
 .Menu {
     background-color:rgba(200,200,200,.25);
@@ -88,6 +87,13 @@ color:black;
     width:50px;
     padding-top:18px;
   
+}
+
+.m_stage1{
+    left:0;
+}
+.m_stage2{
+    left:-300px;
 }
 /* font-family: futura-pt-bold, sans-serif;
 font-weight: 700;

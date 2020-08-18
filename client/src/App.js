@@ -1,19 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { PortfolioProvider } from "./utils/GlobalState";
 import Menu from "./components/Menu"
 
+
 import './App.css';
+    
 
 function App() {
+
   return (
-    <div className="App group">
-      <Menu />
-       <div className="Home group">
-       BART DORITY
-       </div>
-    
-  
-    </div>
+    <Router>
+      <div className="App group">
+        <PortfolioProvider>
+          <Menu/>
+          <div className="Home group">
+          BART DORITY
+          </div>
+        </PortfolioProvider>
+      </div>
+    </Router>
   );
 }
 
