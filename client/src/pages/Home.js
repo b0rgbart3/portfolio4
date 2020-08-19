@@ -13,7 +13,7 @@ function Home() {
         </div>
         <div className="homebody">
           <div className="hometag">
-            Full Stack Developer / Software Engineer
+            Full Stack Developer / <span className="nobr">Software Engineer</span>
           </div>
           <div className="homebio">
             Full Stack Web Developer with a deep knowledge of a broad range of
@@ -39,7 +39,7 @@ function Home() {
         </div>
       </div>
       <div className="homebodyMobile">
-        <div className="hometag">Full Stack Developer / Software Engineer</div>
+        <div className="hometag">Full Stack Developer / <span className="nobr">Software Engineer</span></div>
         <div className="homebio">
             Full Stack Web Developer with a deep knowledge of a broad range of
             web technologies and a strong background in design and computer

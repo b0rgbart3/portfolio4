@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import './Menu.css';
 import slashes from '../images/slashes.png';
 import {usePortfolioContext}  from "../utils/GlobalState";
@@ -12,6 +13,10 @@ import {
 
 function Menu() {
     const [state, dispatch] = usePortfolioContext();
+    function closeMenu() {
+  
+        toggleMenu();
+    }
     function toggleMenu() {
         console.log("menuOpen: "+state.menuOpen);
         //toggle the menuOpen var
@@ -34,12 +39,12 @@ function Menu() {
       
             <div className={ state.menuClass || "MenuPanel group m_stage1" }>
             <div className="Menu group">
-                 <div className="logo">BART<br></br>DORITY</div>
+            <Link to="/"><div className="logo">BART<br></br>DORITY</div></Link>
                  <ul className="menuList">
-                     <li>/HOME</li>
-                     <li>/PROJECTS</li>
-                     <li>/RESUME</li>
-                     <li>/CONTACT</li>
+                     <Link to="/"><li onClick={closeMenu}>/HOME</li></Link>
+                     <Link to="/projects"onClick={closeMenu}><li>/PROJECTS</li></Link>
+                     <li onClick={closeMenu}>/RESUME</li>
+                     <li onClick={closeMenu}>/CONTACT</li>
                  </ul>
             </div>
             <div className="handle" onClick={()=>toggleMenu()}>

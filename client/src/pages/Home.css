@@ -5,7 +5,7 @@
     display:inline-block;
     box-sizing: border-box;
     width:calc(100% - 110px);
-    max-width:900px;
+    max-width:940px;
   }
 
 .homelogo {
@@ -44,12 +44,14 @@
   width:100%;
   min-height:300px;
   min-width:300px;
+  border-radius:8px;
 }
 .hometag {
   font-size:24px;
   text-align:left;
   font-family: futura-pt, sans-serif;
   margin-top:18px;
+  padding-right:20px;
 }
 
 .homebody{

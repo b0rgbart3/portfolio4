@@ -50,9 +50,14 @@ header {
   box-sizing: border-box;
   position: relative;
 }
+.nobr	{ white-space:nowrap; }
 
-
-
+a {
+  text-decoration:none;
+  color:black;
+  cursor: pointer;
+  user-select: none;
+}
 /*  ClearFix  */
 /*  The ClearFix by Tony Aslett and Nicholas Gallagher */
 .group:before,
