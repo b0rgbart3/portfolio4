@@ -9,6 +9,9 @@ html {
 body {
   margin:0;
   padding:0;
+  min-height:100vh;
+  background: rgb(40,44,52);
+  background: linear-gradient(142deg, rgba(40,44,52,1) 36%, rgba(27,59,122,1) 100%);
 }
 
 .medium {
