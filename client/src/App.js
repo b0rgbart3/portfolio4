@@ -22,6 +22,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
+          
           </Switch>
           {/* </TransitionGroup> */}
         </PortfolioProvider>

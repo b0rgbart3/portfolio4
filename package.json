@@ -28,6 +28,7 @@
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "inquirer": "^7.3.3",
+    "react-pdf": "^3.0.0",
     "react-router-dom": "^5.2.0",
     "utils": "^0.3.1"
   }

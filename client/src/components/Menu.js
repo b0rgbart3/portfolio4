@@ -39,11 +39,11 @@ function Menu() {
       
             <div className={ state.menuClass || "MenuPanel group m_stage1" }>
             <div className="Menu group">
-            <Link to="/"><div className="logo">BART<br></br>DORITY</div></Link>
+            <Link to="/"><div className="logo" onClick={closeMenu}>BART<br></br>DORITY</div></Link>
                  <ul className="menuList">
                      <Link to="/"><li onClick={closeMenu}>/HOME</li></Link>
-                     <Link to="/projects"onClick={closeMenu}><li>/PROJECTS</li></Link>
-                     <li onClick={closeMenu}>/RESUME</li>
+                     <Link to="/projects" onClick={closeMenu}><li>/PROJECTS</li></Link>
+                     <Link to="/resume" ><li onClick={closeMenu}>/RESUME</li></Link>
                      <li onClick={closeMenu}>/CONTACT</li>
                  </ul>
             </div>
