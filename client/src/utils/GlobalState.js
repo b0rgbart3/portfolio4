@@ -1,4 +1,6 @@
 import React, { createContext, useReducer, useContext } from "react";
+import Projects from "../data/projects.json";
+
 import {
     CLOSE_MENU,
     OPEN_MENU,
@@ -60,7 +62,7 @@ const reducer = (state, action) => {
   };
 
   const PortfolioProvider = ({ value = {}, ...props }) => {
-    const [state, dispatch] = useReducer(reducer, {portfolio:[], menuOpen:false, menuClass:"MenuPanel group m_stage2" });
+    const [state, dispatch] = useReducer(reducer, {projects:Projects, menuOpen:false, menuClass:"MenuPanel group m_stage2" });
   
     //portfolio:[], menuOpen:true, menuClass:"MenuPanel group m_stage1"
     return <Provider value={[state, dispatch]} {...props} />;

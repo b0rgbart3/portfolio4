@@ -2,18 +2,20 @@
 
     display:inline-block;
     box-sizing: border-box;
-    width:calc(100% - 110px);
-    max-width:940px;
+    width:100%;
+    max-width:1200px;
 }
 
 .Project {
-    width:440px;
+    width:100%;
+    box-sizing:border-box;
     background-color:white;
-    border-radius:8px;
-    margin:8px;
+    margin:0;
     min-height:450px;
     display:inline-block;
     box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom:40px;
 }
 
 .projectslogo {
@@ -25,4 +27,40 @@
     margin-top:120px;
     margin-left:0px;
     line-height:1em;
+    margin-left:40px;
+    margin-bottom:30px;
   }
+  .projectImage {
+      width:100%;
+  }
+
+  .projectTitle {
+    font-family: futura-pt, sans-serif;
+    color:black;
+    font-size:20px;
+    text-align:left;
+    font-weight:700;
+    text-transform: uppercase;
+    padding-left:20px;
+    padding-top:20px;
+  }
+
+  .projectDescription {
+    font-family: futura-pt, sans-serif;
+    color:black; 
+    font-size:18px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align:left;
+    padding-bottom:40px;
+  }
+
+
+@media only screen and (min-width:1140px) {
+    .Project {
+        width:44%;
+        margin-left:2%;
+        margin-right:2%;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Space Force",
+        "description": "This app uses the NASA image bank API, and cross references these images with articles from Wikipedia. Users can search through photographs and find out more about these scientific topics in a visual manner.",
+        "images": ["space2.jpg"],   
+        "github": "https://b0rgbart3.github.io/project-one/",
+        "live": "https://github.com/b0rgbart3/project-one",
+        "features": [""],
+        "tech": ["React","Express","Node.js","MongoDB","Mongoose"]
+    },
+    {
+        "title": "The Weather App",
+        "description": "This app pulls live weather and forecast data from Open-Weather-Map.org's API.  It allows users to view the weather and get a 5 day forecast in multiple cities, to help them better plan their trips.",
+        "images":["weather.jpg"],
+        "github":"https://b0rgbart3.github.io/weather-dashboard/",
+        "live":"https://github.com/b0rgbart3/weather-dashboard",
+        "features": [""],
+        "tech": ["Javascript","JQuery","HTML 5","CSS 3"]
+    },
+    {
+        "title": "Quizzler",
+        "description": "This app sets up a simple set of quiz questions and allows users to store their high scores to compare and compete against their peers.",
+        "images":["quiz.jpg"],
+        "github":"https://b0rgbart3.github.io/code-quiz2/",
+        "live":"https://github.com/b0rgbart3/code-quiz2",
+        "features": [""],
+        "tech": ["Javascript","JQuery","HTML 5","CSS 3"]
+    },
+    {
+        "title": "MiddleGround",
+        "description": "This app allows users to enter a subject, and then aggregates articles from a spectrum of news sources that appear on social media related to that topic.  It also queries the GoogleFact Check API, displaying the truth rating for each article, and generates a word cloud to show what are the hot topics of each side of the political spectrum, and displays them side by side.",
+        "images":["middle.jpg"],
+        "github":"https://b0rgbart3.github.io/project-one/",
+        "live":"https://rocky-meadow-78317.herokuapp.com/",
+        "features": [""],
+        "tech": ["Express","Node.js","MySQL","Handlebars"]
+    }
+]

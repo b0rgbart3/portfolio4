@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link, useLocation } from "react-router-dom";
 import './Menu.css';
 import slashes from '../images/slashes.png';
