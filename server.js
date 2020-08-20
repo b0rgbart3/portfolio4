@@ -2,6 +2,21 @@ const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
+let transporter = nodemailer.createTransport({
+  sendmail: true,
+  newline: 'unix',
+  path: '/usr/sbin/sendmail'
+});
+transporter.sendMail({
+  from: 'sender@example.com',
+  to: 'bartdority@gmail.com',
+  subject: 'Message',
+  text: 'I hope this message gets delivered!'
+}, (err, info) => {
+  console.log(info.envelope);
+  console.log(info.messageId);
+});
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -16,6 +31,10 @@ if (process.env.NODE_ENV === "production") {
 //   res.sendFile(path.join(__dirname, "client/public/assets/images/BARTDORITYresume.pdf"));
 
 // }); 
+app.post("/sendmail", (req, res) => {
+  console.log("got post request to send mail.");
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+})
 
 app.get("*", (req, res) => {
   console.log("got a request.");
