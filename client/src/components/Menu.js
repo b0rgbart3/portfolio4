@@ -44,7 +44,8 @@ function Menu() {
                      <Link to="/"><li onClick={closeMenu}>/HOME</li></Link>
                      <Link to="/projects" onClick={closeMenu}><li>/PROJECTS</li></Link>
                      <Link to="/resume" ><li onClick={closeMenu}>/RESUME</li></Link>
-                     <li onClick={closeMenu}>/CONTACT</li>
+                     <Link to="/contact">
+                     <li onClick={closeMenu}>/CONTACT</li></Link>
                  </ul>
             </div>
             <div className="handle" onClick={()=>toggleMenu()}>
