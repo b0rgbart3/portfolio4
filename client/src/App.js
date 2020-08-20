@@ -4,7 +4,7 @@ import { PortfolioProvider } from "./utils/GlobalState";
 import Menu from "./components/Menu"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
-
+import Resume from "./pages/Resume"
 import './App.css';
     
 
@@ -22,7 +22,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/projects" component={Projects} />
-          
+            <Route exact path="/resume" component={Resume} />
           </Switch>
           {/* </TransitionGroup> */}
         </PortfolioProvider>
