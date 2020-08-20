@@ -11,11 +11,11 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.get("/resume", function(req, res) {
-  console.log("Got resume path");
-  res.sendFile(path.join(__dirname, "client/public/assets/images/BARTDORITYresume.pdf"));
+// app.get("/resume", function(req, res) {
+//   console.log("Got resume path");
+//   res.sendFile(path.join(__dirname, "client/public/assets/images/BARTDORITYresume.pdf"));
 
-}); 
+// }); 
 
 app.get("*", (req, res) => {
   console.log("got a request.");
