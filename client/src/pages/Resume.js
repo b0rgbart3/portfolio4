@@ -1,5 +1,4 @@
 import React, {useState } from "react";
-import { Document, Page } from 'react-pdf';
 import "./Resume.css";
 // import { usePortfolioContext } from "../utils/GlobalState";
 
