@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
 
 .resumeBox {
-    background-color:white;
+    background-color:rgb(248,248,248);
     padding:20px;
     width:100%;
     color:black;
@@ -36,7 +36,7 @@
     margin:0;
     padding:0;
     line-height:.8em;
-    margin-top:30px;
+    margin-top:50px;
 }
 
 .resumeBox h2 {
@@ -44,7 +44,7 @@
     margin:0;
     line-height:0;
     margin-top:26px;
-    margin-bottom:8px;
+    margin-bottom:28px;
 }
 
 .resumeBox ul {
@@ -75,10 +75,41 @@
     padding-top:0;
 }
 
+.emailLinker {
+    border:1px solid rgb(197, 197, 197);
+    display:inline-block;
+    box-sizing: border-box;
+    border-radius:8px;
+    padding:8px;
+    padding-right:12px;
+    margin:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:0;
+    box-shadow:0 0 8px rgb(197, 197, 197);
+  
+    color:gray;
+    font-weight: 400;
+  
+    cursor: pointer;
+}
+
+.emailLinker:hover {
+    border-color:rgb(146, 186, 231);
+    background-color:white;
+    box-shadow: 0px 0px 12px rgb(154, 183, 223);
+}
+
+.emailLinker img {
+    width:40px;
+    vertical-align: middle;
+    margin-right:4px;
+}
+
 @media only screen and (min-width:800px) {
 
     .resumeBox {
-        background-color:white;
+       
         padding:20px;
         width:90%;
         margin:auto;
@@ -105,7 +136,7 @@
 
 @media only screen and (min-width:1200px) {
     .resumeBox {
-        background-color:white;
+    
         padding:20px;
         width:80%;
         max-width:1400px;
