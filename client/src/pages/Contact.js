@@ -1,86 +1,81 @@
-import React, {useRef} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import "./Contact.css";
-import Axios from "axios";
+import API from "../utils/API";
+
 
 function Contact() {
 
-  const first_name=useRef();
-  const last_name=useRef();
+  const fullname=useRef();
   const email=useRef();
   const message = useRef();
+  const [error, setError] = useState(null);
+  const [errMsg, setErrMsg] = useState("");
+  const [sent, setSent] = useState(false);
+
+  useEffect(() => {
+    // Update the document title using the browser API
+    setError(false);
+    setErrMsg("");
+    setSent(false);
+  }, []);
 
   function handleOnSubmit(e) {
     e.preventDefault();
 
-    let messageObject = {
-      first_name: first_name.current.value,
-      last_name: last_name.current.value,
-      email: email.current.value,
-      message: message.current.value
+    if (!fullname.current.value || fullname.current.value.length < 1) {
+      setError(true);
+      setErrMsg("Please include your Full Name");
     }
+    else {
 
-    Axios.put("/api/sendmessage", messageObject);
+        if (!email.current.value || email.current.value.length < 5) {
+          setError(true);
+          setErrMsg("Please include your Email");
+        } else {
 
+          if (!message.current.value || message.current.value.length < 4) {
+            setError(true);
+            setErrMsg("Please include a Message");
+          }  else {
+
+                let info = {
+                  full_name: fullname.current.value,
+                  email: email.current.value,
+                  message: message.current.value
+
+                }
+
+                  API.nodeMail(info).then( (result) => {
+                      console.log("sent node mail");
+                      setError(false);
+                      setErrMsg("");
+                      setSent(true);
+
+                  }).catch(err=>console.log(err));
+            }
+        }
+    }
   }
   return (
        
 <div className="Contact group">
         <form className="contactForm" onSubmit={handleOnSubmit}>
+            { error ? <div className="error">{errMsg} </div> : <div></div>}
+
+            { sent ? <div><h1>Your message was sent.</h1><br></br><h2>Thank you for contacting me.</h2><br></br></div>:
+            <div>
             <h1>Contact Bart Dority</h1>
-            <div className="myLabel">First Name:</div>
-            <input id="first_name" type="text" ref={first_name}></input>
-            <div className="myLabel">Last Name:</div>
-            <input id="last_name" type="text" ref={last_name}></input>
+            <div className="myLabel">Full Name:</div>
+            <input id="full_name" type="text" ref={fullname}></input>
             <div className="myLabel">Email:</div>
             <input id="email" type="email" ref={email}></input>
             <br></br>
             <div className="myLabel">Your message:</div>
             <textarea ref={message}></textarea>
-            <button type="submit">Send</button>
+            <button type="submit">Send</button></div> }
          </form>
     </div> 
-//     <div className="row">
-//     <form className="col s12">
-//       <div className="row">
-//         <div className="input-field col s6">
-//           <input placeholder="Placeholder" id="first_name" type="text" className="validate" />
-//           <label for="first_name">First Name</label>
-//         </div>
-//         <div className="input-field col s6">
-//           <input id="last_name" type="text" className="validate"/>
-//           <label for="last_name">Last Name</label>
-//         </div>
-//       </div>
-//       <div className="row">
-//         <div className="input-field col s12">
-//           <input disabled value="I am not editable" id="disabled" type="text" className="validate"/>
-//           <label for="disabled">Disabled</label>
-//         </div>
-//       </div>
-//       <div className="row">
-//         <div className="input-field col s12">
-//           <input id="password" type="password" className="validate"/>
-//           <label for="password">Password</label>
-//         </div>
-//       </div>
-//       <div className="row">
-//         <div className="input-field col s12">
-//           <input id="email" type="email" className="validate"/>
-//           <label for="email">Email</label>
-//         </div>
-//       </div>
-//       <div className="row">
-//         <div className="col s12">
-//           This is an inline input field:
-//           <div className="input-field inline">
-//             <input id="email_inline" type="email" className="validate"/>
-//             <label for="email_inline">Email</label>
-//             <span className="helper-text" data-error="wrong" data-success="right">Helper text</span>
-//           </div>
-//         </div>
-//       </div>
-//     </form>
-//   </div>
+
 
   );
 }

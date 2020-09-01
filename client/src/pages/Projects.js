@@ -21,7 +21,7 @@ function Projects() {
 
         {state.projects.map( (project, index) => (
           <div className="Project group" key={index}>
-          <img className="projectImage"src={ require("../images/work/wide/" + project.images[0] )}/>
+          <img className="projectImage" src={ require("../images/work/wide/" + project.images[0] )} alt={ "project: "+project.title }/>
           <div className="projectInfo group">
           <div className="projectTitle">
              {project.title} 
@@ -33,7 +33,7 @@ function Projects() {
              Live Demo
           </div>
           <div className="githubLink">
-          <img  className="githubIcon" src={require("../images/icons/github_round.svg")}/>
+          <img  className="githubIcon" src={require("../images/icons/github_round.svg")} alt="github repo"/>
           <div className="projectGithubLink" onClick={()=>goGit(project.github)}>
             Github Repo
           </div>

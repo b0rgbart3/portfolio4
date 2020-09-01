@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";  // ,useLocation
 import './Menu.css';
 import slashes from '../images/slashes.png';
 import {usePortfolioContext}  from "../utils/GlobalState";

@@ -5,12 +5,12 @@ import "./Resume.css";
 function Resume() {
 //   const [state, dispatch] = usePortfolioContext();
 
-const [numPages, setNumPages] = useState(null);
-const [pageNumber, setPageNumber] = useState(1);
+//const [numPages, setNumPages] = useState(null);
+//const [pageNumber, setPageNumber] = useState(1);
 
-function onDocumentLoadSuccess({ numPages }) {
-  setNumPages(numPages);
-}
+// function onDocumentLoadSuccess({ numPages }) {
+//   setNumPages(numPages);
+// }
 
   return (
     <div className="resumeBox">
@@ -23,9 +23,9 @@ function onDocumentLoadSuccess({ numPages }) {
     <p>Page {pageNumber} of {numPages}</p> */}
 
     <h1>BART<br />DORITY</h1>
-    <h2>Full Stack Developer / <span className="nobr">Software Engineer</span></h2>
+    <h2><span className="nobr">Software Engineer</span></h2>
     <p><a href="mailto:bartdority@gmail.com" className="resumeLink">bartdority@gmail.com</a> 
-​ |  <a href="https://www.linkedin.com/in/bart-dority/" className="resumeLink" target="_blank" >linkedin.com/in/bart-dority/</a> | <a href="https://github.com/b0rgbart3" className="resumeLink" target="_blank" >github.com/b0rgbart3</a>
+​ |  <a href="https://www.linkedin.com/in/bart-dority/" className="resumeLink" target="_blank" rel="noopener noreferrer"  >linkedin.com/in/bart-dority/</a> | <a href="https://github.com/b0rgbart3" className="resumeLink" target="_blank" rel="noopener noreferrer"  >github.com/b0rgbart3</a>
 <br></br><span className="nobr">(415) 503-7044</span> </p>
 {/* <h2>Portfolio</h2>
 <ul>
