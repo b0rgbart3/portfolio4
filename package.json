@@ -1,8 +1,8 @@
 {
-  "name": "portfolio4",
+  "name": "mern",
   "version": "1.0.0",
-  "description": "",
-  "main": "sever.js",
+  "description": "Mern Demo",
+  "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -12,24 +12,20 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/b0rgbart3/portfolio4.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/b0rgbart3/portfolio4/issues"
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
   },
-  "homepage": "https://github.com/b0rgbart3/portfolio4#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "concurrently": "^5.3.0",
-    "express": "^4.17.1",
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
     "inquirer": "^7.3.3",
-    "node-mailer": "^0.1.1",
-    "react-router-dom": "^5.2.0",
+    "materialize": "^1.0.0",
+    "mongoose": "^5.10.0",
+    "sendgrid": "^5.2.3",
     "utils": "^0.3.1"
   }
 }
