@@ -28,7 +28,7 @@ function Resume() {
     <p>Page {pageNumber} of {numPages}</p> */}
 
     <h1>BART DORITY</h1>
-    <h2><span className="nobr">Software Engineer</span></h2>
+    <h3><span className="nobr">Software Engineer</span></h3>
     <a href="mailto:bartdority@gmail.com" className="resumeLink">
     <div class='emailLinker'><img src={emailIcon}></img>bartdority@gmail.com</div></a> 
 
@@ -46,8 +46,17 @@ linkedin.com/in/bart-dority</div></a> <a href="https://github.com/b0rgbart3" cla
 </ul> */}
 
     <h2>Skills</h2>
-<p>
-Javascript, Node.js, React, ES6, HTML 5, CSS 3, Express, Sass, MySQL, MongoDB, Handlebars, Bootstrap, API, AJAX, Github, Heroku, jQuery, JSON, Object Oriented Programming (OOP), Problem-solving, RESTful API Design, Require.js, Greensock Animation, Unix, git, npm, AWS, Ruby, Ruby on Rails, Objective-C, XCode, VS-Code, Photoshop, Illustrator, InDesign, AfterEffects and Premier</p>
+<p>Full Stack Web Development, React, React Hooks, Javascript, JQuery, JSON, JSX, Node.js, ES6, HTML 5, Cascading Style Sheets (CSS 3), Express.js, Sass, Databases, MySQL, Mongo DB, Mongoose ODM, Handlebars, Bootstrap, API, AJAX, Github, Heroku, jQuery, JSON, Object Oriented Programming (OOP), ORM, Passport, Postman, Problem-solving, RESTful API Design, Require.js, Sequelize, SQL, Greensock Animation, Unix, Git, Github, npm, Heroku, AWS, Ruby, Ruby on Rails, Objective-C, XCode, VS-Code, Photoshop, Illustrator, InDesign, AfterEffects and Premier</p>
+
+
+{/* React
+Rest API
+Sequelize
+SQL
+Ruby
+Python
+Performance
+PWA  */}
 
 <h2>
 Professional Summary</h2>

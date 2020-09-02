@@ -1,6 +1,10 @@
 import React from "react";
 import "./Main.css";
 import mug from "../images/bartdority_pic1.jpg";
+import mongo from "../images/shields/mongo.png";
+import express from "../images/shields/express.png";
+import react from "../images/shields/react.png";
+import node from "../images/shields/node.png";
 
 function Main() {
   return (
@@ -26,7 +30,7 @@ function Main() {
             working on a certification of Full Stack Development from UC
             Berkeley extension. I have a certificate of iPhone programming from
             The City College of San Francisco, and a BA in Computer Graphics
-            from The Pratt Institute School of Art and Design, in New York. I
+            from The Pratt Institute School of Art and Design, in New York.<br></br>I
             have extensive experience in advertising, animation, marketing and
             design. I’m looking to join a team of engineers that enjoy
             collaborating and value life-long learning.
@@ -37,9 +41,28 @@ function Main() {
         <div className="mugContainer">
           <img src={mug} className="mug" alt="Bart Dority"/>
         </div>
+        <p className="shieldTitle">Current Dev Stack:</p>
+        <div className="bartsShields">
+          <div className="shieldContainer">
+            MONGO DB<br></br>
+              <img src={mongo} className="shield" alt="shield"/>
+          </div>
+          <div className="shieldContainer">
+          Express<br></br>
+              <img src={express} className="shield" alt="shield"/>
+          </div>
+          <div className="shieldContainer">
+          React<br></br>
+              <img src={react} className="shield" alt="shield"/>
+          </div>
+          <div className="shieldContainer">
+          Node.js<br></br>
+             <img src={node} className="shield" alt="shield"/>
+          </div>
+       </div>
       </div>
       <div className="homebodyMobile">
-        <div className="hometag">Full Stack Developer / <span className="nobr">Software Engineer</span></div>
+        <div className="hometag"><span className="nobr">Software Engineer</span></div>
         <div className="homebio">
             Full Stack Web Developer with a deep knowledge of a broad range of
             web technologies and a strong background in design and computer

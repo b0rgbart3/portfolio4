@@ -19,6 +19,8 @@
     box-shadow:0 0 20px #7ebcd4;
     padding-bottom:80px;
     margin-bottom:180px;
+    display:inline-block;
+    box-sizing: border-box;
 }
 
 .clientList {
@@ -37,14 +39,23 @@
     padding:0;
     line-height:.8em;
     margin-top:50px;
+    padding-top:40px;
 }
 
 .resumeBox h2 {
     padding:0;
     margin:0;
     line-height:0;
-    margin-top:26px;
-    margin-bottom:28px;
+    margin-top:40px;
+    margin-bottom:18px;
+}
+
+.resumeBox h3 {
+    padding:0;
+    margin:0;
+    line-height:0;
+    margin-top:36px;
+    margin-bottom:18px;
 }
 
 .resumeBox ul {
@@ -94,16 +105,21 @@
     cursor: pointer;
 }
 
+.emailLinker img {
+    width:40px;
+    vertical-align: middle;
+    margin-right:4px;
+    opacity:.6;
+}
+
 .emailLinker:hover {
     border-color:rgb(146, 186, 231);
     background-color:white;
     box-shadow: 0px 0px 12px rgb(154, 183, 223);
 }
 
-.emailLinker img {
-    width:40px;
-    vertical-align: middle;
-    margin-right:4px;
+.emailLinker:hover img {
+    opacity:1;
 }
 
 @media only screen and (min-width:800px) {

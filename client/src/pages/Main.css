@@ -4,8 +4,8 @@
   
     display:inline-block;
     box-sizing: border-box;
-    width:calc(100% - 110px);
-    max-width:940px;
+    width:calc(100% - 180px);
+    max-width:1140px;
   }
 
 .homelogo {
@@ -38,12 +38,13 @@
     min-height:300px;
     overflow: hidden;
     margin-top:40px;
+    min-width:420px;
 }
 
 .mug {
   width:100%;
   min-height:300px;
-  min-width:300px;
+  min-width:420px;
   border-radius:8px;
 }
 .hometag {
@@ -63,19 +64,51 @@
   font-size:18px;
   font-family: futura-pt, sans-serif;
   line-height:30px;
-  padding-right:20px;
+  padding-right:30px;
+  margin-right:30px;
   padding-top:20px;
+  padding-bottom:80px;
+  margin-bottom:80px;
 }
 
 .homebodyMobile {
   display:block;
 }
 
-@media only screen and (min-width:800px) {
+.bartsShields {
+  text-align:left;
+  min-width:420px;
+}
+
+.shieldContainer {
+  display:inline-block;
+  box-sizing: border-box;
+  text-align:center;
+  text-transform: uppercase;
+  padding:8px;
+  width:25%;
+
+}
+
+.shield {
+text-align:center;
+width:90%;
+}
+
+p.shieldTitle {
+  text-align:left;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:24px;
+  margin:0;
+  padding-top:30px;
+}
+@media only screen and (min-width:900px) {
 
   .homeColumn1 {
  
-    width:55%;
+    width:45%;
     box-sizing: border-box;
     display:inline-block;
     vertical-align: top;
@@ -83,7 +116,7 @@
   
   .homeColumn2 {
   
-    width:45%;
+    width:50%;
     box-sizing: border-box;
     display:inline-block;
     vertical-align: top;

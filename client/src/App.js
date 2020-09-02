@@ -16,7 +16,7 @@ function App() {
     <Router>
      <div className="App group">
         <PortfolioProvider>
-        <Menu/>
+      
 
           <Switch>
             <Route exact path="/" component={Main} />
@@ -26,6 +26,7 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
    
+          <Menu/>
         </PortfolioProvider>
       </div>
     </Router>
