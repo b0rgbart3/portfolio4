@@ -16,7 +16,7 @@ function Projects() {
 
 
         {state.projects.map( (project, index) => (
-          <Project project={project} index={index}/>
+          <Project project={project} key={index}/>
         ))}
         
   

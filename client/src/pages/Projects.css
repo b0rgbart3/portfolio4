@@ -36,7 +36,8 @@
   }
   .projectImage {
       width:100%;
-  
+     cursor: pointer;
+     
   }
 
   .projectInfo {
