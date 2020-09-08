@@ -19,6 +19,7 @@
     background-color:#aaaaaa;
     color:black;
     box-shadow:0 0 18px rgb(76, 104, 164);
+    position: relative;
 }
 
 .projectslogo {

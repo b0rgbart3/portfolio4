@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import "./Project.css";
 
 function Project(props) {
   const location = useLocation();
+  const [hit, setHit] = useState(false);
+  const [highlighter, setHighlighter] = useState(false);
 
   function goLive( url ) {
     window.open(url, "_blank");
@@ -14,6 +16,10 @@ function Project(props) {
 
   function reactToImage(e) {
     
+    e.stopPropagation();
+    let boundingBox = e.target.parentNode;
+
+    console.log("Parent: ", boundingBox);
     // let objectX = e.target.offsetLeft;
     // let objectY = e.target.offsetTop;
 
@@ -42,8 +48,13 @@ var offsetY=BB.top;
 // using e.client and the offsets calculated above
 var mouseX=parseInt(e.clientX-offsetX);
 var mouseY=parseInt(e.clientY-offsetY);
+setHit(true);
 
-console.log("x: ", mouseX, " y: ", mouseY);
+//console.log("x: ", mouseX, " y: ", mouseY);
+let myTimeout = setTimeout(function(){ setHit(false); }, 1000);
+
+let highlighter = document.getElementById('highlighter');
+console.log(highlighter);
 
 
   }
@@ -51,6 +62,7 @@ console.log("x: ", mouseX, " y: ", mouseY);
   return (
     <div className="Project group" key={props.index}>
     <img className="projectImage" src={ require("../images/work/wide/" + props.project.images[0] )} alt={ "project: "+props.project.title } onClick={reactToImage}/>
+    { hit ? <div className='highlighter' style={highlighter} id='highlighter'></div> : <div></div>}
     <div className="projectInfo group">
     <div className="projectTitle">
        {props.project.title} 

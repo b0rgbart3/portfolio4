@@ -1,0 +1,10 @@
+.highlighter {
+    width:100px;
+    height:100px;
+    background-color:white;
+    border-radius:50%;
+    position: absolute;
+    top:0;
+    left:0;
+
+}

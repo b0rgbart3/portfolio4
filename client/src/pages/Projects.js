@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import Project from "../components/project";
+import Project from "../components/Project";
 import { usePortfolioContext } from "../utils/GlobalState";
 
 function Projects() {
