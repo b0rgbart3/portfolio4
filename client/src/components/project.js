@@ -5,18 +5,22 @@ import "./Project.css";
 function Project(props) {
   const location = useLocation();
   const highlighter = useRef();
+  const projImg = useRef();
   const [hit, setHit] = useState(false);
   const [highlightStyle, setHighlightStyle] = useState({
     left: "100px",
     top: "100px",
     backgroundColor: "#ffffff",
     borderRadius: "50%",
-    transition: "all 1s",
+    transition: "all .5s",
     position: "absolute",
     opacity:"1",
     width: "50px",
     height: "50px",
   });
+  const [infoStyle, setInfoStyle] = useState({
+    top:"0px",
+  })
 
   // const [highlighter, setHighlighter] = useState(false);
 
@@ -32,24 +36,10 @@ function Project(props) {
     e.stopPropagation();
     e.preventDefault();
 
-    let boundingBox = e.target.parentNode;
+    // let boundingBox = e.target.parentNode;
 
-    console.log("Parent: ", boundingBox);
-    // let objectX = e.target.offsetLeft;
-    // let objectY = e.target.offsetTop;
+    // console.log("Parent: ", boundingBox);
 
-    // let mousex = e.screenX;
-    // let mousey = e.screenY;
-
-    // //console.log(objectX, ":x , ", objectY, ":y");
-    // let relativePositionX = mousex - objectX;
-    // let relativePositionY = mousey - objectY;
-
-    // console.log("Object x: ", objectX, ", Object y: ", objectY);
-    // console.log("Mouse x: ", mousex, ", Mouse y: ", mousey);
-    // console.log("x: ", relativePositionX, " , y: ", relativePositionY);
-
-    // get a reference to your canvas element at the start of your app
 var canvas=e.target;
 
 // example mousedown handler
@@ -65,7 +55,7 @@ var mouseX=parseInt(e.clientX-offsetX);
 var mouseY=parseInt(e.clientY-offsetY);
 
 
-console.log("x: ", mouseX, " y: ", mouseY);
+//console.log("x: ", mouseX, " y: ", mouseY);
  let myTimeout = setTimeout(function(){ 
 
   setHighlightStyle( {
@@ -74,14 +64,14 @@ console.log("x: ", mouseX, " y: ", mouseY);
     backgroundColor: "#ffffff",
     borderRadius: "50%",
     opacity:"0",
-    transition: "all 1s",
+    transition: "all .5s",
     position: "absolute",
   });
 
  let my2ndTimeout = setTimeout(function(){ 
 
   setHit(false);
- }, 800);
+ }, 1000);
 
  }, 1);
 
@@ -95,35 +85,46 @@ setHighlightStyle( {
   opacity:"1"
 });
 
-//let highlighter = document.getElementById('highlighter');
-//console.log(highlighter);
-
-console.log(highlightStyle);
+console.log(projImg.current.height);
+let imageHeight = projImg.current.height+8;
+setInfoStyle( {
+  top:"-" + imageHeight + "px",
+})
 setHit(true);
   }
   
   return (
-    <div className="Project group" key={props.index}>
-    <img className="projectImage" src={ require("../images/work/wide/" + props.project.images[0] )} alt={ "project: "+props.project.title } onClick={reactToImage}/>
-    { hit ? <div style={highlightStyle} ref={highlighter} className="highlighter"></div> : <div></div>}
-    <div className="projectInfo group">
-    <div className="projectTitle">
-       {props.project.title} {highlightStyle.left}
-    </div>
-    <div className="projectDescription">
-       {props.project.description} 
-    </div>
-    <div className="projectLiveLink" onClick={()=>goLive(props.project.live)}>
-       Live Demo
-    </div>
-    <div className="githubLink">
-    <img  className="githubIcon" src={require("../images/icons/github_round.svg")} alt="github repo"/>
-    <div className="projectGithubLink" onClick={()=>goGit(props.project.github)}>
-      Github Repo
-    </div>
-    </div>
-     </div>
-     </div> 
+    <div className="Project group" key={props.index} onClick={reactToImage}>
+       <div className="infoContainer">
+      <img ref={projImg} className="projectImage" src={ require("../images/work/wide/" + props.project.images[0] )} alt={ "project: "+props.project.title }  />
+      { hit ? <div style={highlightStyle} ref={highlighter} className="highlighter"></div> : <div></div>}
+
+   
+          <div className="projectInfo group" style={infoStyle}>
+              <div className="projectTitle">
+                {props.project.title}
+              </div>
+              <div className="projectDescription">
+                {props.project.description} 
+              </div>
+      
+              <div className="outsideLinks">
+              <div className="githubLink">
+                <img  className="githubIcon" src={require("../images/icons/github_round.svg")} alt="github repo"/>
+                <div className="projectGithubLink" onClick={()=>goGit(props.project.github)}>
+                  Github Repo
+                </div>
+              </div>
+              <div className="projectLiveLink" onClick={()=>goLive(props.project.live)}>
+                    Live Demo
+                  </div>
+
+              </div>
+          </div>
+      </div>
+      </div>
+      
+
   );
 }
 
