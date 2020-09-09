@@ -210,7 +210,7 @@ function Project(props) {
               </div>
     </div>
     <div className="projectBack group" style={cardBackStyle}  onMouseUp={reactToImage}>
-    <img ref={projImg} className="projectImage" src={ require("../images/work/wide/" + props.project.images[0] )} alt={ "project: "+props.project.title }  />
+    <img ref={projImg} className="projectImage" src={ require("../images/work/" + props.project.images[0] )} alt={ "project: "+props.project.title }  />
     </div>
     </div>
   );

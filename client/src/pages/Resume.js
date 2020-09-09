@@ -121,9 +121,9 @@ Built and directed operations of a large full-service web development firm. Proj
 <li><a href="https://jackdavisart.com" className="resumeLink">jackdavisart.com</a></li>
 <li><a href="https://bigmuscletrainer.com" className="resumeLink">bigmuscletrainer.com</a></li>
 {/* <li><a href="http://www.paintedmonkeysf.com" className="resumeLink">paintedmonkeysf.com</a></li> */}
-<li><a href="https://michaellawrenceart.com" className="resumeLink">michaellawrenceart.com</a></li> 
+{/* <li><a href="https://michaellawrenceart.com" className="resumeLink">michaellawrenceart.com</a></li>  */}
 <li><a href="https://willowkelly.com" className="resumeLink">willowkelly.com</a></li> 
-<li><a href="https://darkmessenger.net" className="resumeLink">darkmessenger.net</a></li> 
+{/* <li><a href="https://darkmessenger.net" className="resumeLink">darkmessenger.net</a></li>  */}
 <li><a href="http://www.laurellittletheatre.com" className="resumeLink">laurellittletheatre.com</a></li>
 <li><a href="http://gedeparma.com" className="resumeLink">gedeparma.com</a></li>
 <li><a href="http://vargatorte.com" className="resumeLink">vargatorte.com</a></li>
@@ -136,7 +136,30 @@ Pratt Circle Award, Dean’s List, 1990, 1991, 1992 Outstanding Academic Achieve
 </p>
 <h2>Abbreviated Client List</h2>
 <p className="clientList">
-Rick Crane & the SF Long Term Care, Coordinating Council , San Francisco, CA, KQED, Interactive Department, San Francisco, CA, Organic, Inc, Bloomfield Hills, MI, A.S.K. Learning, San Francisco, CA, ClearPath Media, Mountain View, CA, Technesis, Inc., Mountain View, CA, CloudBreak Software, Mountain View, CA, Nyquist Design, Los Gatos, CA, Soma Networks, San Francisco, CA, Doremus Advertising, San Francisco, CA, Grey Advertising, San Francisco, CA, Ric Cohn Productions, New York, NY, Catholic Charities, Dept of AIDS Health Care Services, New York, NY, Lovett Productions, and The Cancer Institute of Brooklyn, NY, Dixon & Company Publishing, New York, NY
+<ul>
+<li>
+Rick Crane & the SF Long Term Care, Coordinating Council , San Francisco, CA
+</li>
+<li>
+KQED, Interactive Department, San Francisco, CA
+</li>
+<li>Organic, Inc, Bloomfield Hills, MI
+</li>
+<li>A.S.K. Learning, San Francisco, CA
+</li>
+<li>ClearPath Media, Mountain View, CA
+</li>
+<li>Technesis, Inc., Mountain View, CA</li>
+<li>CloudBreak Software, Mountain View, CA</li>
+<li>Nyquist Design, Los Gatos, CA</li>
+<li>Soma Networks, San Francisco, CA</li>
+<li>Doremus Advertising, San Francisco, CA</li>
+<li>Grey Advertising, San Francisco, CA</li>
+<li>Ric Cohn Productions, New York, NY</li>
+<li>Catholic Charities, Dept of AIDS Health Care Services, New York, NY</li>
+<li>Lovett Productions, and The Cancer Institute of Brooklyn, NY</li>
+<li>Dixon & Company Publishing, New York, NY</li>
+</ul>
 </p>
   </div>
   )

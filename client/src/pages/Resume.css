@@ -7,20 +7,18 @@
     width:100%;
     color:black;
     margin:auto;
-    border-radius:8px;
     text-align:left;
-    margin-top:80px;
     padding-left:80px;
     padding-right:80px;
-    padding-top:60px;
     box-sizing: border-box;
     font-family: futura-pt, sans-serif;
     font-family: 'Rubik', serif;
-    box-shadow:0 0 20px #7ebcd4;
+    box-shadow:0 0 28px rgb(146, 183, 194);
     padding-bottom:80px;
     margin-bottom:180px;
     display:inline-block;
     box-sizing: border-box;
+    max-width:1200px;
 }
 
 .clientList {
@@ -33,7 +31,7 @@
 .resumeBox h1 {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
-    font-size:67px;
+    font-size:54px;
     letter-spacing:-.035em;
     margin:0;
     padding:0;
@@ -48,6 +46,8 @@
     line-height:0;
     margin-top:40px;
     margin-bottom:18px;
+    font-family: futura-pt, sans-serif;
+    font-size:24px;
 }
 
 .resumeBox h3 {
@@ -56,6 +56,8 @@
     line-height:0;
     margin-top:36px;
     margin-bottom:18px;
+    font-family: futura-pt, sans-serif;
+    font-size:20px;
 }
 
 .resumeBox ul {
@@ -68,15 +70,15 @@
     margin-left:30px;
     font-size:18px;
     line-height:28px;
+    font-family: futura-pt, sans-serif;
 }
 .resumeLink {
-    color:rgb(68, 68, 146);
-    font-weight: 700;
-    font-size:18px;
+    font-weight: 600;
+    font-size:16px;
 }
 
 .resumeLink:hover {
-    color:rgb(63, 63, 214);
+    color:rgb(47, 153, 202);
 }
 
 .resumeBox p {
@@ -84,6 +86,7 @@
     line-height:30px;
     margin-top:0;
     padding-top:0;
+    font-family: futura-pt, sans-serif;
 }
 
 .emailLinker {
@@ -129,19 +132,19 @@
         padding:20px;
         width:90%;
         margin:auto;
-        border-radius:8px;
-        margin-top:80px;
+        margin-top:20px;
         padding-left:80px;
         padding-right:80px;
         padding-top:60px;
         box-shadow:0 0 20px #7ebcd4;
         padding-bottom:80px;
         margin-bottom:180px;
+        max-width:1200px;
     }
 
 
 .clientList {
-    column-count:2;
+    /* column-count:2; */
 }
 .livewebsiteList {
     column-count:2;
@@ -152,23 +155,22 @@
 
 @media only screen and (min-width:1200px) {
     .resumeBox {
-    
         padding:20px;
         width:80%;
         max-width:1400px;
         margin:auto;
-        border-radius:8px;
-        margin-top:80px;
+        margin-top:20px;
         padding-left:80px;
         padding-right:80px;
         padding-top:60px;
         box-shadow:0 0 20px #7ebcd4;
         padding-bottom:80px;
         margin-bottom:180px;
+        max-width:1200px;
     }
 
     .clientList {
-        column-count:2;
+        /* column-count:2; */
     }
     .livewebsiteList {
         column-count:3;

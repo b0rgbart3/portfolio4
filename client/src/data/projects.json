@@ -2,7 +2,7 @@
     {
         "title": "Name List",
         "description": "This app displays a list of names such as an employee directory, and allows you to search for a person based on any keyword filter.  It also allows you to sort the list of names in ascending or descending order of any column, such as first name, last name, phone number, or department.",
-        "images": ["names.jpg"],   
+        "images": ["list.jpg"],   
         "live": "https://b0rgbart3.github.io/name_search/",
         "github": "https://github.com/b0rgbart3/name_search",
         "features": [""],
