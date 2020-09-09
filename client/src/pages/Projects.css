@@ -2,11 +2,12 @@
     display:inline-block;
     box-sizing: border-box;
     width:100%;
-    max-width:1900px;
-    perspective: 1200px;
+    max-width:1400px;
     text-align:center;
-    border:2px solid purple;
+
     text-align:center;
+    padding:0;
+    padding-bottom:300px;
 }
 
 .projectslogo {
