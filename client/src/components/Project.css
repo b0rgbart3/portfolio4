@@ -23,6 +23,8 @@
     width:100%;
     padding-top:28px;
     padding-bottom:18px;
+    position: absolute;
+    bottom:0;
 }
 
 .projectContainer {
@@ -94,7 +96,7 @@
 
 .projectBack img {
     transform:scaleX(-1);
-    width:90%;
+    width:94%;
     box-shadow:0 0 20px gray;
     margin-top:20px;
 }
