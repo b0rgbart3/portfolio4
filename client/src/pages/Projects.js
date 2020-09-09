@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
-import Project from "../components/Project";
 import { usePortfolioContext } from "../utils/GlobalState";
+import Project from "../components/Project";
 
 function Projects() {
   const [state, dispatch] = usePortfolioContext();

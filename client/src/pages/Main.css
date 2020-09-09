@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
 
 .Home {
-  
+    margin-top:0;
+    box-sizing:border-box;
     display:inline-block;
     box-sizing: border-box;
-    width:calc(100% - 180px);
-    max-width:1140px;
+    width:100%;
+    display:block;
+    padding-left:4%;
+    padding-right:4%;
+    background-color:white;
+    padding-bottom:0;
+    box-shadow:0 0 28px rgb(146, 183, 194);
   }
 
 .homelogo {
@@ -18,7 +24,7 @@
   line-height:1em;
 }
 .homeColumn1 {
-  
+
   width:100%;
   box-sizing: border-box;
   display:block;
@@ -32,19 +38,20 @@
   display:block;
   vertical-align: top;
   margin-top:0px;
+
 }
 
 .mugContainer {
     min-height:300px;
     overflow: hidden;
     margin-top:40px;
-    min-width:420px;
+    text-align:left;
 }
 
 .mug {
   width:100%;
-  min-height:300px;
-  min-width:420px;
+  max-width:450px;
+
   border-radius:8px;
 }
 .hometag {
@@ -64,11 +71,9 @@
   font-size:18px;
   font-family: futura-pt, sans-serif;
   line-height:30px;
-  padding-right:30px;
-  margin-right:30px;
   padding-top:20px;
-  padding-bottom:80px;
-  margin-bottom:80px;
+  padding-right:5%;
+  padding-bottom:140px;
 }
 
 .homebodyMobile {
@@ -77,7 +82,7 @@
 
 .bartsShields {
   text-align:left;
-  min-width:420px;
+  max-width:500px;
 }
 
 .shieldContainer {
@@ -87,7 +92,7 @@
   text-transform: uppercase;
   padding:8px;
   width:25%;
-
+  font-size:12px;
 }
 
 .shield {
@@ -108,8 +113,17 @@ p.shieldTitle {
 
 @media only screen and (min-width:900px) {
 
+  .Home {
+
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+    padding-left:0;
+    max-width:1200px;
+  } 
+
   .homeColumn1 {
- 
+    padding-left:4%;
     width:45%;
     box-sizing: border-box;
     display:inline-block;
@@ -117,7 +131,7 @@ p.shieldTitle {
   }
   
   .homeColumn2 {
-  
+    padding-left:4%;
     width:50%;
     box-sizing: border-box;
     display:inline-block;

@@ -7,6 +7,8 @@
     box-sizing: border-box;
     display:inline-block;
     transition: all .3s;
+    top:0;
+    left:0;
 }
 .Menu {
     position: relative;

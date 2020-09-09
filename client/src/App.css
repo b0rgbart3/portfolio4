@@ -2,6 +2,7 @@
 
 html {
   background-color: #282c34;
+  background-color:#dae4e9;
   margin:0;
   padding:0;
 
@@ -10,8 +11,8 @@ body {
   margin:0;
   padding:0;
   min-height:100vh;
-  background: rgb(40,44,52);
-  background: linear-gradient(142deg, rgba(40,44,52,1) 36%, rgba(27,59,122,1) 100%);
+  /* background: rgb(40,44,52); */
+  /* background: linear-gradient(142deg, rgba(40,44,52,1) 36%, rgba(27,59,122,1) 100%); */
 }
 
 .medium {
@@ -47,7 +48,7 @@ header {
 
 .App {
   text-align: center;
-  color:white;
+  color:black;
   padding:0;
   margin:0;
   box-sizing: border-box;

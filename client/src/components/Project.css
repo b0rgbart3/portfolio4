@@ -6,43 +6,93 @@
     position: absolute;
 
 }
+.techLabel {
+    margin:0;
+    padding:0;
+    font-family: futura-pt, sans-serif;
+    color:#555555;
+    font-size:18px;
+    text-transform: uppercase;
+    text-align:left;
+    padding-left:30px;
+    margin-top:30px;
+    font-weight: 500;
+}
 
+.outsideLinks {
+    width:100%;
+    padding-top:28px;
+    padding-bottom:18px;
+}
+
+.projectContainer {
+    width:100%;
+    display:inline-block;
+    perspective:800px;
+    box-sizing: border-box;
+    transition: all 1s;
+
+    text-align:center;
+}
 
 .Project {
-    width:80%;
+    width:90%;
+    background-color:rgba(255,255,255,.25);
     box-sizing:border-box;
     margin:0;
-    min-height:420px;
     display:inline-block;
     box-sizing: border-box;
     vertical-align: top;
     margin-bottom:40px;
     overflow: hidden;
-
     color:black;
-    box-shadow:0 0 18px rgb(76, 104, 164);
     position: relative;
-    border:2px solid rgb(28, 28, 71);
+    border:2px solid rgb(192, 202, 206);
     border-radius: 8px;
-    background-color:#eeeeee;
-    opacity:.85;
+    opacity:.5;
     cursor: pointer;
+    transition: all .1s;
+    position: relative;
+    transition-timing-function: ease-in;
+    min-height: 550px;
 }
 .Project:hover {
+    background-color:rgba(255,255,255,1);
     border:2px solid rgb(146, 233, 248);
-    box-shadow:0 0 18px rgb(146, 233, 248);
+    border-radius:0;
+    box-shadow:0px 0px 18px rgb(119, 168, 177);
     opacity:1;
 }
 
+.Project:focus {
+  
+}
 
-.projectInfo {
-    background-color:#eeeeee;
-    padding-bottom:0px;
-    position: relative;
-    transition:all .6s;
-    transition-timing-function: ease-in-out;
-    user-select: none;
-  }
+.projectBack {
+    display:inline-block;
+    box-sizing: border-box;
+    width:90%;
+    transform: rotateY(40deg);
+    position: absolute;
+    top:0;
+    left:5%;
+    opacity:0;
+    transition:all .5s;
+    transition-timing-function: ease-out;
+    border-radius:8px;
+    overflow: hidden;
+    border:2px solid white;
+    display:none;
+}
+
+.projectBack:hover {
+    border:2px solid blue;
+}
+
+.projectBack img {
+    transform:scaleX(-1);
+    width:100%;
+}
 
   .projectTitle {
     font-family: futura-pt, sans-serif;
@@ -50,29 +100,30 @@
     text-align:left;
     font-weight:700;
     padding-left:30px;
-    padding-top:30px;
+    padding-top:60px;
     padding-bottom:8px;
 
   }
 
   .projectDescription {
     font-family: futura-pt, sans-serif;
-    font-size:22px;
+    font-size:19px;
     padding-left:30px;
     padding-right:30px;
     text-align:left;
-    padding-bottom:40px;
     line-height:32px;
-    border-bottom:1px solid gray;
-    margin-bottom:18px;
+    color:#555555;
+  
   }
 .projectLiveLink {
     padding:0;
     font-family: futura-pt, sans-serif;
     font-size:18px;
     display:inline-block;
-    padding:18px;
-    background-color:rgb(67, 89, 163);
+    padding:11px;
+    padding-left:18px;
+    padding-right:18px;
+    background-color:rgba(67, 120, 163,.6);
     color:white;
     float:right;
     text-transform: uppercase;
@@ -84,7 +135,7 @@
 }
 
 .projectLiveLink:hover {
-    background-color:rgb(24, 150, 233);
+    background-color:rgb(63, 190, 212);
 }
 
 .projectGithubLink {
@@ -114,33 +165,51 @@ border-radius:8px;
 .githubIcon {
     width:50px;
     height:50px;
- 
     display:inline-block;
     float:left;
 }
 
-.infoContainer {
-  
-    overflow: hidden;
-    height:380px;
+
+.projectTech {
+    padding:18px;
+    text-align:left;
+}
+
+.projectImage {
+    width:100%;
+   cursor: pointer;
+
+}
+
+.techIcon {
+    min-width:15%;
+    border:1px solid rgb(209, 207, 207);
+    display:inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align:center;
+    padding:10px;
+    color:#555555;
 }
 
 
-@media only screen and (min-width:1140px) {
-    .Project {
-        width:40%;
-        margin-left:15px;
-        margin-right:15px;
-        box-sizing: border-box;
-    }
+@media only screen and (min-width:1080px) {
+
+
+        .projectContainer {
+            width:45%;
+            display:inline-block;
+    
+        }
 }
 
-@media only screen and (min-width:1740px) {
-    .Project {
-        width:28%;
-        margin-left:15px;
-        margin-right:15px;
-        box-sizing: border-box;
-    }
+@media only screen and (min-width:1540px) {
+
+
+        .projectContainer {
+            width:30%;
+            display:inline-block;
+        
+        }
 }
 
