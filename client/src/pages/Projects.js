@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { usePortfolioContext } from "../utils/GlobalState";
-import Project from "../components/Project";
+import ProjectBox from "../components/ProjectBox";
 
 function Projects() {
   const [state, dispatch] = usePortfolioContext();
@@ -16,7 +16,7 @@ function Projects() {
 
 
         {state.projects.map( (project, index) => (
-          <Project project={project} key={index}/>
+          <ProjectBox project={project} key={index}/>
         ))}
         
   

@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./Project.css";
+import "./ProjectBox.css";
 
-function Project(props) {
+function ProjectBox(props) {
   const projImg = useRef();
  // const [hit, setHit] = useState(false);
   const [cardStyle, setCardStyle] = useState({
@@ -216,7 +216,7 @@ function Project(props) {
   );
 }
 
-export default Project;
+export default ProjectBox;
 
 
 // <img ref={projImg} className="projectImage" src={ require("../images/work/wide/" + props.project.images[0] )} alt={ "project: "+props.project.title }  />
