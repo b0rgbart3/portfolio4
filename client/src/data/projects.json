@@ -6,7 +6,8 @@
         "live": "https://shoppr-ai.herokuapp.com/",
         "github": "https://github.com/b0rgbart3/Shoppinator2.0",
         "features": [""],
-        "tech": ["React","Express","Node.js","MySQL","Sequelize"]
+        "tech": ["React","Node.js","Express", "MySQL","Sequelize"],
+        "shields": ["react","node", "express", "sql","sequelize"]
     },
     {
         "title": "Name List",
@@ -15,7 +16,8 @@
         "live": "https://b0rgbart3.github.io/name_search/",
         "github": "https://github.com/b0rgbart3/name_search",
         "features": [""],
-        "tech": ["React","Express","Node.js","MongoDB","Mongoose"]
+        "tech": ["React","Node.js","Express","MongoDB","Mongoose"],
+        "shields": ["react","node","express","mongo","mongoose"]
     },
     {
         "title": "Memory Lane",
@@ -24,43 +26,8 @@
         "live": "https://b0rgbart3.github.io/clicky/",
         "github": "https://github.com/b0rgbart3/clicky",
         "features": [""],
-        "tech": ["React","Express","Node.js","MongoDB","Mongoose"]
-    },
-    {
-        "title": "Space Force",
-        "description": "This app uses the NASA public image bank, and cross references these images with articles from Wikipedia. Users can search through photographs and find out more about these scientific topics in a visual manner, based on a keyword search, that filters the data coming in from the API.",
-        "images": ["spaceforce.jpg"],   
-        "live": "https://b0rgbart3.github.io/project-one/",
-        "github": "https://github.com/b0rgbart3/project-one",
-        "features": [""],
-        "tech": ["React","Express","Node.js","MongoDB","Mongoose"]
-    },
-    {
-        "title": "The Weather App",
-        "description": "This app pulls live weather and forecast data from Open-Weather-Map.org's API.  It allows users to view the weather and get a 5 day forecast in multiple cities, to help them better plan their trips.  The city choices are saved so they can easily check the weather again at another time.",
-        "images":["weather.jpg"],
-        "live":"https://b0rgbart3.github.io/weather-dashboard/",
-        "github":"https://github.com/b0rgbart3/weather-dashboard",
-        "features": [""],
-        "tech": ["Javascript","JQuery","HTML 5","CSS 3"]
-    },
-    {
-        "title": "Supper",
-        "description": "An MVC application using Express Handlebars, and a custom ORM in node.js - demonstrating full CRUD capabilities.",
-        "images":["supper.jpg"],
-        "live":"https://fierce-oasis-15914.herokuapp.com/",
-        "github":"https://github.com/b0rgbart3/supper",
-        "features": [""],
-        "tech": ["Node.js", "MySQL", "Express", "Handlebars", "Custom ORM"]
-    },
-    {
-        "title": "Quizzler",
-        "description": "This app sets up a simple set of timed quiz questions in a fun game like interface with sound effects and current score to test users knowledge of a particular subject.  It also allows users to save their high scores and their initials to compare and compete against their peers.",
-        "images":["quizzler.jpg"],
-        "live":"https://b0rgbart3.github.io/code-quiz2/",
-        "github":"https://github.com/b0rgbart3/code-quiz2",
-        "features": [""],
-        "tech": ["Javascript","JQuery","HTML 5","CSS 3"]
+        "tech": ["React","Node.js","Express","MongoDB","Mongoose"],
+        "shields": ["react","node","express","mongo","mongoose"]
     },
     {
         "title": "MiddleGround",
@@ -69,6 +36,49 @@
         "live":"https://b0rgbart3.github.io/project-one/",
         "github":"https://rocky-meadow-78317.herokuapp.com/",
         "features": [""],
-        "tech": ["Express","Node.js","MySQL","Handlebars"]
+        "tech": ["Node.js","Express","MySQL","Handlebars"],
+        "shields": ["node","express","sql","handlebars"]
+    },
+    {
+        "title": "Supper",
+        "description": "An MVC application using Express Handlebars, and a custom ORM in node.js - demonstrating full CRUD capabilities.",
+        "images":["supper.jpg"],
+        "live":"https://fierce-oasis-15914.herokuapp.com/",
+        "github":"https://github.com/b0rgbart3/supper",
+        "features": [""],
+        "tech": ["Node.js", "MySQL", "Express", "Handlebars"],
+        "shields": ["node","sql","express","handlebars","custom_orm"]
+    },
+    {
+        "title": "Space Force",
+        "description": "This app uses the NASA public image bank, and cross references these images with articles from Wikipedia. Users can search through photographs and find out more about these scientific topics in a visual manner, based on a keyword search, that filters the data coming in from the API.",
+        "images": ["spaceforce.jpg"],   
+        "live": "https://b0rgbart3.github.io/project-one/",
+        "github": "https://github.com/b0rgbart3/project-one",
+        "features": [""],
+        "tech": ["Javascript", "JQuery"],
+        "shields": ["js", "jq"]
+    },
+    {
+        "title": "The Weather App",
+        "description": "This app pulls live weather and forecast data from Open-Weather-Map.org's API.  It allows users to view the weather and get a 5 day forecast in multiple cities, to help them better plan their trips.  The city choices are saved so they can easily check the weather again at another time.",
+        "images":["weather.jpg"],
+        "live":"https://b0rgbart3.github.io/weather-dashboard/",
+        "github":"https://github.com/b0rgbart3/weather-dashboard",
+        "features": [""],
+        "tech": ["Javascript","JQuery"],
+        "shields": ["js","jq"]
+        
+    },
+    {
+        "title": "Quizzler",
+        "description": "This app sets up a simple set of timed quiz questions in a fun game like interface with sound effects and current score to test users knowledge of a particular subject.  It also allows users to save their high scores and their initials to compare and compete against their peers.",
+        "images":["quizzler.jpg"],
+        "live":"https://b0rgbart3.github.io/code-quiz2/",
+        "github":"https://github.com/b0rgbart3/code-quiz2",
+        "features": [""],
+        "tech": ["Javascript","JQuery"],
+        "shields": ["js","jq"]
     }
+
 ]

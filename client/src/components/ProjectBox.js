@@ -190,7 +190,9 @@ function ProjectBox(props) {
               </div>
               <p class='techLabel'>Technology Stack:</p>
               <div className="projectTech">
-                { props.project.tech.map( (tech) => <div className='techIcon'>{tech}</div>) }
+                { props.project.tech.map( (tech, techIndex) => <div className='techIcon'>
+                  <img className="techShieldIcon" src={require("../images/shields/" + props.project.shields[techIndex] + ".png")} />
+                </div>) }
               </div>
       
              
@@ -203,15 +205,17 @@ function ProjectBox(props) {
                   Github Repo
                 </div>
               </div>
-              <div className="projectLiveLink" onClick={()=>goLive(props.project.live)}>
-                    Live Demo
-                  </div>
+ 
 
               </div>
     </div>
     <div className="projectBack group" style={cardBackStyle}  onMouseUp={reactToImage}>
     <img ref={projImg} className="projectImage" src={ require("../images/work/" + props.project.images[0] )} alt={ "project: "+props.project.title }  />
+    <div className="projectLiveLink" onClick={()=>goLive(props.project.live)}>
+                    Live Demo
+                  </div>
     </div>
+    
     </div>
   );
 }

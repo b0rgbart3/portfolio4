@@ -4,11 +4,11 @@
     padding:0;
     font-family: futura-pt, sans-serif;
     color:#555555;
-    font-size:18px;
+    font-size:16px;
     text-transform: uppercase;
     text-align:left;
     padding-left:40px;
-    margin-top:20px;
+    margin-top:30px;
     font-weight: 500;
     margin-bottom:0;
     line-height:1em;
@@ -39,7 +39,7 @@
     display:inline-block;
     box-sizing: border-box;
     vertical-align: top;
-    margin-bottom:40px;
+    margin-bottom:20px;
     overflow: hidden;
     color:black;
     position: relative;
@@ -50,7 +50,7 @@
     transition: all .1s;
     position: relative;
     transition-timing-function: ease-in;
-    min-height: 500px;
+    min-height: 480px;
 }
 .Project:hover {
     background-color:rgba(255,255,255,1);
@@ -84,6 +84,10 @@
     padding-bottom:0;
 }
 
+.techShieldIcon {
+    width:48px;
+  
+}
 .projectBack:hover {
     background-color:#eeeeee;
     box-shadow:0px 0px 18px rgb(119, 168, 177);
@@ -91,7 +95,7 @@
 
 .projectBack img {
     transform:scaleX(-1);
-    width:84%;
+    width:94%;
     box-shadow:0 0 20px gray;
     margin-top:20px;
 }
@@ -102,7 +106,7 @@
     text-align:left;
     font-weight:700;
     padding-left:40px;
-    padding-top:60px;
+    padding-top:40px;
     padding-bottom:8px;
 
   }
@@ -113,7 +117,7 @@
     padding-left:40px;
     padding-right:40px;
     text-align:left;
-    line-height:32px;
+    line-height:22px;
     color:#555555;
   
   }
@@ -122,18 +126,28 @@
     font-family: futura-pt, sans-serif;
     font-size:16px;
     display:inline-block;
-    padding:11px;
-    padding-left:10px;
-    padding-right:10px;
-    background-color:rgba(67, 120, 163,.6);
+    padding:12px;
+    padding-left:30px;
+    padding-right:50px;
+    background-color:rgb(66, 155, 182);
+    background-color:white;
+    box-shadow:0 0 8px rgb(31, 203, 255);
     color:white;
-    float:right;
+    float:left;
     text-transform: uppercase;
     font-weight: 700;
     user-select: none;
     cursor: pointer;
-    margin-right:26px;
-    border-radius:8px;
+    border-radius:2px;
+    transform:scaleX(-1);
+    position: absolute;
+    color:black;
+    top:30px;
+    left:0px;
+    background-image:url(../images/icons/external.svg);
+    background-repeat: no-repeat;
+    background-position:90% 6px;
+    background-size:26px 26px;
 }
 
 .projectLiveLink:hover {
@@ -154,7 +168,7 @@
 .githubLink { 
 padding-right:10px;
 display:inline-block;
-margin-left:6px;
+margin-left:30px;
 float:left;
 border-radius:8px;
 
@@ -166,14 +180,13 @@ border-radius:8px;
 
 .githubIcon {
     width:40px;
-    height:40px;
     display:inline-block;
     float:left;
 }
 
 
 .projectTech {
-    padding:18px;
+    padding-left:30px;
     text-align:left;
 }
 
@@ -184,8 +197,6 @@ border-radius:8px;
 }
 
 .techIcon {
-    min-width:15%;
-    border:1px solid rgb(209, 207, 207);
     display:inline-block;
     vertical-align: top;
     box-sizing: border-box;
@@ -199,6 +210,15 @@ border-radius:8px;
         width:80%;
 
     }
+
+    .Project {
+        min-height: 440px;
+        max-height:440px;
+    }
+    .projectBack {
+        max-height:440px;
+    }
+
 }
 @media only screen and (min-width:900px) {
 
@@ -210,8 +230,9 @@ border-radius:8px;
             margin-left:1.25%;
     
         }
-}
 
+
+    }
 @media only screen and (min-width:1140px) {
 
 
@@ -224,7 +245,7 @@ border-radius:8px;
         }
         .projectDescription {
             font-size:15px;
-            line-height:24px;
+            line-height:20px;
            
           
           }

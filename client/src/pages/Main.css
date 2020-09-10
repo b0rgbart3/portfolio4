@@ -90,14 +90,14 @@
   box-sizing: border-box;
   text-align:center;
   text-transform: uppercase;
-  padding:8px;
-  width:25%;
+  padding:0px;
+  width:70px;
   font-size:12px;
 }
 
 .shield {
 text-align:center;
-width:70%;
+width:64px;
 }
 
 p.shieldTitle {

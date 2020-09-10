@@ -2,9 +2,11 @@ import React from "react";
 import "./Main.css";
 import mug from "../images/bartdority_pic1.jpg";
 import mongo from "../images/shields/mongo.png";
+import sql from "../images/shields/sql.png";
 import express from "../images/shields/express.png";
 import react from "../images/shields/react.png";
 import node from "../images/shields/node.png";
+import sequelize from "../images/shields/sequelize.png";
 
 function Main() {
   return (
@@ -40,24 +42,25 @@ function Main() {
         <div className="mugContainer">
           <img src={mug} className="mug" alt="Bart Dority"/>
         </div>
-        <p className="shieldTitle">Current Dev Stack:</p>
+        <p className="shieldTitle">Preferred Development Stack:</p>
         <div className="bartsShields">
-          <div className="shieldContainer">
-            MONGO DB<br></br>
-              <img src={mongo} className="shield" alt="shield"/>
+        <div className="shieldContainer">
+              <img src={react} className="shield" alt="shield"/>
           </div>
+        <div className="shieldContainer">
+             <img src={node} className="shield" alt="shield"/>
+          </div>
+ 
           <div className="shieldContainer">
-          Express<br></br>
               <img src={express} className="shield" alt="shield"/>
           </div>
           <div className="shieldContainer">
-          React<br></br>
-              <img src={react} className="shield" alt="shield"/>
+              <img src={sql} className="shield" alt="shield"/>
           </div>
           <div className="shieldContainer">
-          Node.js<br></br>
-             <img src={node} className="shield" alt="shield"/>
+              <img src={sequelize} className="shield" alt="shield"/>
           </div>
+
        </div>
       </div>
       <div className="homebodyMobile">
