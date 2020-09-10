@@ -1,11 +1,4 @@
-.highlighter {
-    width:100px;
-    height:100px;
-    background-color:white;
-    border-radius:50%;
-    position: absolute;
 
-}
 .techLabel {
     margin:0;
     padding:0;
@@ -14,9 +7,11 @@
     font-size:18px;
     text-transform: uppercase;
     text-align:left;
-    padding-left:30px;
-    margin-top:30px;
+    padding-left:40px;
+    margin-top:20px;
     font-weight: 500;
+    margin-bottom:0;
+    line-height:1em;
 }
 
 .outsideLinks {
@@ -28,12 +23,11 @@
 }
 
 .projectContainer {
-    width:80%;
+    width:100%;
     display:inline-block;
     perspective:800px;
     box-sizing: border-box;
     transition: all 1s;
-
     text-align:center;
 }
 
@@ -56,7 +50,7 @@
     transition: all .1s;
     position: relative;
     transition-timing-function: ease-in;
-    min-height: 550px;
+    min-height: 500px;
 }
 .Project:hover {
     background-color:rgba(255,255,255,1);
@@ -85,8 +79,9 @@
     overflow: hidden;
     background-color:#b9c6cc;
     display:none;
-    height:550px;
+    max-height:500px;
     box-shadow:0px 0px 18px rgb(97, 136, 143);
+    padding-bottom:0;
 }
 
 .projectBack:hover {
@@ -96,17 +91,17 @@
 
 .projectBack img {
     transform:scaleX(-1);
-    width:94%;
+    width:84%;
     box-shadow:0 0 20px gray;
     margin-top:20px;
 }
 
   .projectTitle {
     font-family: futura-pt, sans-serif;
-    font-size:28px;
+    font-size:20px;
     text-align:left;
     font-weight:700;
-    padding-left:30px;
+    padding-left:40px;
     padding-top:60px;
     padding-bottom:8px;
 
@@ -114,9 +109,9 @@
 
   .projectDescription {
     font-family: futura-pt, sans-serif;
-    font-size:19px;
-    padding-left:30px;
-    padding-right:30px;
+    font-size:18px;
+    padding-left:40px;
+    padding-right:40px;
     text-align:left;
     line-height:32px;
     color:#555555;
@@ -125,11 +120,11 @@
 .projectLiveLink {
     padding:0;
     font-family: futura-pt, sans-serif;
-    font-size:18px;
+    font-size:16px;
     display:inline-block;
     padding:11px;
-    padding-left:18px;
-    padding-right:18px;
+    padding-left:10px;
+    padding-right:10px;
     background-color:rgba(67, 120, 163,.6);
     color:white;
     float:right;
@@ -153,13 +148,13 @@
     float:left;
     font-family: futura-pt, sans-serif;
     font-weight:600;
-    font-size:20px;
+    font-size:16px;
     text-transform: uppercase;
 }
 .githubLink { 
 padding-right:10px;
 display:inline-block;
-margin-left:26px;
+margin-left:6px;
 float:left;
 border-radius:8px;
 
@@ -170,8 +165,8 @@ border-radius:8px;
 }
 
 .githubIcon {
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     display:inline-block;
     float:left;
 }
@@ -195,12 +190,17 @@ border-radius:8px;
     vertical-align: top;
     box-sizing: border-box;
     text-align:center;
-    padding:10px;
+    padding:4px;
     color:#555555;
 }
 
+@media only screen and (min-width:700px) {
+    .projectContainer {
+        width:80%;
 
-@media only screen and (min-width:1080px) {
+    }
+}
+@media only screen and (min-width:900px) {
 
 
         .projectContainer {
@@ -212,7 +212,7 @@ border-radius:8px;
         }
 }
 
-@media only screen and (min-width:1640px) {
+@media only screen and (min-width:1140px) {
 
 
         .projectContainer {
@@ -223,7 +223,7 @@ border-radius:8px;
         
         }
         .projectDescription {
-            font-size:18px;
+            font-size:15px;
             line-height:24px;
            
           
