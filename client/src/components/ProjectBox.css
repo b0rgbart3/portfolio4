@@ -105,7 +105,7 @@
     font-size:20px;
     text-align:left;
     font-weight:700;
-    padding-left:40px;
+    padding-left:5%;
     padding-top:40px;
     padding-bottom:8px;
 
@@ -113,11 +113,11 @@
 
   .projectDescription {
     font-family: futura-pt, sans-serif;
-    font-size:18px;
-    padding-left:40px;
-    padding-right:40px;
+    font-size:16px;
+    padding-left:5%;
+    padding-right:5%;
     text-align:left;
-    line-height:22px;
+    line-height:1.4em;
     color:#555555;
   
   }
