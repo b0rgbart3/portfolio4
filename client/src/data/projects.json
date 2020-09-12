@@ -10,6 +10,16 @@
         "shields": ["react","node", "express", "sql","sequelize"]
     },
     {
+        "title": "My Google Books",
+        "description": "Full Stack MERN application to search for books from the Google Book API, and store them in a Mongo data base.",
+        "images": ["googlebooks.jpg"],   
+        "live": "https://serene-sands-53576.herokuapp.com/",
+        "github": "https://github.com/b0rgbart3/myGoogleBooks",
+        "features": [""],
+        "tech": ["React","Node.js","Express","MongoDB","Mongoose"],
+        "shields": ["react","node","express","mongo","mongoose"]
+    },
+    {
         "title": "Name List",
         "description": "This app displays a list of names such as an employee directory, and allows you to search for a person based on any keyword filter.  It also allows you to sort the list of names in ascending or descending order of any column, such as first name, last name, phone number, or department.",
         "images": ["list.jpg"],   
