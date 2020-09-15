@@ -124,11 +124,11 @@
         "title": "JerryFrost.com",
         "description": "A custom website designed and built for Jerry Frost, an Artist in San Francisco.",
         "images":["jerry.jpg"],
-        "live":"http://jerrfrost.com",
-        "github":"https://github.com/b0rgbart3/jane_meredith",
+        "live":"http://jerryfrost.com",
+        "github":"https://github.com/b0rgbart3/jerryfrost",
         "features": [""],
-        "tech": ["Php", "Javascript"],
-        "shields": ["js", "php" ]
+        "tech": ["Php", "Javascript", "MySQL"],
+        "shields": ["js", "php", "sql" ]
     }
 
 
