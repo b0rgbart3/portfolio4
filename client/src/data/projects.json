@@ -43,8 +43,8 @@
         "title": "MiddleGround",
         "description": "This app allows users to view social media posts from a spectrum of news sources, based on a keyword search.  Using the GoogleFact Check API it displays a truth rating for various articles and generates a word cloud to showing the hot topics of each side of the political spectrum.",
         "images":["middleground.jpg"],
-        "live":"https://b0rgbart3.github.io/project-one/",
-        "github":"https://rocky-meadow-78317.herokuapp.com/",
+        "live":"https://rocky-meadow-78317.herokuapp.com/",
+        "github":"https://github.com/b0rgbart3/MiddleGround",
         "features": [""],
         "tech": ["Node.js","Express","MySQL","Handlebars"],
         "shields": ["node","express","sql","handlebars"]
