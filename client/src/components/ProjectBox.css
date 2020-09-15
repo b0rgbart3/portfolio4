@@ -3,15 +3,16 @@
     margin:0;
     padding:0;
     font-family: futura-pt, sans-serif;
-    color:#555555;
+    color:#666666;
     font-size:16px;
     text-transform: uppercase;
     text-align:left;
-    padding-left:40px;
+    padding-left:4%;
     margin-top:30px;
     font-weight: 500;
     margin-bottom:0;
     line-height:1em;
+    font-weight: 600;
 }
 
 .outsideLinks {
@@ -24,7 +25,7 @@
 }
 
 .projectContainer {
-    width:100%;
+    width:90%;
     display:inline-block;
     perspective:800px;
     box-sizing: border-box;
@@ -133,18 +134,19 @@
     background-color:rgb(66, 155, 182);
     background-color:white;
     box-shadow:0 0 8px rgb(31, 203, 255);
+    box-shadow:2px -2px 18px #696969;
     color:white;
     float:left;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
     user-select: none;
     cursor: pointer;
-    border-radius:2px;
+    border-radius:5px;
     transform:scaleX(-1);
     position: absolute;
     color:black;
     top:30px;
-    left:0px;
+    left:4px;
     background-image:url(../images/icons/external.svg);
     background-repeat: no-repeat;
     background-position:90% 6px;
@@ -153,6 +155,15 @@
 
 .projectLiveLink:hover {
     background-color:rgb(63, 190, 212);
+    background-color:rgb(215, 239, 255);
+    color:#39a6c7;
+    box-shadow:0 0 12px #1f8bac;
+    background-image:url(../images/icons/external_hi.svg);
+}
+
+.projectLiveLink:active {
+    top:32px;
+    left:2px;
 }
 
 .projectGithubLink {
@@ -165,6 +176,10 @@
     font-weight:600;
     font-size:16px;
     text-transform: uppercase;
+    margin-bottom:10px;
+    margin-left:10px;
+    user-select: none;
+    cursor: pointer;
 }
 .githubLink { 
 padding-right:10px;
@@ -172,11 +187,25 @@ display:inline-block;
 margin-left:30px;
 float:left;
 border-radius:8px;
-
+background-image:url(../images/icons/github_round.svg);
+background-repeat: no-repeat;
+padding-left:40px;
+box-shadow:0 0 8px #9a9a9a;
+position: relative;
 }
 
 .githubLink:hover {
-    background-color:rgb(112, 193, 247);
+    background-color:rgba(112, 193, 247,.1);
+    background-image:url(../images/icons/github_round_hi.svg);
+    color:#39a6c7;
+    box-shadow:0 0 12px #1f8bac;
+}
+
+
+
+.githubLink:active {
+    top:2px;
+    left:2px;
 }
 
 .githubIcon {
@@ -187,7 +216,7 @@ border-radius:8px;
 
 
 .projectTech {
-    padding-left:30px;
+    padding-left:3%;
     text-align:left;
 }
 
@@ -202,11 +231,12 @@ border-radius:8px;
     vertical-align: top;
     box-sizing: border-box;
     text-align:center;
-    padding:4px;
+    padding:2px;
+    padding-top:8px;
     color:#555555;
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:680px) {
     .projectContainer {
         width:80%;
 
@@ -221,7 +251,7 @@ border-radius:8px;
     }
 
 }
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:768px) {
 
 
         .projectContainer {
@@ -234,7 +264,7 @@ border-radius:8px;
 
 
     }
-@media only screen and (min-width:1140px) {
+@media only screen and (min-width:1040px) {
 
 
         .projectContainer {
@@ -255,3 +285,14 @@ border-radius:8px;
           }
 }
 
+@media only screen and (min-width:1540px) {
+
+
+    .projectContainer {
+        width:22.4%;
+        margin-right:.4%;
+        margin-left:.4%;
+        display:inline-block;
+    
+    }
+}

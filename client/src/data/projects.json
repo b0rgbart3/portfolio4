@@ -89,6 +89,38 @@
         "features": [""],
         "tech": ["Javascript","JQuery"],
         "shields": ["js","jq"]
+    },
+    {
+        "title": "The Loom",
+        "description": "This is an online university Content Management System.",
+        "images":["loom.jpg"],
+        "live":"https://thawing-reaches-29763.herokuapp.com/",
+        "github":"https://github.com/b0rgbart3/loomfront",
+        "features": [""],
+        "tech": ["Node.js", "Angular", "MongoDB"],
+        "shields": ["node","angular", "mongo"]
+    },
+    {
+        "title": "Starburst",
+        "description": "A fun little graphic puzzle game built for the iPhone.",
+        "images":["starburst.jpg"],
+        "live":"https://ddworks.org/index.php?section=apps",
+        "github":"https://github.com/b0rgbart3/starburst",
+        "features": [""],
+        "tech": ["Objective-C", "ios", "xcode"],
+        "shields": ["objc", "ios", "xcode"]
+    },
+    {
+        "title": "JaneMeredith.com",
+        "description": "A custom website designed and built for Jane Meredith, an Author of metaphysical studies.",
+        "images":["jane.jpg"],
+        "live":"http://janemeredith.com",
+        "github":"https://github.com/b0rgbart3/jane_meredith",
+        "features": [""],
+        "tech": ["Php", "Javascript"],
+        "shields": ["js", "php" ]
     }
+
+
 
 ]

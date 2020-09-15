@@ -191,7 +191,7 @@ function ProjectBox(props) {
               <p class='techLabel'>Technology Stack:</p>
               <div className="projectTech">
                 { props.project.tech.map( (tech, techIndex) => <div className='techIcon'>
-                  <img className="techShieldIcon" src={require("../images/shields/" + props.project.shields[techIndex] + ".png")} />
+                  <img className="techShieldIcon" src={require("../images/shields/" + props.project.shields[techIndex] + ".png")} alt={tech}/>
                 </div>) }
               </div>
       
@@ -199,9 +199,8 @@ function ProjectBox(props) {
        
 
           <div className="outsideLinks group">
-              <div className="githubLink">
-                <img  className="githubIcon" src={require("../images/icons/github_round.svg")} alt="github repo"/>
-                <div className="projectGithubLink" onClick={()=>goGit(props.project.github)}>
+              <div className="githubLink" onClick={()=>goGit(props.project.github)}>
+                <div className="projectGithubLink" >
                   Github Repo
                 </div>
               </div>
