@@ -4,24 +4,24 @@ const apiRoutes = require("./api");
 const axios = require("axios");
 
 // API Routes for data pertaining to our DB
-router.use("/api", apiRoutes);
+// router.use("/api", apiRoutes);
 
-// API Route to query the Google API
-router.get("/google/:name", (req, res) => {
-  // make an api call to `https://www.googleapis.com/books/v1/volumes?q=<Book Name>` and return the relevant results.
+// // API Route to query the Google API
+// router.get("/google/:name", (req, res) => {
+//   // make an api call to `https://www.googleapis.com/books/v1/volumes?q=<Book Name>` and return the relevant results.
 
-  console.log("Looking for: "+ req.params.name  );
-   //res.json({q: req.params.name });
+//   console.log("Looking for: "+ req.params.name  );
+//    //res.json({q: req.params.name });
 
-  axios.get("https://www.googleapis.com/books/v1/volumes",
-   { params: { q: req.params.name }}).then(({ data }) => {
+//   axios.get("https://www.googleapis.com/books/v1/volumes",
+//    { params: { q: req.params.name }}).then(({ data }) => {
 
-    console.log(data.items);
+//     console.log(data.items);
 
-    res.json( data.items );
-  })
-    .catch(err => res.status(422).json(err));
-});
+//     res.json( data.items );
+//   })
+//     .catch(err => res.status(422).json(err));
+// });
 
 // Jerome's example
 // router.get("/recipes", (req, res) => {
@@ -34,7 +34,7 @@ router.get("/google/:name", (req, res) => {
 // Send every other request to the React app
 // Define any API routes before this runs
 router.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 

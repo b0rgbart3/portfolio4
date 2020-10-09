@@ -24,7 +24,7 @@ npm start
 ```
 <a name="Live_Demo"></a>
 ## Live Demo
-<a href="http://vast-coast-19153.herokuapp.com/projects">Live Demo on Heroku</a>
+<a href="http://vast-coast-19153.herokuapp.com">Live Demo on Heroku</a>
 <a name='License'></a>
 ## License
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
