@@ -55,7 +55,7 @@ async function main( messageObject ) {
   textMessage += messageObject.message;
   textMessage += "\t\n-------------\t\nEnd of Transmission.\t\n\t\n";
 
-  let htmlMessage = "<div><h1>Message from your Porfolio website:</h1>";
+  let htmlMessage = "<div><h1>Message from your Vast-Coast Porfolio website:</h1>";
   htmlMessage += "<p><strong>From: </strong>" + messageObject.full_name +"</p>";
   htmlMessage += "<p><strong>Email: </strong>" + messageObject.email + "</p>";
   htmlMessage += "<p></p><h2>Their Message:</h2><p>" + messageObject.message + "</p>";
@@ -65,10 +65,10 @@ async function main( messageObject ) {
 
   let info = await transporter.sendMail({
     from: '"Bart Dority" <b0rgBart3@gmail.com>', // sender address
-    to: "b0rgBart3@gmail.com", // list of receivers
-    subject: "A Message from your Porftolio Website", // Subject line
+    to: "b0rgBart3@gmail.com, bartdority@gmail.com", // list of receivers
+    subject: "A Message from your vast-coast Website", // Subject line
     text: textMessage, // plain text body
-    html:htmlMessage, // html body
+    html: htmlMessage, // html body
   })
 
   console.log("Message sent: %s", info.messageId);

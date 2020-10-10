@@ -30,15 +30,15 @@ function Resume() {
     <h1>BART DORITY</h1>
     <h3><span className="nobr">Software Engineer</span></h3>
     <a href="mailto:bartdority@gmail.com" className="resumeLink">
-    <div class='emailLinker'><img src={emailIcon}></img>bartdority@gmail.com</div></a> 
+    <div className='emailLinker'><img src={emailIcon}></img>bartdority@gmail.com</div></a> 
 
 ​  <a href="https://www.linkedin.com/in/bart-dority/" className="resumeLink" target="_blank" rel="noopener noreferrer"  >
-<div class='emailLinker'>
+<div className='emailLinker'>
 <img src={linkedInIcon}></img>
 linkedin.com/in/bart-dority</div></a> <a href="https://github.com/b0rgbart3" className="resumeLink" target="_blank" rel="noopener noreferrer"  >
-<div class='emailLinker'><img src={githubIcon}></img>github.com/b0rgbart3</div></a>
+<div className='emailLinker'><img src={githubIcon}></img>github.com/b0rgbart3</div></a>
 
-<div class='emailLinker'><img src={textIcon}></img><span className="nobr">(415) 503-7044</span> </div>
+<div className='emailLinker'><img src={textIcon}></img><span className="nobr">(415) 503-7044</span> </div>
 {/* <h2>Portfolio</h2>
 <ul>
     <li><a href="https://b0rgbart3.github.io/portfolio/" target="_blank" className="resumeLink">b0rgbart3.github.io/portfolio/ </a></li>
