@@ -10,7 +10,16 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // all routes are in here
+
+
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
+// all routes are in here
 app.use(routes);
+
 
 // Serve up static assets (usually on heroku)
 // if (process.env.NODE_ENV === "production") {
