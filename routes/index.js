@@ -4,7 +4,7 @@ const apiRoutes = require("./api");
 const axios = require("axios");
 
 // API Routes for data pertaining to our DB
-// router.use("/api", apiRoutes);
+router.use("/api", apiRoutes);
 
 // // API Route to query the Google API
 // router.get("/google/:name", (req, res) => {
