@@ -5,7 +5,7 @@ export default {
 
   nodeMail: function(info) {
     console.log("About to send email: ", info);
-    return axios.post("/api/nodeMail", info);
+    return axios.post("/api/nodemail", info);
   },
   // sendMail: function(info) {
   //   return axios.post("/api/sendMail", info);
