@@ -3,6 +3,8 @@ import "./Projects.css";
 import { usePortfolioContext } from "../utils/GlobalState";
 import ProjectBox from "../components/ProjectBox";
 
+
+
 function Projects() {
   const [state, dispatch] = usePortfolioContext();
 

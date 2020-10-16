@@ -236,6 +236,28 @@ position: relative;
     color:#555555;
 }
 
+.pageTurnIcon {
+
+    width:80px;
+    height:80px;
+    float:right;
+    position: relative;
+    top:80px;
+}
+
+.flip {
+    position: absolute;
+    bottom:0px;
+    right:0;
+    width:100px;
+    height:100px;
+    background-image: url(../images/icons/flip_icon.svg);
+    z-index: 200;
+}
+
+.flip:hover {
+    background-image: url(../images/icons/flip_icon_hi.svg);
+}
 @media only screen and (min-width:680px) {
     .projectContainer {
         width:80%;

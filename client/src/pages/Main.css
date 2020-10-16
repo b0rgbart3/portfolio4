@@ -12,6 +12,8 @@
     background-color:white;
     padding-bottom:0;
     box-shadow:0 0 28px rgb(146, 183, 194);
+    margin-bottom:80px;
+    min-height:660px;
   }
 
 .homelogo {
@@ -38,7 +40,7 @@
   display:block;
   vertical-align: top;
   margin-top:0px;
-
+  
 }
 
 .mugContainer {
@@ -73,7 +75,7 @@
   line-height:30px;
   padding-top:20px;
   padding-right:5%;
-  padding-bottom:140px;
+
 }
 
 .homebodyMobile {
@@ -83,6 +85,8 @@
 .bartsShields {
   text-align:left;
   max-width:500px;
+  display:none;
+
 }
 
 .shieldContainer {
@@ -93,6 +97,8 @@
   padding:0px;
   width:70px;
   font-size:12px;
+  padding-bottom:40px;
+  float:left;
 }
 
 .shield {
@@ -131,12 +137,12 @@ p.shieldTitle {
   }
   
   .homeColumn2 {
-    padding-left:4%;
     width:50%;
     box-sizing: border-box;
     display:inline-block;
     vertical-align: top;
     margin-top:80px;
+    padding-left:10px;
   }
 
   .homebody{
@@ -146,5 +152,9 @@ p.shieldTitle {
     display:none;
   }
   
+  .bartsShields {
+    display:inline-block;
+    float:left;
+  }
 
 }

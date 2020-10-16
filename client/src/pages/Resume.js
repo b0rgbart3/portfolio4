@@ -4,6 +4,7 @@ import emailIcon from "../images/icons/email.svg";
 import linkedInIcon from "../images/icons/linked_in_black.svg";
 import githubIcon from "../images/icons/github_round.svg";
 import textIcon from "../images/icons/textIcon.svg";
+import googleDocIcon from "../images/icons/google_doc.svg";
 
 // import { usePortfolioContext } from "../utils/GlobalState";
 
@@ -27,8 +28,14 @@ function Resume() {
     </Document>
     <p>Page {pageNumber} of {numPages}</p> */}
 
+<a href="https://docs.google.com/document/d/1vw7rjAgVcp_jm3KI4BYYychWd5sFDpoJa53TTbz01Uo" target="_blank">
+<div class='googleLink'>
+<div class='googleDocIcon'><img src={googleDocIcon}></img></div>
+  Google Doc<br />Version
+</div></a>
     <h1>BART DORITY</h1>
-    <h3><span className="nobr">Software Engineer</span></h3>
+    <h2><span className="nobr">Software Engineer</span></h2>
+    <div class='contactButtons'>
     <a href="mailto:bartdority@gmail.com" className="resumeLink">
     <div className='emailLinker'><img src={emailIcon}></img>bartdority@gmail.com</div></a> 
 
@@ -39,14 +46,35 @@ linkedin.com/in/bart-dority</div></a> <a href="https://github.com/b0rgbart3" cla
 <div className='emailLinker'><img src={githubIcon}></img>github.com/b0rgbart3</div></a>
 
 <div className='emailLinker'><img src={textIcon}></img><span className="nobr">(415) 503-7044</span> </div>
+</div>
 {/* <h2>Portfolio</h2>
 <ul>
     <li><a href="https://b0rgbart3.github.io/portfolio/" target="_blank" className="resumeLink">b0rgbart3.github.io/portfolio/ </a></li>
     <li><a href="https://ddworks.org/" target="_blank" className="resumeLink">Ddworks.org</a></li>
 </ul> */}
+<br></br>
+<h2>
+Professional Summary</h2>
+<ul>
+<li>
+Senior-level Software Engineer and Full Stack Developer</li>
+<li>A broad range of technical expertise and extensive experience in web development</li>
+<li>B2B, Government Agency, and Non-Profit experience</li>
+<li>Develops and writes code that is clean, agile, and object oriented</li>
+<li>Team driven collaborator with the ability to quickly learn and teach new technologies </li>
+<li>Background in computer science</li>
+<li>Passion for user interface design and visual branding; extending brand continuity</li>
+<li>Industry knowledge in design, publishing, marketing, advertising, and animation</li>
 
+</ul>
+
+
+<br></br>
     <h2>Skills</h2>
-<p>Full Stack Web Development, React, React Hooks, Javascript, JQuery, JSON, JSX, Node.js, ES6, HTML 5, Cascading Style Sheets (CSS 3), Express.js, Sass, Databases, MySQL, Mongo DB, Mongoose ODM, Handlebars, Bootstrap, API, AJAX, Github, Heroku, jQuery, JSON, Object Oriented Programming (OOP), ORM, Passport, Postman, Problem-solving, RESTful API Design, Require.js, Sequelize, SQL, Greensock Animation, Unix, Git, Github, npm, Heroku, AWS, Ruby, Ruby on Rails, Objective-C, XCode, VS-Code, Photoshop, Illustrator, InDesign, AfterEffects and Premier</p>
+<p>Expertly skilled in Javascript, Node.js, React, Angular, Ruby, Ruby on Rails, ES6, Express, JQuery, Materialize, Sass, PHP, WordPress, MySQL, HTML 5, CSS 3, AJAX, Github, ORM, Handlebars, Bootstrap, JSON, Object Oriented Programming, Problem-solving, RESTful API Design, Require.js, Greensock Animation, Unix, git, npm, VS-Code, Adobe CS Suite, Flash, ColdFusion, and ActionScript.</p>
+<p>
+Experienced with Flutter, Dart, Python, Java, Objective-C, Typescript, MongoDB, Mongoose, Heroku, AWS, X-Code, Drupal and CoffeeScript.
+</p>
 
 
 {/* React
@@ -58,30 +86,15 @@ Python
 Performance
 PWA  */}
 
-<h2>
-Professional Summary</h2>
-<ul>
-<li>Senior-level Full Stack Developer with a broad range of technical expertise and extensive experience in web development</li>
-<li>B2B, Government Agency, Non-Profit experience</li>
-<li>Develop and write code that is clean, agile, object oriented, and test driven</li>
-<li>Passion for user interface design and visual branding; extending the brand’s continuity</li>
-<li>Vast expertise in design, publishing, marketing, advertising, and animation</li>
-<li>Highly skilled collaborator with the ability to quickly learn and teach new technologies</li>
-<li>Background in computer science</li>
+<br></br>
 
-<h2>Noteworthy Projects</h2>
-<li>MiddleGround​ ​ -​ F​ull stack application that analyzes social media feeds and displays analytics, aggregating analysis from multiple APIs, built with Node.js, Express, handlebars, custom CSS, Sequelize and MySQL.</li>
-<li>The Loom​ - F​ull stack Content Management System for an online University, built with Node.js, Javascript, jQuery, and MongoDB</li>
-<li>Starburst​ ​- G​ame for the iPhone and iPad, written in Objective C</li>
-<li>Jeep.com​ -​ A​ nnouncement of the new Jeep Liberty, built with Flash and ActionScript</li>
-<li>NewLine Cinema Films Intro Animation​ -​ ​Built with SoftImage, and Unix scripting on Silicone
-Graphics The Loom Workstations</li>
-</ul>
-
-<h2>Employment History</h2>
+<h2>Relevant Experience</h2>
 <h3>Dority Design Works - San Francisco, CA</h3>
-<p>Principal - Independent Full Stack Developer and Graphic Designer 2003 – Current<br/>
-Web hosting, database management, designing and developing custom themes for WordPress, and technical consultation. Full range of graphic design services including logo design, branding, illustration, and related promotional materials, such as business cards, postcards, and HTML emails.</p>
+<p>
+Principal - Independent Software Engineer and Full Stack Developer 20003 - Current<br></br>
+Designing, building and maintaining client websites with an ever evolving spectrum of technologies.
+</p>
+
            
 <h3>McQuerter Group - Burlingame, CA</h3>
 <p>Design Director & Associate Creative Director March 2002 - September 2002<br/>
@@ -104,6 +117,7 @@ October 1996 - May 2000
 Built and directed operations of a large full-service web development firm. Projects included corporate identities, websites, software development and interactive presentations for Fortune 100 and hi-tech companies. Creative direction, client contact, staff management and training. Developed internal procedures for tracking workflow, assets, style-guides, correspondence, presentations, and production. Clients: Amerada Hess, AIG, Artel Video, Ascend Communications, Akamai Technologies, Battery Ventures, Eduneering, Intira, Lucent, Next Venue, TDK, The Futures Group, Fuji Medical, Tiaa-Cref, US Peace Corps, The White House Fellows Program, Xevo and Xpedior.
 </p>
 
+<br></br>
 <h2>Education</h2>
 <ul>
 <li>UC Berkeley - Full Stack Web Development Coding Bootcamp - 2020</li>
@@ -113,6 +127,7 @@ Built and directed operations of a large full-service web development firm. Proj
 <li>Los Alamos National Laboratory, NM - C-Programming Internship</li>
 </ul>
 
+<br></br>
 <h2>Live Websites</h2>
 <ul className="livewebsiteList">
 <li>
@@ -129,11 +144,14 @@ Built and directed operations of a large full-service web development firm. Proj
 <li><a href="http://vargatorte.com" className="resumeLink">vargatorte.com</a></li>
 </ul>
 
+<br></br>
 <h2>Awards & Recognition</h2>
 <p>
 Silver Caddy Award, for Jeep.com
 Pratt Circle Award, Dean’s List, 1990, 1991, 1992 Outstanding Academic Achievement Award Taylor Endowment Scholarship
 </p>
+
+<br></br>
 <h2>Abbreviated Client List</h2>
 <p className="clientList">
 <ul>

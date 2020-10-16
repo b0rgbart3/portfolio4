@@ -1,6 +1,9 @@
 import React, {useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./ProjectBox.css";
+import pageTurn from "../images/icons/page_turn.svg";
+import flipIcon from "../images/icons/flip_icon.svg";
+
 
 function ProjectBox(props) {
   const projImg = useRef();
@@ -175,6 +178,7 @@ function ProjectBox(props) {
   
   return (
     <div className="projectContainer">
+
     <div className="Project group" key={props.index} onMouseUp={reactToProject} style={cardStyle}>
 
 
@@ -194,7 +198,7 @@ function ProjectBox(props) {
                   <img className="techShieldIcon" src={require("../images/shields/" + props.project.shields[techIndex] + ".png")} alt={tech}/>
                 </div>) }
               </div>
-      
+              <div className='flip'></div>
              
        
 
