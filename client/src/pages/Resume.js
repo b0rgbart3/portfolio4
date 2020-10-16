@@ -71,9 +71,7 @@ Senior-level Software Engineer and Full Stack Developer</li>
 
 <br></br>
     <h2>Skills</h2>
-<p>Expertly skilled in Javascript, Node.js, React, Angular, Ruby, Ruby on Rails, ES6, Express, JQuery, Materialize, Sass, PHP, WordPress, MySQL, HTML 5, CSS 3, AJAX, Github, ORM, Handlebars, Bootstrap, JSON, Object Oriented Programming, Problem-solving, RESTful API Design, Require.js, Greensock Animation, Unix, git, npm, VS-Code, Adobe CS Suite, Flash, ColdFusion, and ActionScript.</p>
-<p>
-Experienced with Flutter, Dart, Python, Java, Objective-C, Typescript, MongoDB, Mongoose, Heroku, AWS, X-Code, Drupal and CoffeeScript.
+<p>Javascript, Node.js, React, Angular, Flutter, Dart, Python,  Ruby, Ruby on Rails, Java, Objective-C, Typescript, ES6, MySQL, HTML 5, CSS 3,  MongoDB, Mongoose, Express, JQuery, Materialize, Sass, Heroku, AWS, X-Code, PHP, WordPress, AJAX, Github, ORM, Handlebars, Bootstrap, JSON, Object Oriented Programming, Problem-solving, RESTful API Design, Require.js, Greensock Animation, Unix, git, npm, VS-Code, Adobe CS Suite, Flash, ColdFusion, and ActionScript.
 </p>
 
 
