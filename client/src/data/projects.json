@@ -1,10 +1,10 @@
 [
     {
-        "title": "Shoppr",
+        "title": "ImageShoppr",
         "description": "This React/Node.js app utilizes the the AI image recognition capabilities of the GoogleVision API -- and makes shopping a fun and easy and social experience. With Shoppr you can connect with your friends and find out if they buy similar items to what you are searching for, so if they have already purchased that item, we can get their opinion about it.",
         "images": ["shoppr.jpg"],   
-        "live": "https://shoppr-ai.herokuapp.com/",
-        "github": "https://github.com/b0rgbart3/Shoppinator2.0",
+        "live": "https://polar-tor-03271.herokuapp.com/",
+        "github": "https://github.com/b0rgbart3/ImageShoppr",
         "features": [""],
         "tech": ["React","Node.js","Express", "MySQL","Sequelize"],
         "shields": ["react","node", "express", "sql","sequelize"]
