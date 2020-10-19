@@ -32,20 +32,20 @@ form {
 
 .myLabel {
     margin-left:40px;
-    font-size:28px;
+    font-size:18px;
     margin-bottom:4px;
     display:block;
-    margin-top:32px;
+    margin-top:22px;
     text-transform: uppercase;
     opacity:.5;
     position: relative;
 }
 .contactForm label {
     margin-left:40px;
-    font-size:28px;
+    font-size:18px;
     margin-bottom:4px;
     display:block;
-    margin-top:32px;
+    margin-top:22px;
     text-transform: uppercase;
     opacity:.5;
 }
@@ -54,11 +54,11 @@ form {
     width:calc(100% - 80px);
     margin-left:40px;
     margin-right:40px;
-    padding:14px;
+    padding:9px;
     box-sizing: border-box;
     border:none;
     outline:none;
-    font-size:24px;
+    font-size:16px;
     font-weight: 600;
     color:rgb(92, 134, 146);
     outline-color:black;
@@ -153,13 +153,13 @@ button {
     font-weight: 500;
     font-style: normal;
     background-color:rgb(131, 166, 179);
-    padding:18px;
-    padding-left:26px;
-    padding-right:26px;
+    padding:12px;
+    padding-left:20px;
+    padding-right:20px;
     text-transform: uppercase;
-    font-size:24px;
+    font-size:18px;
     color:white;
-    margin-top:60px;
+    margin-top:40px;
     margin-left:28px;
     border-radius:8px;
     border:2px solid rgb(131, 166, 179);
@@ -197,8 +197,8 @@ textarea {
     margin-right:40px;
     box-sizing: border-box;
     border:2px solid rgba(255,255,255,.25);
-    font-size:28px;
-    padding:20px;
+    font-size:18px;
+    padding:10px;
     font-family: futura-pt, sans-serif;
     background-color:white;
     font-size:24px;
@@ -238,6 +238,12 @@ textarea:focus {
     font-size:21px;
 }
 
+.contactButtons {
+    text-align: center;
+    margin:auto;
+    padding:10px;
+    padding-top:30px;
+}
 @media only screen and (min-width:800px) {
 
     .contactForm {

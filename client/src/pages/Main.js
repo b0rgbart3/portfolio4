@@ -7,8 +7,10 @@ import express from "../images/shields/express.png";
 import react from "../images/shields/react.png";
 import node from "../images/shields/node.png";
 import sequelize from "../images/shields/sequelize.png";
+import { Link, useLocation } from "react-router-dom";
 
 function Main() {
+
   return (
     <div className="Home group">
       <div className="homeColumn1">
@@ -22,9 +24,12 @@ function Main() {
             <span className="nobr">Software Engineer</span>
           </div>
           <div className="homebio">
-            I have a deep knowledge of a broad range of
+          I have a deep knowledge of a broad range of
             web development technologies and computer
-            science. I also have extensive experience in advertising, animation, marketing and typography. I’m looking to join a team of engineers that enjoy collaborating and value life-long learning.
+            science. I also have extensive experience in advertising, animation, marketing and design. I build applications that people find intuitive, and I’m looking to join a team of engineers that enjoy collaborating and value life-long learning.<br></br><br></br>
+            <Link to="/projects">
+            <div className='mbutton'>Projects</div></Link> 
+            <Link to="/resume"><div className='mbutton'>resume</div></Link>
           </div>
         </div>
       </div>
@@ -59,7 +64,11 @@ function Main() {
         <div className="homebio">
         I have a deep knowledge of a broad range of
             web development technologies and computer
-            science. I also have extensive experience in advertising, animation, marketing and typography. I’m looking to join a team of engineers that enjoy collaborating and value life-long learning.
+            science. I also have extensive experience in advertising, animation, marketing and design. I build applications that people find intuitive, and I’m looking to join a team of engineers that enjoy collaborating and value life-long learning.<br></br><br></br>
+            <Link to="/projects">
+            <div className='mbutton'>Projects</div></Link> 
+            <Link to="/resume"><div className='mbutton'>resume</div></Link>
+            <br></br><br></br>
           </div>
           <p className="shieldTitle">Current Development Stack:</p>
         <div className="shieldContainer">
