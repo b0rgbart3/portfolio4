@@ -1,7 +1,7 @@
 [
     {
         "title": "ImageShoppr",
-        "description": "This React/Node.js app utilizes the AI image recognition capabilities of the GoogleVision API -- and makes shopping a fun and easy and social experience. With Shoppr you can connect with your friends and find out if they have purchased similar items.",
+        "description": "This React/Node.js app utilizes the AI image recognition capabilities of the GoogleVision API -- and makes shopping a fun and easy and social experience. With ImageShoppr you can connect with your friends and find out if they have purchased similar items.",
         "images": ["shoppr.jpg"],   
         "live": "https://polar-tor-03271.herokuapp.com/",
         "github": "https://github.com/b0rgbart3/ImageShoppr",
