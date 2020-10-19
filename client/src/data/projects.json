@@ -10,11 +10,11 @@
         "shields": ["react","node", "express", "sql","sequelize"]
     },
     {
-        "title": "My Google Books",
+        "title": "My Google Bookshelf",
         "description": "Full Stack MERN application to search for books from the Google Book API, and store them in a Mongo data base.",
         "images": ["googlebooks.jpg"],   
         "live": "https://shielded-crag-85117.herokuapp.com/",
-        "github": "https://github.com/b0rgbart3/myGoogleBooks",
+        "github": "https://github.com/b0rgbart3/GoogleBookShelf",
         "features": [""],
         "tech": ["React","Node.js","Express","MongoDB","Mongoose"],
         "shields": ["react","node","express","mongo","mongoose"]
