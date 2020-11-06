@@ -94,10 +94,10 @@
         "title": "The Loom",
         "description": "This is an online university Content Management System.",
         "images":["loom.jpg"],
-        "live":"https://polar-refuge-17698.herokuapp.com/", 
-        "github":"https://github.com/b0rgbart3/loomfront",
+        "live":"https://thawing-mountain-56615.herokuapp.com", 
+        "github":"https://github.com/b0rgbart3/Loom2",
         "features": [""],
-        "tech": ["Node.js", "Angular", "MongoDB"],
+        "tech": ["Node.js", "Angular10", "MongoDB"],
         "shields": ["node","angular", "mongo"]
     },
     {
