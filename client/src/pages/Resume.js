@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Resume.css";
 import emailIcon from "../images/icons/email.svg";
 import linkedInIcon from "../images/icons/linked_in_black.svg";
@@ -31,10 +31,11 @@ function Resume() {
       <a
         href="https://docs.google.com/document/d/1vw7rjAgVcp_jm3KI4BYYychWd5sFDpoJa53TTbz01Uo"
         target="_blank"
+        rel="noopener noreferrer"
       >
         <div class="googleLink">
           <div class="googleDocIcon">
-            <img src={googleDocIcon}></img>
+            <img src={googleDocIcon} alt='google_doc_version' />
           </div>
           Google Doc
           <br />
@@ -48,7 +49,7 @@ function Resume() {
       <div class="contactButtons">
         <a href="mailto:bartdority@gmail.com" className="resumeLink">
           <div className="emailLinker">
-            <img src={emailIcon}></img>bartdority@gmail.com
+            <img src={emailIcon} alt='email_icon' />bartdority@gmail.com
           </div>
         </a>
         ​{" "}
@@ -59,7 +60,7 @@ function Resume() {
           rel="noopener noreferrer"
         >
           <div className="emailLinker">
-            <img src={linkedInIcon}></img>
+            <img src={linkedInIcon} alt='linked_in' />
             linkedin.com/in/bart-dority
           </div>
         </a>{" "}
@@ -70,11 +71,11 @@ function Resume() {
           rel="noopener noreferrer"
         >
           <div className="emailLinker">
-            <img src={githubIcon}></img>github.com/b0rgbart3
+            <img src={githubIcon} alt='github' />github.com/b0rgbart3
           </div>
         </a>
         <div className="emailLinker">
-          <img src={textIcon}></img>
+          <img src={textIcon} alt='email_link' />
           <span className="nobr">(415) 503-7044</span>{" "}
         </div>
       </div>

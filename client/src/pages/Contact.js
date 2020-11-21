@@ -5,7 +5,7 @@ import emailIcon from "../images/icons/email.svg";
 import linkedInIcon from "../images/icons/linked_in_black.svg";
 import githubIcon from "../images/icons/github_round.svg";
 import textIcon from "../images/icons/textIcon.svg";
-import googleDocIcon from "../images/icons/google_doc.svg";
+// import googleDocIcon from "../images/icons/google_doc.svg";
 
 function Contact() {
 
@@ -70,7 +70,7 @@ function Contact() {
         <div class="contactButtons">
         <a href="mailto:bartdority@gmail.com" className="resumeLink">
           <div className="emailLinker">
-            <img src={emailIcon}></img>bartdority@gmail.com
+            <img src={emailIcon} alt='email_icon' />bartdority@gmail.com
           </div>
         </a>
         ​{" "}
@@ -81,7 +81,7 @@ function Contact() {
           rel="noopener noreferrer"
         >
           <div className="emailLinker">
-            <img src={linkedInIcon}></img>
+            <img src={linkedInIcon} alt='linked_in' />
             linkedin.com/in/bart-dority
           </div>
         </a>{" "}
@@ -92,11 +92,11 @@ function Contact() {
           rel="noopener noreferrer"
         >
           <div className="emailLinker">
-            <img src={githubIcon}></img>github.com/b0rgbart3
+            <img src={githubIcon} alt='github_icon' />github.com/b0rgbart3
           </div>
         </a>
         <div className="emailLinker">
-          <img src={textIcon}></img>
+          <img src={textIcon} alt='email_link' />
           <span className="nobr">(415) 503-7044</span>{" "}
         </div>
       </div>

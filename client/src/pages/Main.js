@@ -1,13 +1,13 @@
 import React from "react";
 import "./Main.css";
 import mug from "../images/bartdority_pic1.jpg";
-import mongo from "../images/shields/mongo.png";
+// import mongo from "../images/shields/mongo.png";
 import sql from "../images/shields/sql.png";
 import express from "../images/shields/express.png";
 import react from "../images/shields/react.png";
 import node from "../images/shields/node.png";
 import sequelize from "../images/shields/sequelize.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";  // UseLocation
 
 function Main() {
 
