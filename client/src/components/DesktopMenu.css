@@ -1,0 +1,59 @@
+
+
+.desktopMenu {
+    margin-bottom:0px;
+ 
+}
+
+.dmenuList {
+    list-style:none;
+    text-align:left;
+    font-family: futura-pt, sans-serif;
+    font-size:28px;
+    line-height:2em;
+    font-weight: 600;
+    letter-spacing:-1px;
+    padding:0;
+    margin:0;
+    padding-top:0px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    background-color:#7897a6;
+}
+
+.dmenuList li {
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:40px;
+    cursor: pointer;
+    user-select: none;
+    display:inline-block;
+}
+.dmenuList li:hover {
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.dmenuList li:active {
+color:white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dmenuList li:focus {
+    cursor: pointer;
+    user-select: none;
+}
+
+.dmenuList li:visited {
+    cursor: pointer;
+    user-select: none;
+}
+
+@media only screen and (max-width:740px) {
+    .desktopMenu {
+        display:none;
+    }
+}

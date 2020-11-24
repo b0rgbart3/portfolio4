@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { PortfolioProvider } from "./utils/GlobalState";
 import Menu from "./components/Menu"
+import DesktopMenu from "./components/DesktopMenu"
 import Main from "./pages/Main"
 import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
@@ -16,8 +17,7 @@ function App() {
     <Router>
      <div className="App group">
         <PortfolioProvider>
-      
-
+          <DesktopMenu/>
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/projects" component={Projects} />
@@ -25,7 +25,6 @@ function App() {
             <Route exact path="/contact" component={Contact} />
             <Route component={NoMatch} />
           </Switch>
-   
           <Menu/>
         </PortfolioProvider>
       </div>

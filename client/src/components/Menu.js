@@ -36,7 +36,7 @@ function Menu() {
       }
     
     return (
-      
+            
             <div className={ state.menuClass || "MenuPanel group m_stage1" }>
             <div className="Menu group">
             <Link to="/"><div className="logo" onClick={closeMenu}>BART<br></br>DORITY</div></Link>

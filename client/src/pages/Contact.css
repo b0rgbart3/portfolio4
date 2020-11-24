@@ -3,6 +3,9 @@
     display:inline-block;
     box-sizing: border-box;
     width:100%;
+    margin:0;
+    padding:0;
+    margin-top:20px;
 }
 form {
     padding:0;
@@ -11,8 +14,7 @@ form {
     width:100%;
     background-color: white;
     margin:auto;
-    border-radius:8px;
-    margin-top:80px;
+    margin-top:0px;
     color:black;
     text-align:left;
     z-index: 0;
@@ -21,13 +23,10 @@ form {
     padding:0;
     overflow: hidden;
     box-shadow:0 0 28px rgb(146, 183, 194);
-
-}
-
-.contactForm {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
+   
 }
 
 .myLabel {
@@ -251,9 +250,21 @@ textarea:focus {
         width:80%;
         max-width:800px;    
         margin:auto;
-        border-radius:8px;
-        margin-top:80px;
+ 
+        margin-top:0px;
         text-align:left;
     }
 
 }
+
+
+@media only screen and (max-width:740px) {
+    .Contact  {
+        margin-top:0px;
+        padding-top:0;
+    }
+    .contactForm {
+        padding-top:120px;
+        margin-top:0;
+    }
+  }

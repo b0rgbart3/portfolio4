@@ -168,10 +168,10 @@ function ProjectBox(props) {
 
         <div className="projectTitle">{props.project.title}</div>
         <div className="projectDescription">{props.project.description}</div>
-        <p class="techLabel">Technology Stack:</p>
+        <p className="techLabel">Technology Stack:</p>
         <div className="projectTech">
           {props.project.tech.map((tech, techIndex) => (
-            <div className="techIcon">
+            <div className="techIcon" key={techIndex}>
               <img
                 className="techShieldIcon"
                 src={require("../images/shields/" +

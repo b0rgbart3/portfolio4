@@ -60,14 +60,10 @@ function Contact() {
         }
     }
   }
-  return (
-       
+  return (  
 <div className="Contact group">
-
         <form className="contactForm" onSubmit={handleOnSubmit}>
-
-
-        <div class="contactButtons">
+ <div class="contactButtons">
         <a href="mailto:bartdority@gmail.com" className="resumeLink">
           <div className="emailLinker">
             <img src={emailIcon} alt='email_icon' />bartdority@gmail.com

@@ -33,8 +33,8 @@ function Resume() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div class="googleLink">
-          <div class="googleDocIcon">
+        <div className="googleLink">
+          <div className="googleDocIcon">
             <img src={googleDocIcon} alt='google_doc_version' />
           </div>
           Google Doc
@@ -46,7 +46,7 @@ function Resume() {
       <h2>
         <span className="nobr">Software Engineer</span>
       </h2>
-      <div class="contactButtons">
+      <div className="contactButtons">
         <a href="mailto:bartdority@gmail.com" className="resumeLink">
           <div className="emailLinker">
             <img src={emailIcon} alt='email_icon' />bartdority@gmail.com
