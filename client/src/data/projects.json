@@ -20,6 +20,27 @@
         "shields": ["react","node","express","mongo","mongoose"]
     },
     {
+        "title": "LightBurst",
+        "description": "A fun little graphic puzzle game built for the iPhone.",
+        "images":["starburst.jpg"],
+        "live":"https://ddworks.org/lightburst.php",
+        "github":"https://github.com/b0rgbart3/LightBurst",
+        "features": [""],
+        "tech": ["Objective-C", "ios", "xcode"],
+        "shields": ["objc", "ios", "xcode"]
+    },
+    {
+        "title": "The Loom",
+        "description": "This is an online university Content Management System.",
+        "images":["loom.jpg"],
+        "live":"https://thawing-mountain-56615.herokuapp.com", 
+        "github":"https://github.com/b0rgbart3/Loom2",
+        "features": [""],
+        "tech": ["Node.js", "Angular10", "MongoDB"],
+        "shields": ["node","angular", "mongo"]
+    },
+
+    {
         "title": "Name List",
         "description": "This app displays a list of names such as an employee directory, and allows you to search for a person based on any keyword filter.  It also allows you to sort the list of names in ascending or descending order of any column, such as first name, last name, phone number, or department.",
         "images": ["list.jpg"],   
@@ -89,26 +110,6 @@
         "features": [""],
         "tech": ["Javascript","JQuery"],
         "shields": ["js","jq"]
-    },
-    {
-        "title": "The Loom",
-        "description": "This is an online university Content Management System.",
-        "images":["loom.jpg"],
-        "live":"https://thawing-mountain-56615.herokuapp.com", 
-        "github":"https://github.com/b0rgbart3/Loom2",
-        "features": [""],
-        "tech": ["Node.js", "Angular10", "MongoDB"],
-        "shields": ["node","angular", "mongo"]
-    },
-    {
-        "title": "Starburst",
-        "description": "A fun little graphic puzzle game built for the iPhone.",
-        "images":["starburst.jpg"],
-        "live":"https://ddworks.org/index.php?section=apps",
-        "github":"https://github.com/b0rgbart3/starburst",
-        "features": [""],
-        "tech": ["Objective-C", "ios", "xcode"],
-        "shields": ["objc", "ios", "xcode"]
     },
     {
         "title": "JaneMeredith.com",
