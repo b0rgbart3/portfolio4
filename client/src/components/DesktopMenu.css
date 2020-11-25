@@ -11,7 +11,7 @@
     font-family: futura-pt, sans-serif;
     font-size:28px;
     line-height:2em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing:-1px;
     padding:0;
     margin:0;
@@ -19,19 +19,22 @@
     cursor: pointer;
     user-select: none;
     text-align: center;
-    background-color:#7897a6;
+    /* border-bottom:3px solid rgba(120, 151, 166,.2); */
 }
 
 .dmenuList li {
     padding-left:1em;
     padding-right:1em;
-    padding-top:40px;
+    padding-top:20px;
+    padding-bottom:20px;
     cursor: pointer;
     user-select: none;
     display:inline-block;
+    color:#304550;
+    opacity:.5;
 }
 .dmenuList li:hover {
-
+    opacity:1;
     cursor: pointer;
     user-select: none;
 }

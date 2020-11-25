@@ -1,4 +1,4 @@
-
+/* 
 .techLabel {
     margin:0;
     padding:0;
@@ -153,7 +153,7 @@
     background-size:26px 26px;
 }
 
-.projectLiveLink:hover {
+/* .projectLiveLink:hover {
     background-color:rgb(63, 190, 212);
     background-color:rgb(215, 239, 255);
     color:#39a6c7;
@@ -164,8 +164,8 @@
 .projectLiveLink:active {
     top:32px;
     left:2px;
-}
-
+} */
+/* 
 .projectGithubLink {
     user-select: none;
     cursor: pointer;
@@ -212,9 +212,9 @@ position: relative;
     width:40px;
     display:inline-block;
     float:left;
-}
+} */
 
-
+/* 
 .projectTech {
     padding-left:3%;
     text-align:left;
@@ -317,4 +317,4 @@ position: relative;
         display:inline-block;
     
     }
-}
+} */ */

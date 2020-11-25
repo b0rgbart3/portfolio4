@@ -9,7 +9,7 @@ function DesktopMenu() {
     <div className="desktopMenu">
       <ul className="dmenuList">
         <Link to="/">
-          <li>/HOME</li>
+          <li>/BART DORITY</li>
         </Link>
         <Link to="/projects">
           <li>/PROJECTS</li>

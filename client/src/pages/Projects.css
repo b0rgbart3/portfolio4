@@ -2,14 +2,13 @@
     display:inline-block;
     box-sizing: border-box;
     width:100%;
-    max-width:1400px;
     text-align:center;
     text-align:center;
     padding:0;
     padding-bottom:300px;
     padding-top:0;
     margin-top:20px;
-
+ 
 }
 
 .projectslogo {
@@ -23,19 +22,20 @@
     line-height:1em;
     margin-left:40px;
     margin-bottom:30px;
+    text-align: center;
   }
 
 
   @media only screen and (min-width:1140px) {
     .Projects {
-        width:90%;
+  
     }
 
   }
 
-  @media only screen and (min-width:1340px) {
+  @media only screen and (min-width:1440px) {
     .Projects {
-        width:80%;
+      
     }
 
   }
@@ -46,3 +46,25 @@
       margin-top:120px;
   }
 }
+
+
+/* .Projects {
+
+  display:inline-block;
+  box-sizing: border-box;
+  width:100%;
+  max-width:1800px;
+}
+
+.projectslogo {
+  font-size:54px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align:left;
+  margin-top:120px;
+  margin-left:0px;
+  line-height:1em;
+  margin-left:40px;
+  margin-bottom:30px;
+} */

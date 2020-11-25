@@ -62,6 +62,7 @@ a {
   cursor: pointer;
   user-select: none;
 }
+
 /*  ClearFix  */
 /*  The ClearFix by Tony Aslett and Nicholas Gallagher */
 .group:before,

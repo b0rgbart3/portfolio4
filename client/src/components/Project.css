@@ -1,0 +1,245 @@
+.highlighter {
+    width:100px;
+    height:100px;
+    background-color:white;
+    border-radius:50%;
+    position: absolute;
+
+}
+
+
+.Project {
+    width:80%;
+    box-sizing:border-box;
+    margin:0;
+    min-height:420px;
+    display:inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom:40px;
+    overflow: hidden;
+    color:rgb(98, 113, 126);
+    box-shadow:0 0 4px rgba(130, 140, 143, .4);
+    position: relative;
+    background-color:#dce4e8;
+    cursor: pointer;
+    position: relative;
+    border:2px solid rgb(192, 200, 206);
+    border-radius: 8px;
+}
+.Project:hover {
+    box-shadow:0 0 18px rgb(146, 233, 248);
+    border:2px solid rgb(146, 233, 248);
+}
+
+.projectImage {
+   width:100%;
+   cursor: pointer;
+   box-sizing: border-box;
+
+   /* filter: blur(2px);
+   -webkit-filter: blur(2px); */
+   transition: all .5s;
+}
+
+.projectImage:hover {
+
+    /* filter: blur(0px);
+    -webkit-filter: blur(0px); */
+}
+
+.projectInfo {
+    background-color:hsl(200, 21%, 97%);
+    padding-bottom:0px;
+    position: absolute;
+    transition:all .6s;
+    transition-timing-function: ease-in-out;
+    user-select: none;
+    /* border:4px solid fuchsia; */
+    margin-top:300px;
+    padding-top:0;
+    padding-left:18px;
+    padding-right:18px;
+    top:100px;
+    height:500px;
+    box-shadow: 0 0 30px black;
+  }
+
+  .projectInfo:hover {
+      background-color:white;
+  }
+
+  .projectTitle {
+    font-family: futura-pt, sans-serif;
+    font-size:21px;
+    text-align:left;
+    font-weight:700;
+    padding-left:0px;
+    padding-top:36px;
+    padding-bottom:8px;
+    color:black;
+  }
+
+
+.infoContainer {
+    /* border:4px solid cyan; */
+    position: relative;
+}
+
+
+.pImageContainer {
+    /* border:4px solid red; */
+    box-sizing: border-box;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    background-color:rgb(192, 200, 206);;
+    box-sizing: border-box;
+    position: relative;
+    top:0px;
+}
+
+
+.techLabel {
+    margin:0;
+    padding:0;
+    font-family: futura-pt, sans-serif;
+    color:#666666;
+    font-size:16px;
+    text-transform: uppercase;
+    text-align:left;
+    padding-left:4%;
+    margin-top:20px;
+    font-weight: 500;
+    margin-bottom:0;
+    line-height:1em;
+    font-weight: 600;
+}
+
+.outsideLinks {
+    width:100%;
+    bottom:0;
+    margin-top:20px;
+    position: absolute;
+    bottom:100px;
+}
+
+
+.projectDescription {
+    font-family: futura-pt, sans-serif;
+    font-size:16px;
+    text-align:left;
+    line-height:1.4em;
+    color:rgb(91, 98, 104);
+    
+  }
+
+  .st_button {
+    font-family: futura-pt, sans-serif;
+    font-size:16px;
+    padding:0;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:8px;
+    padding-bottom:10px;
+    color:black;
+    display:inline-block;
+    background-color:white;
+    box-shadow:0px 0px 4px #696969;
+    text-transform: uppercase;
+    font-weight: 600;
+    user-select: none;
+
+    cursor: pointer;
+    border-radius:4px;
+  }
+
+
+.st_button:hover {
+    background-color:rgb(63, 190, 212);
+    background-color:rgb(215, 239, 255);
+    color:#39a6c7;
+    box-shadow:0 0 12px #1f8bac;
+  
+}
+
+.projectLiveLink {
+    background-image:url(../images/icons/external.svg);
+    background-repeat: no-repeat;
+    background-position:90% 6px;
+    background-size:26px 26px;
+    float:right;
+    padding-right:45px;
+    margin-right:28px;
+}
+
+.projectGithubLink { 
+    float:left;
+background-image:url(../images/icons/github_round.svg);
+background-repeat: no-repeat;
+background-position:0% 0px;
+background-size:36px 36px;
+padding-left:40px;
+}
+
+.projectTech {
+    padding-left:3%;
+    text-align:left;
+}
+.techShieldIcon {
+    width:42px;
+  
+}
+.techIcon {
+    display:inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align:center;
+    padding:2px;
+    padding-top:8px;
+    color:#555555;
+}
+
+@media only screen and (min-width:780px) {
+    .Project {
+        width:40%;
+        margin-left:15px;
+        margin-right:15px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width:940px) {
+    .Project {
+        width:30%;
+        margin-left:15px;
+        margin-right:15px;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (min-width:1140px) {
+    .Project {
+        width:28%;
+        margin-left:15px;
+        margin-right:15px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .Project {
+        width:22%;
+        margin-left:15px;
+        margin-right:15px;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width:1640px) {
+    .Project {
+        width:18%;
+        margin-left:15px;
+        margin-right:15px;
+        box-sizing: border-box;
+    }
+}

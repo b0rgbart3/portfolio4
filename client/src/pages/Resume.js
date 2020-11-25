@@ -265,7 +265,7 @@ PWA  */}
 
       <br></br>
       <h2>Abbreviated Client List</h2>
-      <p className="clientList">
+      <p className="clientList"></p>
         <ul>
           <li>
             Rick Crane & the SF Long Term Care, Coordinating Council , San
@@ -288,7 +288,7 @@ PWA  */}
           <li>Lovett Productions, and The Cancer Institute of Brooklyn, NY</li>
           <li>Dixon & Company Publishing, New York, NY</li>
         </ul>
-      </p>
+     
     </div>
   );
 }
