@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Main.css";
-import mug from "../images/bartdority_pic1.jpg";
+import mug from "../images/bartdority_pic2.jpg";
 // import mongo from "../images/shields/mongo.png";
 import sql from "../images/shields/sql.png";
 import express from "../images/shields/express.png";
