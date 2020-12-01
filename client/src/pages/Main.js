@@ -20,6 +20,7 @@ function Main() {
   const [stackStyle, setStackStyle] = useState("state1");
   const [projButtonStyle, setProjButtonStyle ] = useState("state1");
 
+
   let cardTimer = setTimeout(function () {
     setCardStyle("state2");
 
@@ -39,10 +40,15 @@ function Main() {
 
   let projButtonTimer = setTimeout(function() {
     setProjButtonStyle("state2");
+    clearTimeout(projButtonTimer);
   }, 3200);
+
+
+
 
   return (
     <div className={"Home group " + cardStyle}>
+        
       <div className={"homeColumn1 " + divStyle}>
         <div className="homelogo">
           BART

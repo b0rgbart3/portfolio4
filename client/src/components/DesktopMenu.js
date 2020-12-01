@@ -1,24 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom"; // ,useLocation
+import { Link, useLocation } from "react-router-dom"; // ,useLocation
 import "./DesktopMenu.css";
+import {usePortfolioContext}  from "../utils/GlobalState";
 
-function DesktopMenu() {
-  //const [state, dispatch] = usePortfolioContext();
+let page="/";
 
+function getPage() {
+  let location = useLocation();
+ // console.log('My Location: ', location.pathname);
+  if (location && location.pathname) {
+    page = location.pathname;
+  }
+}
+function DesktopMenu(props) {
+
+  getPage();
   return (
     <div className="desktopMenu">
       <ul className="dmenuList">
+      
         <Link to="/">
-          <li>/BART DORITY</li>
+        { page=="/"?(   <li class='active'>/BART DORITY</li>):(   <li >/BART DORITY</li>)}
+      
         </Link>
         <Link to="/projects">
-          <li>/PROJECTS</li>
+        { page=="/projects"?(   <li class='active'>/PROJECTS</li>):(   <li >/PROJECTS</li>)}
+
         </Link>
         <Link to="/resume">
-          <li>/RESUME</li>
+        { page=="/resume"?(   <li class='active'>/RESUME</li>):(   <li >/RESUME</li>)}
         </Link>
         <Link to="/contact">
-          <li>/CONTACT</li>
+        { page=="/contact"?(   <li class='active'>/CONTACT</li>):(   <li >/CONTACT</li>)}
         </Link>
       </ul>
     </div>

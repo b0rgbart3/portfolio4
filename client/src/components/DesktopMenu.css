@@ -30,8 +30,13 @@
     cursor: pointer;
     user-select: none;
     display:inline-block;
-    color:#304550;
-    opacity:.5;
+    color:#3e5f70;
+    opacity:.25;
+}
+
+.dmenuList li.active {
+    color:black;
+    opacity:1;
 }
 .dmenuList li:hover {
     opacity:1;
@@ -40,7 +45,7 @@
 }
 
 .dmenuList li:active {
-color:white;
+color:black;
     cursor: pointer;
     user-select: none;
 }

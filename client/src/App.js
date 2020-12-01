@@ -13,11 +13,13 @@ import Shield from "./components/Shield";
 
 
 function App() {
+  let pageName = "main";
+
   return (
     <Router>
      <div className="App group">
         <PortfolioProvider>
-          <DesktopMenu/>
+          <DesktopMenu />
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/projects" component={Projects} />

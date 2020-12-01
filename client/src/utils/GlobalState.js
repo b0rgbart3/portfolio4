@@ -4,7 +4,7 @@ import Projects from "../data/projects.json";
 import {
     CLOSE_MENU,
     OPEN_MENU,
-    SET_CLASS
+    SET_CLASS,
   } from "./actions.js";
 
 
@@ -17,8 +17,8 @@ const PortfolioContext = createContext(
   ],
 
   menuOpen: false,
-  menuClass: "MenuPanel group m_stage2"
-
+  menuClass: "MenuPanel group m_stage2",
+  currentPage: "main"
 }
 
 
@@ -35,6 +35,7 @@ const reducer = (state, action) => {
             return {...state, menuOpen: true};
         case SET_CLASS:
             return {...state, menuClass: action.menuClass};
+
 
     // case GET_ALL_BOOKS:
     //    return  {...state, savedBooks: action.savedBooks};

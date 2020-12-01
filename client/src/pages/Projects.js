@@ -10,10 +10,7 @@ function Projects() {
   return (
     <div className="Projects group">
         <div className="projectslogo">
-       
         </div>
-
-
         {state.projects.map( (project, index) => (
           <Project project={project} key={index} number={index}/>
         ))}
