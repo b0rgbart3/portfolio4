@@ -14,7 +14,8 @@
     padding-bottom:0;
     box-shadow:0 0 28px rgb(146, 183, 194);
     margin-bottom:80px;
-    min-height:660px;
+    max-height:20px;
+    transition: all 2s;
   }
 
 .homelogo {
@@ -32,6 +33,7 @@
   box-sizing: border-box;
   display:block;
   vertical-align: top;
+  transition: all 3s;
 }
 
 .homeColumn2 {
@@ -54,8 +56,14 @@
 .mug {
   width:100%;
   max-width:450px;
-
   border-radius:8px;
+  transition: all 3s;
+}
+
+
+
+.Home.state2 {
+  max-height:1800px;
 }
 .hometag {
   font-size:24px;
@@ -208,6 +216,22 @@ p.shieldTitle {
   .bartsShields {
     display:inline-block;
     float:left;
+    transition:all 3s;
+
+  }
+  .bartsShields.state1 {
+    opacity:0;
+  }
+  .bartsShields.state2 {
+    opacity:1;
   }
 
+}
+
+.state1 {
+  opacity:0;
+}
+
+.state2 {
+  opacity:1;
 }
