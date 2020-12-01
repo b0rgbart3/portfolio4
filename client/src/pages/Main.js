@@ -8,6 +8,7 @@ import react from "../images/shields/react.png";
 import node from "../images/shields/node.png";
 import sequelize from "../images/shields/sequelize.png";
 import { Link } from "react-router-dom";  // UseLocation
+import Shield from "../components/Shield";
 
 
 function Main() {
@@ -17,6 +18,7 @@ function Main() {
   const [divStyle, setDivStyle] = useState("state1");
   const [photoStyle, setPhotoStyle] = useState("state1");
   const [stackStyle, setStackStyle] = useState("state1");
+  const [projButtonStyle, setProjButtonStyle ] = useState("state1");
 
   let cardTimer = setTimeout(function () {
     setCardStyle("state2");
@@ -35,7 +37,9 @@ function Main() {
     setStackStyle("state2");
   }, 1500);
 
-  
+  let projButtonTimer = setTimeout(function() {
+    setProjButtonStyle("state2");
+  }, 3200);
 
   return (
     <div className={"Home group " + cardStyle}>
@@ -54,8 +58,8 @@ function Main() {
             web development technologies and computer
             science. I also have extensive experience in advertising, animation, marketing and design. I build applications that people find intuitive, and I’m looking to join a team of engineers that enjoy collaborating and value life-long learning.<br></br><br></br>
             <Link to="/projects">
-            <div className='mbutton'>Projects</div></Link> 
-            <Link to="/resume"><div className='mbutton'>resume</div></Link>
+            <div className={'mbutton ' + projButtonStyle}>Projects</div></Link> 
+            <Link to="/resume"><div className={'mbutton ' + projButtonStyle}>resume</div></Link>
           </div>
         </div>
       </div>
@@ -66,22 +70,12 @@ function Main() {
        
         <div className={"bartsShields " + stackStyle}>
         <p className="shieldTitle">Current Development Stack:</p>
-        <div className="shieldContainer">
-              <img src={react} className="shield" alt="shield"/>
-          </div>
-        <div className="shieldContainer">
-             <img src={node} className="shield" alt="shield"/>
-          </div>
- 
-          <div className="shieldContainer">
-              <img src={express} className="shield" alt="shield"/>
-          </div>
-          <div className="shieldContainer">
-              <img src={sql} className="shield" alt="shield"/>
-          </div>
-          <div className="shieldContainer">
-              <img src={sequelize} className="shield" alt="shield"/>
-          </div>
+
+        <Shield shieldNumber="0" />
+        <Shield shieldNumber="1" />
+        <Shield shieldNumber="2" />
+        <Shield shieldNumber="3" />
+        <Shield shieldNumber="4" />
 
        </div>
       </div>

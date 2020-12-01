@@ -111,6 +111,9 @@
   height:72px;
   overflow: hidden;
   margin-bottom:40px;
+  transition: all 1s;
+  position: relative;
+  left:-100px;
 }
 
 .shield {
@@ -154,6 +157,9 @@ p.shieldTitle {
   text-align:center;
   margin-right:10px;
   margin-bottom:20px;
+  transition:all 1s;
+  position:relative;
+  left:-140px;
 }
 
 .mbutton:hover {
@@ -234,4 +240,12 @@ p.shieldTitle {
 
 .state2 {
   opacity:1;
+}
+
+.shieldContainer.state2{
+ left:0px;
+}
+
+.mbutton.state2 {
+  left:0px;
 }
