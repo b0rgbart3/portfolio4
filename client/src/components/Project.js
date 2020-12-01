@@ -8,6 +8,7 @@ function Project(props) {
   const projImg = useRef();
   const projImgContainer = useRef();
   const [hit, setHit] = useState(false);
+  const [up, setUp] = useState(false);
   const [highlightStyle, setHighlightStyle] = useState({
     left: "100px",
     top: "100px",
@@ -43,6 +44,7 @@ function Project(props) {
       marginTop: "300px"
     });
     setHit(false);
+    setUp(false);
 
 
   }
@@ -70,6 +72,7 @@ function Project(props) {
 
     //console.log("x: ", mouseX, " y: ", mouseY);
     let myTimeout = setTimeout(function () {
+   
       setHighlightStyle({
         left: mouseX - 350 + "px",
         top: mouseY - 350 + "px",
@@ -86,6 +89,8 @@ function Project(props) {
         setHit(false);
       }, 1000);
     }, 1);
+
+    setUp(false);
 
     setHighlightStyle({
       left: mouseX - 25 + "px",
@@ -110,6 +115,7 @@ function Project(props) {
         marginTop: "0px"
       });
       setHit(true);
+      setUp(true);
     } 
   }
 
@@ -142,7 +148,10 @@ function Project(props) {
 
         <div className="projectTitle">
                 {props.project.title}
+                { up ? ( <div className='closer'></div>) : ( <div></div>) }
               </div>
+
+         
               <div className="projectDescription">
                 {props.project.description} 
               </div>

@@ -200,6 +200,33 @@ padding-left:40px;
     color:#555555;
 }
 
+.closer {
+    display:inline-block;
+    float:right;
+    box-sizing: border-box;
+    position: relative;
+    top:-25px;
+    left:8px;
+    border-radius:50%;
+    width:32px;
+    height:32px;
+    text-transform: uppercase;
+    color:#aaaaaa;
+    font-weight: 600;
+    box-shadow: 0 0 8px #333333;
+    opacity:.25;
+    background-image:url(../images/icons/closer.svg);
+    background-size:60%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.closer:hover {
+    box-shadow: 0 0 8px #888888;
+    opacity:1;
+}
+
+
 @media only screen and (min-width:780px) {
     .Project {
         width:40%;

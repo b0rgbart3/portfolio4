@@ -173,14 +173,14 @@ function ProjectBox(props) {
 //setHit(true);
 
   
-  return (
-    <div className="projectContainer">
-    <div className="Project group" key={props.index} onMouseUp={reactToProject} style={cardStyle}>
+  // return (
+  //   <div className="projectContainer">
+  //   <div className="Project group" key={props.index} onMouseUp={reactToProject} style={cardStyle}>
 
 
       {/* { hit ? <div style={highlightStyle} ref={highlighter} className="highlighter"></div> : <div></div>} */}
 
-   
+{/*    
    
               <div className="projectTitle">
                 {props.project.title}
@@ -220,6 +220,6 @@ function ProjectBox(props) {
   );
 }
 
-export default ProjectBox;
+export default ProjectBox; */}
 
 // <img ref={projImg} className="projectImage" src={ require("../images/work/wide/" + props.project.images[0] )} alt={ "project: "+props.project.title }  />
