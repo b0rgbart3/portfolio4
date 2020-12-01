@@ -15,8 +15,9 @@ function Shield(props) {
   let imageSource = shields[props.shieldNumber];
   let animTimer = setTimeout(function () {
     setShieldStyle("state2");
-
+    clearTimeout(animTimer);
   }, (200 * props.shieldNumber) + 2000);
+
 
   return (
     <div className={ "shieldContainer " + shieldStyle } key={props.index}>

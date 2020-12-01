@@ -142,7 +142,7 @@ p.shieldTitle {
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   font-style: normal;
-  background-color:rgb(131, 166, 179);
+  background-color:rgb(164, 195, 206);
   padding:6px;
   padding-left:20px;
   padding-right:20px;
@@ -150,16 +150,17 @@ p.shieldTitle {
   font-size:18px;
   color:white;
   border-radius:8px;
-  border:2px solid rgb(131, 166, 179);
+  border:2px solid rgb(164, 195, 206);
   user-select:none;
   cursor:pointer;
   min-width:100px;
   text-align:center;
   margin-right:10px;
   margin-bottom:20px;
-  transition:all 1s;
+  transition:all .6s;
   position:relative;
-  left:-140px;
+  left:-40px;
+  opacity:0;
 }
 
 .mbutton:hover {
@@ -170,8 +171,8 @@ p.shieldTitle {
 .mbutton:active {
   border:0;
   outline:0;
-  background-color:rgb(76, 164, 196);
-  border:2px solid rgb(76, 164, 196);
+  background-color:rgb(87, 188, 219);
+  border:2px solid rgb(87, 188, 219);
 
 
 }
@@ -179,8 +180,8 @@ p.shieldTitle {
 .mbutton:focus {
   border:0;
   outline:0;
-  background-color:rgb(76, 164, 196);
-  border:2px solid rgb(76, 164, 196);
+  background-color:rgb(87, 188, 219);
+  border:2px solid rgb(87, 188, 219);
 
 }
 
@@ -246,6 +247,8 @@ p.shieldTitle {
  left:0px;
 }
 
+
 .mbutton.state2 {
   left:0px;
+  opacity:1;
 }

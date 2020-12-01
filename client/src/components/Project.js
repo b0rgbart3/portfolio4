@@ -23,6 +23,8 @@ function Project(props) {
   const [infoStyle, setInfoStyle] = useState({
     top: "0px",
   });
+  const [projectStyle, setProjectStyle] = useState("initialState");
+
 
   // const [highlighter, setHighlighter] = useState(false);
 
@@ -32,6 +34,7 @@ function Project(props) {
   function goGit(url) {
     window.open(url, "_blank");
   }
+  
 
   function reactToInfo(e) {
     console.log("reacting.");
@@ -52,10 +55,6 @@ function Project(props) {
     e.stopPropagation();
     e.preventDefault();
 
-    // let boundingBox = e.target.parentNode;
-
-    // console.log("Parent: ", boundingBox);
-
     var canvas = e.target;
 
     // example mousedown handler
@@ -70,9 +69,11 @@ function Project(props) {
     var mouseX = parseInt(e.clientX - offsetX);
     var mouseY = parseInt(e.clientY - offsetY);
 
-    //console.log("x: ", mouseX, " y: ", mouseY);
     let myTimeout = setTimeout(function () {
    
+      // Setting this highlight style -- allows the white circle highlight
+      // to animate to a full width that is larger than the containing box
+
       setHighlightStyle({
         left: mouseX - 350 + "px",
         top: mouseY - 350 + "px",
@@ -81,7 +82,7 @@ function Project(props) {
         backgroundColor: "#ffffff",
         borderRadius: "50%",
         opacity: "0",
-        transition: "all .5s",
+        transition: "all .5s",  // this determines the speed of the highlight animation
         position: "absolute",
       });
 
@@ -92,6 +93,7 @@ function Project(props) {
 
     setUp(false);
 
+    // reset the highlight style for the next time we need it
     setHighlightStyle({
       left: mouseX - 25 + "px",
       top: mouseY - 25 + "px",
@@ -107,9 +109,11 @@ function Project(props) {
     
     let imageHeight = projImg.current.height + 8;
     let imageContainerHeight = projImgContainer;
-    console.log(projImgContainer.current);
+    console.log('mouseX:', mouseX);
 
     if (!hit) {
+      // this triggers the info box to animate upwards
+
       setInfoStyle({
         top: "0px",
         marginTop: "0px"
@@ -117,13 +121,19 @@ function Project(props) {
       setHit(true);
       setUp(true);
     } 
+
+    
   }
 
 
-
+  let revealTimer = setTimeout(function() {
+    setProjectStyle("finalState");
+  }, 500 + (200*props.number));
 
   return (
-    <div className="Project group" key={props.index}>
+
+    <div className={"Project group "+ projectStyle} key={props.index}>
+    
       <div className="infoContainer group">
         <div className="pImageContainer group" ref={projImgContainer}>
           <img
@@ -170,13 +180,6 @@ function Project(props) {
           ))}
         </div>
 
-              {/* <p class='techLabel'>Technology Stack:</p>
-              <div className="projectTech">
-                { props.project.tech.map( (tech, techIndex) => <div className='techIcon'>
-                  <img className="techShieldIcon" src={require("../images/shields/" + props.project.shields[techIndex] + ".png")} />
-                </div>) }
-              </div> */}
-
           <div className="outsideLinks">
   
               <div
@@ -191,6 +194,7 @@ function Project(props) {
         </div>
       </div>
     </div>
+   
   );
 }
 

@@ -9,7 +9,7 @@ import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import Contact from "./pages/Contact"
 import NoMatch from "./pages/NoMatch";
-
+import Shield from "./components/Shield";
 
 
 function App() {

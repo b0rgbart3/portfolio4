@@ -26,10 +26,19 @@
     position: relative;
     border:2px solid rgb(192, 200, 206);
     border-radius: 8px;
+    transition: all 1s;
 }
 .Project:hover {
     box-shadow:0 0 18px rgb(146, 233, 248);
     border:2px solid rgb(146, 233, 248);
+}
+
+.initialState {
+    opacity:.0001;
+}
+
+.finalState {
+    opacity:1;
 }
 
 .projectImage {
@@ -63,6 +72,7 @@
     top:100px;
     height:500px;
     box-shadow: 0 0 30px black;
+    margin-top:300px;
   }
 
   .projectInfo:hover {
