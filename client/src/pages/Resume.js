@@ -29,7 +29,7 @@ function Resume() {
     <p>Page {pageNumber} of {numPages}</p> */}
 
       <a
-        href="https://docs.google.com/document/d/1vw7rjAgVcp_jm3KI4BYYychWd5sFDpoJa53TTbz01Uo"
+        href="https://docs.google.com/document/d/1-lmAoLQdn3TNLv3XQy1GRMnA0Z8diUM5eDvuPJHrLKQ/edit?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >

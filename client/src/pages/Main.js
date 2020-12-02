@@ -47,6 +47,7 @@ function Main() {
 
 
   return (
+    <div className="homeContainer">
     <div className={"Home group " + cardStyle}>
         
       <div className={"homeColumn1 " + divStyle}>
@@ -116,6 +117,7 @@ function Main() {
 
        
       </div>
+    </div>
     </div>
   );
 }

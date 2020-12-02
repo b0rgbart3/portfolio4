@@ -32,6 +32,24 @@
     display:inline-block;
     color:#3e5f70;
     opacity:.25;
+    position:relative;
+    left:0px;
+    top:-100px;
+    transition: all 1s;
+}
+
+.dmenuList li.state2 {
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:20px;
+    padding-bottom:20px;
+    cursor: pointer;
+    user-select: none;
+    display:inline-block;
+    color:#3e5f70;
+    opacity:.25;
+    left:0px;
+    top:0;
 }
 
 .dmenuList li.active {

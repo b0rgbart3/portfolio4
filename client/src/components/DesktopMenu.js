@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom"; // ,useLocation
 import "./DesktopMenu.css";
 import {usePortfolioContext}  from "../utils/GlobalState";
@@ -15,23 +15,30 @@ function getPage() {
 function DesktopMenu(props) {
 
   getPage();
+  const [linkStyle, setLinkStyle] = useState("");
+
+  let myTimer = setTimeout(function () {
+    setLinkStyle("state2");
+    clearTimeout(myTimer);
+  }, 300);
+
   return (
     <div className="desktopMenu">
       <ul className="dmenuList">
       
         <Link to="/">
-        { page=="/"?(   <li class='active'>/BART DORITY</li>):(   <li >/BART DORITY</li>)}
+        { page=="/"?(   <li className={ 'active ' + linkStyle}>/BART DORITY</li>):(   <li className={ linkStyle}>/BART DORITY</li>)}
       
         </Link>
         <Link to="/projects">
-        { page=="/projects"?(   <li class='active'>/PROJECTS</li>):(   <li >/PROJECTS</li>)}
+        { page=="/projects"?(   <li className={ 'active ' + linkStyle}>/PROJECTS</li>):(   <li className={ linkStyle}>/PROJECTS</li>)}
 
         </Link>
         <Link to="/resume">
-        { page=="/resume"?(   <li class='active'>/RESUME</li>):(   <li >/RESUME</li>)}
+        { page=="/resume"?(   <li className={ 'active ' + linkStyle}>/RESUME</li>):(   <li className={ linkStyle}>/RESUME</li>)}
         </Link>
         <Link to="/contact">
-        { page=="/contact"?(   <li class='active'>/CONTACT</li>):(   <li >/CONTACT</li>)}
+        { page=="/contact"?(   <li className={ 'active ' + linkStyle}>/CONTACT</li>):(   <li className={ linkStyle}>/CONTACT</li>)}
         </Link>
       </ul>
     </div>
