@@ -58,7 +58,7 @@ function Main() {
         </div>
         <div className="homebody">
           <div className="hometag">
-            <span className="nobr">Software Engineer</span>
+            <span className="nobr">Full Stack Developer</span>
           </div>
           <div className="homebio">
           I have a deep knowledge of a broad range of
