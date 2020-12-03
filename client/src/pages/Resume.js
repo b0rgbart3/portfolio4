@@ -112,7 +112,7 @@ function Resume() {
       </ul>
 
       <br></br>
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <p>
         Javascript, Node.js, React, Angular, Flutter, Dart, Python, Ruby, Ruby
         on Rails, Java, Objective-C, Typescript, ES6, MySQL, HTML 5, CSS 3,
