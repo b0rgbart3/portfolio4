@@ -6,6 +6,7 @@ import githubIcon from "../images/icons/github_round.svg";
 import textIcon from "../images/icons/textIcon.svg";
 import googleDocIcon from "../images/icons/google_doc.svg";
 import pdfDocIcon from "../images/icons/pdf_doc.svg";
+import pdf from '../images/BART_DORITY_resume.pdf';
 
 // import { usePortfolioContext } from "../utils/GlobalState";
 
@@ -45,7 +46,7 @@ function Resume() {
       </a>
       {/* process.env.PUBLIC_URL + "../</div> */}
       <a
-        href="BART_DORITIY_resume.pdf"
+        href={pdf}
         target="_blank"
         rel="noopener noreferrer"
       >
