@@ -25,7 +25,6 @@ function Project(props) {
   });
   const [projectStyle, setProjectStyle] = useState("initialState");
 
-
   // const [highlighter, setHighlighter] = useState(false);
 
   function goLive(url) {
@@ -34,22 +33,23 @@ function Project(props) {
   function goGit(url) {
     window.open(url, "_blank");
   }
-  
 
   function reactToInfo(e) {
-    console.log("reacting.");
-    e.stopPropagation();
-    e.preventDefault();
+    if (!up) {
+      console.log("Not yet hit, so reacting to image.");
+      reactToImage(e);
+    } else {
+      console.log("reacting.");
+      e.stopPropagation();
+      e.preventDefault();
 
-
-    setInfoStyle({
-      top: "0px",
-      marginTop: "300px"
-    });
-    setHit(false);
-    setUp(false);
-
-
+      setInfoStyle({
+        top: "0px",
+        marginTop: "300px",
+      });
+      setHit(false);
+      setUp(false);
+    }
   }
   function reactToImage(e) {
     e.stopPropagation();
@@ -69,11 +69,27 @@ function Project(props) {
     var mouseX = parseInt(e.clientX - offsetX);
     var mouseY = parseInt(e.clientY - offsetY);
 
+    setHighlightStyle({
+      left: mouseX - 25 + "px",
+      top: mouseY - 25 + "px",
+      backgroundColor: "#ffffff",
+      borderRadius: "50%",
+      transition: "all .002s",
+      position: "absolute",
+      width: "50px",
+      height: "50px",
+      opacity: "1",
+    });
+
     let myTimeout = setTimeout(function () {
-   
       // Setting this highlight style -- allows the white circle highlight
       // to animate to a full width that is larger than the containing box
 
+      console.log("");
+      console.log("mouseX:", mouseX);
+      console.log("mouseY:", mouseY);
+      console.log("");
+      
       setHighlightStyle({
         left: mouseX - 350 + "px",
         top: mouseY - 350 + "px",
@@ -82,58 +98,40 @@ function Project(props) {
         backgroundColor: "#ffffff",
         borderRadius: "50%",
         opacity: "0",
-        transition: "all .5s",  // this determines the speed of the highlight animation
+        transition: "all .5s", // this determines the speed of the highlight animation
         position: "absolute",
       });
 
       let my2ndTimeout = setTimeout(function () {
         setHit(false);
+        clearTimeout(my2ndTimeout);
       }, 1000);
-    }, 1);
+      clearTimeout(myTimeout);
+    }, 3);
 
     setUp(false);
 
-    // reset the highlight style for the next time we need it
-    setHighlightStyle({
-      left: mouseX - 25 + "px",
-      top: mouseY - 25 + "px",
-      backgroundColor: "#ffffff",
-      borderRadius: "50%",
-      transition: "all .00001s",
-      position: "absolute",
-      width: "50px",
-      height: "50px",
-      opacity: "1",
-    });
-
-    
     let imageHeight = projImg.current.height + 8;
     let imageContainerHeight = projImgContainer;
-    console.log('mouseX:', mouseX);
 
     if (!hit) {
       // this triggers the info box to animate upwards
 
       setInfoStyle({
         top: "0px",
-        marginTop: "0px"
+        marginTop: "0px",
       });
       setHit(true);
       setUp(true);
-    } 
-
-    
+    }
   }
 
-
-  let revealTimer = setTimeout(function() {
+  let revealTimer = setTimeout(function () {
     setProjectStyle("finalState");
-  }, 500 + (200*props.number));
+  }, 500 + 200 * props.number);
 
   return (
-
-    <div className={"Project group "+ projectStyle} key={props.index}>
-    
+    <div className={"Project group " + projectStyle} key={props.index}>
       <div className="infoContainer group">
         <div className="pImageContainer group" ref={projImgContainer}>
           <img
@@ -154,47 +152,50 @@ function Project(props) {
           )}
         </div>
 
-        <div className="projectInfo group" style={infoStyle} onClick={reactToInfo}>
+        <div
+          className="projectInfo group"
+          style={infoStyle}
+          onClick={reactToInfo}
+        >
+          <div className="projectTitle">
+            {props.project.title}
+            {up ? <div className="closer"></div> : <div></div>}
+          </div>
 
-        <div className="projectTitle">
-                {props.project.title}
-                { up ? ( <div className='closer'></div>) : ( <div></div>) }
+          <div className="projectDescription">{props.project.description}</div>
+          <p className="techLabel">Tech Stack:</p>
+          <div className="projectTech">
+            {props.project.tech.map((tech, techIndex) => (
+              <div className="techIcon" key={techIndex}>
+                <img
+                  className="techShieldIcon"
+                  src={require("../images/shields/" +
+                    props.project.shields[techIndex] +
+                    ".png")}
+                  alt={tech}
+                />
               </div>
-
-         
-              <div className="projectDescription">
-                {props.project.description} 
-              </div>
-              <p className="techLabel">Tech Stack:</p>
-        <div className="projectTech">
-          {props.project.tech.map((tech, techIndex) => (
-            <div className="techIcon" key={techIndex}>
-              <img
-                className="techShieldIcon"
-                src={require("../images/shields/" +
-                  props.project.shields[techIndex] +
-                  ".png")}
-                alt={tech}
-              />
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
           <div className="outsideLinks">
-  
-              <div
-                className="st_button projectGithubLink"
-                onClick={() => goGit(props.project.github)}
-              >Repo</div>
+            <div
+              className="st_button projectGithubLink"
+              onClick={() => goGit(props.project.github)}
+            >
+              Repo
+            </div>
             <div
               className="st_button projectLiveLink"
               onClick={() => goLive(props.project.live)}
-            > Live Demo</div>
+            >
+              {" "}
+              Live Demo
+            </div>
           </div>
         </div>
       </div>
     </div>
-   
   );
 }
 

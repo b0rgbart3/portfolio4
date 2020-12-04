@@ -87,7 +87,7 @@ function Main() {
        </div>
       </div>
       <div className="homebodyMobile">
-        <div className="hometag"><span className="nobr">Software Engineer</span></div>
+        <div className="hometag"><span className="nobr">Full Stack Developer</span></div>
         <div className="homebio">
         I have a deep knowledge of a broad range of
             web development technologies and computer
@@ -98,6 +98,7 @@ function Main() {
             <br></br><br></br>
           </div>
           <p className="shieldTitle">Current Development Stack:</p>
+          <div className="shieldGroup group">
         <div className="shieldContainer">
               <img src={react} className="shield" alt="shield"/>
           </div>
@@ -114,7 +115,7 @@ function Main() {
           <div className="shieldContainer">
               <img src={sequelize} className="shield" alt="shield"/>
           </div>
-
+          </div>
        
       </div>
     </div>

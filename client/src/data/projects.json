@@ -21,8 +21,8 @@
     },
     {
         "title": "LightBurst",
-        "description": "A puzzle game for iPhone.  The game consists of a square grid of lights. When the game starts, a random pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off.",
-        "images":["starburst.jpg"],
+        "description": "A puzzle game for the iPhone, iPad and any iOS device.  The game consists of a square grid of lights. When the game starts, a random pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off.",
+        "images":["lightburst.jpg"],
         "live":"https://ddworks.org/lightburst.php",
         "github":"https://github.com/b0rgbart3/LightBurst",
         "features": [""],

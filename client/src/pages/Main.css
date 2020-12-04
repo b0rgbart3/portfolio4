@@ -64,7 +64,6 @@
 }
 
 
-
 .Home.state2 {
   max-height:1800px;
 }
@@ -107,7 +106,7 @@
   text-align:center;
   text-transform: uppercase;
   padding:0px;
-  width:70px;
+  width:62px;
   font-size:12px;
   padding-bottom:40px;
   float:left;
@@ -116,7 +115,6 @@
   margin-bottom:40px;
   transition: all 1s;
   position: relative;
-  left:-100px;
 }
 
 .shield {
@@ -188,15 +186,20 @@ p.shieldTitle {
 
 }
 
-@media only screen and (min-width:900px) {
+.shieldGroup {
+
+}
+
+@media only screen and (min-width:750px) {
 
   .Home {
 
-    width:90%;
+    width:94%;
     margin:auto;
     margin-top:20px;
     padding-left:0;
     max-width:1200px;
+    padding-bottom:40px;
   } 
 
   .homeColumn1 {
@@ -229,6 +232,14 @@ p.shieldTitle {
     transition:all 3s;
 
   }
+
+
+  .shieldContainer {
+
+    left:-100px;
+  }
+
+
   .bartsShields.state1 {
     opacity:0;
   }
