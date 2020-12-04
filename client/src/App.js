@@ -14,7 +14,7 @@ import Shield from "./components/Shield";
 
 function App() {
   let pageName = "main";
-
+  const reload = () => window.location.reload();
   return (
     <Router>
      <div className="App group">
@@ -25,6 +25,7 @@ function App() {
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/contact" component={Contact} />
+            <Route path="/BART_DORITY_resume.pdf" />
             <Route component={NoMatch} />
           </Switch>
           <Menu/>

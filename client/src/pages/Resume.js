@@ -5,6 +5,7 @@ import linkedInIcon from "../images/icons/linked_in_black.svg";
 import githubIcon from "../images/icons/github_round.svg";
 import textIcon from "../images/icons/textIcon.svg";
 import googleDocIcon from "../images/icons/google_doc.svg";
+import pdfDocIcon from "../images/icons/pdf_doc.svg";
 
 // import { usePortfolioContext } from "../utils/GlobalState";
 
@@ -34,10 +35,25 @@ function Resume() {
         rel="noopener noreferrer"
       >
         <div className="googleLink">
-          <div className="googleDocIcon">
+          <div className="docIcon">
             <img src={googleDocIcon} alt='google_doc_version' />
           </div>
           Google Doc
+          <br />
+          Version
+        </div>
+      </a>
+      {/* process.env.PUBLIC_URL + "../</div> */}
+      <a
+        href="BART_DORITIY_resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="pdfLink">
+          <div className="docIcon">
+            <img src={pdfDocIcon} alt='pdf_doc_version' />
+          </div>
+          PDF
           <br />
           Version
         </div>

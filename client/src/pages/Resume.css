@@ -129,17 +129,25 @@
 .emailLinker:hover img {
     opacity:1;
 }
+.pdfLink {
+    width:140px;
+    text-align: right;
+
+    display:inline-block;
+    float:right;
+}
 
 .googleLink {
-    width:100%;
+    width:140px;
     text-align: right;
-  
+    display:inline-block;
+    float:right;
 }
-.googleDocIcon {
+.docIcon {
     
 }
 
-.googleDocIcon img {
+.docIcon img {
     width:58px;
     height:70px;
   

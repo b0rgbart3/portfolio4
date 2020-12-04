@@ -1,10 +1,12 @@
 const path = require("path");
+const express = require("express");
 const router = require("express").Router();
 const apiRoutes = require("./api");
 const axios = require("axios");
 
 // API Routes for data pertaining to our DB
 router.use("/api", apiRoutes);
+
 
 // // API Route to query the Google API
 // router.get("/google/:name", (req, res) => {
@@ -33,7 +35,15 @@ router.use("/api", apiRoutes);
 
 // Send every other request to the React app
 // Define any API routes before this runs
+
+router.get("/BART_DORITY_resume.pdf", (req, res) => {
+  console.log("serving up the static pdf.");
+  res.sendFile(path.join(__dirname, "../client/build/BART_DORITY_resume.pdf"));
+
+});
 router.get("*", (req, res) => {
+  console.log("Got to the catch-all block of the router.");
+
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 

@@ -17,6 +17,8 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
+
+
 // all routes are in here
 app.use(routes);
 
