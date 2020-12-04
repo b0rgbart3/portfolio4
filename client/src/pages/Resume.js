@@ -40,8 +40,6 @@ function Resume() {
             <img src={googleDocIcon} alt='google_doc_version' />
           </div>
           Google Doc
-          <br />
-          Version
         </div>
       </a>
       {/* process.env.PUBLIC_URL + "../</div> */}
@@ -55,8 +53,6 @@ function Resume() {
             <img src={pdfDocIcon} alt='pdf_doc_version' />
           </div>
           PDF
-          <br />
-          Version
         </div>
       </a>
       <h1>BART DORITY</h1>
