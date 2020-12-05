@@ -7,7 +7,16 @@
     padding:0;
     margin-top:20px;
     min-height:1400px;
+    width:100%;
+
 }
+
+.contactPageButtons {
+    text-align: left;
+   padding-left:30px;
+   padding-top:40px;
+}
+
 form {
     padding:0;
 }
@@ -27,7 +36,27 @@ form {
     font-family: futura-pt, sans-serif;
     font-weight: 400;
     font-style: normal;
+    max-width:1050px;
+    width:100%;
    
+}
+
+.send {
+    float:right;
+    display:inline-block;
+    margin-right:5%;
+}
+.actualForm {
+    border:4px dashed rgb(201, 226, 233);
+    border-radius:12px;
+    margin:20px;
+    box-sizing: border-box;
+    width:90%;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:90px;
+    background-color:rgba(136, 184, 197, 0.1);
+
 }
 
 .myLabel {
@@ -63,9 +92,11 @@ form {
     color:rgb(92, 134, 146);
     outline-color:black;
     border-bottom:4px solid rgba(105, 168, 187,.2);
+    background-color:rgba(0,0,0,0);
     cursor: pointer;
     padding-left:8px;
     padding-top:20px;
+    border-radius:8px;
 }
 
 .contactForm input:hover {
@@ -74,8 +105,8 @@ form {
 
 .contactForm input:active {
     border-radius:8px;
-    border-bototm:2px solid rgb(146, 183, 194);
-    background-color:rgba(199, 236, 255, .5);
+    border-bottom:2px solid rgb(146, 183, 194);
+    background-color:white;
     font-size:24px;
     font-weight: 600;
 
@@ -85,12 +116,12 @@ form {
     font-size:24px;
     font-weight: 600;
     border-bottom:4px solid #7ebcd4;
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
 
 }
 
 .contactForm input:visited {
-    background-color:rgba(199, 236, 255, .5);
+  
 }
 
 .contactForm input[type=email] {
@@ -99,22 +130,22 @@ form {
 
 .contactForm input[type=email]:active {
 
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
 }
 .contactForm input[type=email]:focus {
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
 }
 
 .contactForm input[type=email] :-internal-autofill-selected {
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
 }
 
 .contactForm input:-internal-autofill-selected  {
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
 }
 
 input:-internal-autofill-selected {
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
 }
 
 /* input:-autofill {
@@ -132,11 +163,13 @@ input:-webkit-autofill {
 
 .contactForm h1 {
     font-family: futura-pt, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
-    padding-left:40px;
-    padding-top:40px;
+    padding-left:38px;
+    padding-top:20px;
+    padding-bottom:30px;
+   
 
 }
 .contactForm h2 {
@@ -200,7 +233,7 @@ textarea {
     font-size:18px;
     padding:10px;
     font-family: futura-pt, sans-serif;
-    background-color:white;
+    background-color:rgba(0,0,0,0);
     font-size:24px;
     font-weight: 600;
     color:rgb(92, 134, 146);
@@ -217,7 +250,7 @@ textarea:active {
    
     font-size:28px;
     font-size:26px;
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
     border-bottom:4px solid rgba(105, 168, 187,1);
 }
 textarea:focus {
@@ -226,7 +259,7 @@ textarea:focus {
   
     font-size:28px;
     font-size:26px;
-    background-color:rgba(199, 236, 255, .5);
+    background-color:white;
     border-bottom:4px solid rgba(105, 168, 187,1);
 }
 
@@ -238,18 +271,13 @@ textarea:focus {
     font-size:21px;
 }
 
-.contactButtons {
-    text-align: center;
-    margin:auto;
-    padding:10px;
-    padding-top:30px;
-}
+
 @media only screen and (min-width:800px) {
 
     .contactForm {
         overflow: hidden;
         width:80%;
-        max-width:800px;    
+    
         margin:auto;
  
         margin-top:0px;

@@ -62,10 +62,10 @@ function Resume() {
       <div className="contactButtons">
         <a href="mailto:bartdority@gmail.com" className="resumeLink">
           <div className="emailLinker">
-            <img src={emailIcon} alt='email_icon' />bartdority@gmail.com
+            <img src={emailIcon} alt='email_icon' />
           </div>
         </a>
-        ​{" "}
+
         <a
           href="https://www.linkedin.com/in/bart-dority/"
           className="resumeLink"
@@ -73,9 +73,7 @@ function Resume() {
           rel="noopener noreferrer"
         >
           <div className="emailLinker">
-            <img src={linkedInIcon} alt='linked_in' />
-            linkedin.com/in/bart-dority
-          </div>
+            <img src={linkedInIcon} alt='linked_in' /></div>
         </a>{" "}
         <a
           href="https://github.com/b0rgbart3"
@@ -84,13 +82,13 @@ function Resume() {
           rel="noopener noreferrer"
         >
           <div className="emailLinker">
-            <img src={githubIcon} alt='github' />github.com/b0rgbart3
+            <img src={githubIcon} alt='github' />
           </div>
         </a>
-        <div className="emailLinker">
+        {/* <div className="emailLinker">
           <img src={textIcon} alt='email_link' />
           <span className="nobr">(415) 503-7044</span>{" "}
-        </div>
+        </div> */}
       </div>
       {/* <h2>Portfolio</h2>
 <ul>
