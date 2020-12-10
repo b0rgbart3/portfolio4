@@ -155,7 +155,7 @@ PWA  */}
         March 2002 - September
         2002
         <br />
-        Creative direction of a newly formed Silicone Valley branch office of this established San Diego based Advertising and Public Relations Firm. I designed and produced all of the online and printed 
+        Creative direction of a newly formed Silicon Valley branch office of this established San Diego based Advertising and Public Relations Firm. I designed and produced all of the online and printed 
 promotional materials for the agency and it's clients, and pitch projects. Projects included rich-media ads, interstitials, websites and interactive presentations that were coded with Flash ActionScript, 
 Javascript and HTML. Clients included: iPass, and Snapple Beverage Group. I designed and coded 
 several 3D interactive Flash driven websites that were conceptually integrated with a 3D toy that was mailed to prospective clients as part of a successful launch campaign that won the first two contracts for the agency.
