@@ -2,6 +2,7 @@ node_modules
 client/node_modules
 design
 smtp_secret.txt
+sendgrid.env
 
 
 
