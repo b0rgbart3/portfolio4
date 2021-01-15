@@ -26,8 +26,8 @@
         "live": "https://enigmatic-anchorage-91060.herokuapp.com/",
         "github": "https://github.com/b0rgbart3/spaceforce2",
         "features": [""],
-        "tech": ["React"],
-        "shields": ["react"]
+        "tech": ["React", "Redux"],
+        "shields": ["react", "redux"]
     },
     {
         "title": "LightBurst",
