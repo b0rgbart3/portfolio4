@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
 import "./Project.css";
 
 function Project(props) {
-  const location = useLocation();
   const highlighter = useRef();
   const projImg = useRef();
   const projImgContainer = useRef();
@@ -20,21 +18,18 @@ function Project(props) {
     width: "50px",
     height: "50px",
   });
-  const [infoStyle, setInfoStyle] = useState({
-    top: "0px",
-  });
+  const [infoStyle, setInfoStyle] = useState({top: "0px"});
   const [projectStyle, setProjectStyle] = useState("initialState");
 
-  // const [highlighter, setHighlighter] = useState(false);
 
-  function goLive(url) {
+  function gotoLive(url) {
     window.open(url, "_blank");
   }
-  function goGit(url) {
+  function gotoGit(url) {
     window.open(url, "_blank");
   }
 
-  function reactToInfo(e) {
+  function reactToInfoClick(e) {
     if (!up) {
       console.log("Not yet hit, so reacting to image.");
       reactToImage(e);
@@ -56,8 +51,6 @@ function Project(props) {
     e.preventDefault();
 
     var canvas = e.target;
-
-    // example mousedown handler
 
     // get the current canvas offsets using getBoundingClientRect
     var BB = canvas.getBoundingClientRect();
@@ -89,7 +82,7 @@ function Project(props) {
       console.log("mouseX:", mouseX);
       console.log("mouseY:", mouseY);
       console.log("");
-      
+
       setHighlightStyle({
         left: mouseX - 350 + "px",
         top: mouseY - 350 + "px",
@@ -111,8 +104,8 @@ function Project(props) {
 
     setUp(false);
 
-    let imageHeight = projImg.current.height + 8;
-    let imageContainerHeight = projImgContainer;
+    // let imageHeight = projImg.current.height + 8;
+    // let imageContainerHeight = projImgContainer;
 
     if (!hit) {
       // this triggers the info box to animate upwards
@@ -126,9 +119,14 @@ function Project(props) {
     }
   }
 
-  let revealTimer = setTimeout(function () {
-    setProjectStyle("finalState");
-  }, 500 + 200 * props.number);
+  useEffect(() => {
+    let revealTimer = setTimeout(function () {
+      setProjectStyle("finalState");
+    }, 500 + 200 * props.number);
+
+    // let React clear our timeout so we don't have a memory leak
+    return () => clearTimeout(revealTimer);
+  });
 
   return (
     <div className={"Project group " + projectStyle} key={props.index}>
@@ -155,7 +153,7 @@ function Project(props) {
         <div
           className="projectInfo group"
           style={infoStyle}
-          onClick={reactToInfo}
+          onClick={reactToInfoClick}
         >
           <div className="projectTitle">
             {props.project.title}
@@ -172,23 +170,18 @@ function Project(props) {
                   src={require("../images/shields/" +
                     props.project.shields[techIndex] +
                     ".png")}
-                  alt={tech}
-                />
+                  alt={tech}/>
               </div>
             ))}
           </div>
 
           <div className="outsideLinks">
-            <div
-              className="st_button projectGithubLink"
-              onClick={() => goGit(props.project.github)}
-            >
+            <div className="st_button projectGithubLink"
+              onClick={() => gotoGit(props.project.github)}>
               Repo
             </div>
-            <div
-              className="st_button projectLiveLink"
-              onClick={() => goLive(props.project.live)}
-            >
+            <div className="st_button projectLiveLink"
+              onClick={() => gotoLive(props.project.live)}>
               {" "}
               Live Demo
             </div>
@@ -200,3 +193,5 @@ function Project(props) {
 }
 
 export default Project;
+
+/* Old Host for SpaceForce:   "https://b0rgbart3.github.io/project-one/", */

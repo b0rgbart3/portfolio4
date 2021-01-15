@@ -9,13 +9,9 @@ import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import Contact from "./pages/Contact"
 import NoMatch from "./pages/NoMatch";
-import Shield from "./components/Shield";
 
-/* Old Host for SpaceForce:   "https://b0rgbart3.github.io/project-one/", */
 
 function App() {
-  let pageName = "main";
-  const reload = () => window.location.reload();
   return (
     <Router>
      <div className="App group">

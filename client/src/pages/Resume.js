@@ -3,32 +3,15 @@ import "./Resume.css";
 import emailIcon from "../images/icons/email.svg";
 import linkedInIcon from "../images/icons/linked_in_black.svg";
 import githubIcon from "../images/icons/github_round.svg";
-import textIcon from "../images/icons/textIcon.svg";
 import googleDocIcon from "../images/icons/google_doc.svg";
 import pdfDocIcon from "../images/icons/pdf_doc.svg";
 import pdf from '../images/BART_DORITY_resume.pdf';
 
-// import { usePortfolioContext } from "../utils/GlobalState";
-
 function Resume() {
-  //   const [state, dispatch] = usePortfolioContext();
 
-  //const [numPages, setNumPages] = useState(null);
-  //const [pageNumber, setPageNumber] = useState(1);
-
-  // function onDocumentLoadSuccess({ numPages }) {
-  //   setNumPages(numPages);
-  // }
 
   return (
     <div className="resumeBox">
-      {/* <Document
-      file="../images/.pdf"
-      onLoadSuccess={onDocumentLoadSuccess}
-    >
-      <Page pageNumber={pageNumber} />
-    </Document>
-    <p>Page {pageNumber} of {numPages}</p> */}
 
       <a
         href="https://docs.google.com/document/d/1-lmAoLQdn3TNLv3XQy1GRMnA0Z8diUM5eDvuPJHrLKQ"
@@ -42,7 +25,7 @@ function Resume() {
           Google Doc
         </div>
       </a>
-      {/* process.env.PUBLIC_URL + "../</div> */}
+
       <a
         href={pdf}
         target="_blank"

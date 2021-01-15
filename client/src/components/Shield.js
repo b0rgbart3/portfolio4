@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import "./Project.css";
 import react from "../images/shields/react.png";
 import express from "../images/shields/express.png";

@@ -4,8 +4,6 @@ import API from "../utils/API";
 import emailIcon from "../images/icons/email.svg";
 import linkedInIcon from "../images/icons/linked_in_black.svg";
 import githubIcon from "../images/icons/github_round.svg";
-import textIcon from "../images/icons/textIcon.svg";
-// import googleDocIcon from "../images/icons/google_doc.svg";
 
 function Contact() {
   const fullname = useRef();

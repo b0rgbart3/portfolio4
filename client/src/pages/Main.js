@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Main.css";
 import mug from "../images/bartdority_pic2.jpg";
-// import mongo from "../images/shields/mongo.png";
 import sql from "../images/shields/sql.png";
 import express from "../images/shields/express.png";
 import react from "../images/shields/react.png";
@@ -44,6 +43,15 @@ function Main() {
   }, 3200);
 
 
+  useEffect(() => {
+    return () => {
+      clearTimeout(cardTimer);
+      clearTimeout(photoTimer);
+      clearTimeout(divTimer);
+      clearTimeout(stackTimer);
+      clearTimeout(projButtonTimer);
+    }
+  });
 
 
   return (

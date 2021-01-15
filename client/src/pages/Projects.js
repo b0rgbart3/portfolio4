@@ -4,7 +4,7 @@ import Project from "../components/Project";
 import { usePortfolioContext } from "../utils/GlobalState";
 
 function Projects() {
-  const [state, dispatch] = usePortfolioContext();
+  const [state ] = usePortfolioContext();
 
 
   return (
