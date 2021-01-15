@@ -1,4 +1,4 @@
-# Bart Doritiy - Full Stack Developer Portfolio
+# Bart Dority - Full Stack Developer Portfolio
 Full Stack MERN application to showcase my lastest projects.
 
 ![screenshot.jpg](screenshot.jpg)
