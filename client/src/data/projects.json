@@ -20,6 +20,16 @@
         "shields": ["react","node","express","mongo","mongoose"]
     },
     {
+        "title": "Space Force",
+        "description": "This app uses the NASA public image API to search for images by topic or key word - allowing users to learn about science in a fun and interactive way.",
+        "images": ["spaceforce.jpg"],   
+        "live": "https://enigmatic-anchorage-91060.herokuapp.com/",
+        "github": "https://github.com/b0rgbart3/spaceforce2",
+        "features": [""],
+        "tech": ["React"],
+        "shields": ["react"]
+    },
+    {
         "title": "LightBurst",
         "description": "A puzzle game for the iPhone, iPad and any iOS device.  The game consists of a square grid of lights. When the game starts, a random pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off.",
         "images":["lightburst.jpg"],
@@ -49,6 +59,7 @@
         "tech": ["Node.js","Express","MySQL","Handlebars"],
         "shields": ["node","express","sql","handlebars"]
     },
+
     {
         "title": "Name List",
         "description": "This app displays a list of names such as an employee directory, and allows you to search for a person based on any keyword filter.  It also allows you to sort the list of names in ascending or descending order of any column, such as first name, last name, phone number, or department.",
@@ -80,16 +91,7 @@
         "tech": ["Node.js", "MySQL", "Express", "Handlebars"],
         "shields": ["node","sql","express","handlebars","custom_orm"]
     },
-    {
-        "title": "Space Force",
-        "description": "This app uses the NASA public image bank, and cross references these images with articles from Wikipedia. Users can search through photographs and find out more about these scientific topics in a visual manner, based on a keyword search, that filters the data coming in from the API.",
-        "images": ["spaceforce.jpg"],   
-        "live": "https://b0rgbart3.github.io/project-one/",
-        "github": "https://github.com/b0rgbart3/project-one",
-        "features": [""],
-        "tech": ["Javascript", "JQuery"],
-        "shields": ["js", "jq"]
-    },
+
     {
         "title": "The Weather App",
         "description": "This app pulls live weather and forecast data from Open-Weather-Map.org's API.  It allows users to view the weather and get a 5 day forecast in multiple cities, to help them better plan their trips.  The city choices are saved so they can easily check the weather again at another time.",

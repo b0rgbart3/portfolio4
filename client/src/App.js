@@ -11,6 +11,7 @@ import Contact from "./pages/Contact"
 import NoMatch from "./pages/NoMatch";
 import Shield from "./components/Shield";
 
+/* Old Host for SpaceForce:   "https://b0rgbart3.github.io/project-one/", */
 
 function App() {
   let pageName = "main";
