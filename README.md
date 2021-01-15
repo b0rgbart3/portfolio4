@@ -1,5 +1,5 @@
 # Bart Dority - Full Stack Developer Portfolio
-Full Stack MERN application to showcase my lastest projects.
+This is a react app that uses JSON data to showcase my lastest projects.
 
 ![screenshot.jpg](screenshot.jpg)
 # Table of contents
@@ -10,8 +10,7 @@ Full Stack MERN application to showcase my lastest projects.
 5. [Features](#Features)
 6. [Technology](#Technology)
 7. [Credits](#Credits)
-8. [Badges](#Badges)
-9. [User Story](#User_Story)
+8. [User Story](#User_Story)
 <a name="Installation"></a>
 ## Installation
 ```sh
@@ -33,17 +32,20 @@ npm start
 1. mobile friendly layout
 2. interactive project cards
 3. contact form
+4. css based animations
+
 <a name="Technology"></a>
 ## Technology
 1. React
-2.  Express
-3.  NodeJS
+2. Express
+3. NodeJS
+4. JSON
 
 
 <a name="User_Story"></a>
 ## User Story
 ```sh
-As recruiter I want to be able to quickly see all of Bart's relevant project work related to any particular given technology.
+As recruiter or fellow engineer I want to be able to quickly see all of Bart's relevant project work, and the technologies that were used to create them.
 
 As a job-seeker, I want to be able to showcase my latest and best work and the technologies that were used to build these projects.
 ```
@@ -52,9 +54,7 @@ As a job-seeker, I want to be able to showcase my latest and best work and the t
 <a name="Credits"></a>
 ## Credits
 Bart Dority
-<a name="Badges"></a>
-## Badges
- [![Generic badge](https://img.shields.io/badge/made_with-MERN-<COLOR>.svg)](https://shields.io/)
+
 
 
 **on github:** <a href='github.com/b0rgBart3'>b0rgBart3</a>
