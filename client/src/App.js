@@ -10,19 +10,20 @@ import Resume from "./pages/Resume"
 import Contact from "./pages/Contact"
 import NoMatch from "./pages/NoMatch";
 
+// Portfolio Provider is our Global State 
 
 function App() {
   return (
     <Router>
      <div className="App group">
-        <PortfolioProvider>
+        <PortfolioProvider> 
           <DesktopMenu />
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/contact" component={Contact} />
-            <Route path="/BART_DORITY_resume.pdf" />
+            <Route exact path="/BART_DORITY_resume.pdf" />
             <Route component={NoMatch} />
           </Switch>
           <Menu/>

@@ -20,30 +20,31 @@ function Main() {
   const [projButtonStyle, setProjButtonStyle ] = useState("state1");
 
 
-  let cardTimer = setTimeout(function () {
-    setCardStyle("state2");
-
-  }, 300);
-
-  let photoTimer = setTimeout(function () {
-    setPhotoStyle("state2");
-  }, 900);
-
-  let divTimer = setTimeout(function () {
-    setDivStyle("state2");
-  }, 600);
-
-  let stackTimer = setTimeout(function() {
-    setStackStyle("state2");
-  }, 1500);
-
-  let projButtonTimer = setTimeout(function() {
-    setProjButtonStyle("state2");
-    clearTimeout(projButtonTimer);
-  }, 3200);
-
-
   useEffect(() => {
+    let cardTimer = setTimeout(function () {
+      setCardStyle("state2");
+      clearTimeout(cardTimer);
+    }, 300);
+  
+    let photoTimer = setTimeout(function () {
+      setPhotoStyle("state2");
+      clearTimeout(photoTimer);
+    }, 900);
+  
+    let divTimer = setTimeout(function () {
+      setDivStyle("state2");
+      clearTimeout(divTimer);
+    }, 600);
+  
+    let stackTimer = setTimeout(function() {
+      setStackStyle("state2");
+      clearTimeout(stackTimer);
+    }, 1500);
+  
+    let projButtonTimer = setTimeout(function() {
+      setProjButtonStyle("state2");
+      clearTimeout(projButtonTimer);
+    }, 3200);
     return () => {
       clearTimeout(cardTimer);
       clearTimeout(photoTimer);

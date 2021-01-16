@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom"; // ,useLocation
 import "./DesktopMenu.css";
 
@@ -6,20 +6,26 @@ let page="/";
 
 function getPage() {
   let location = useLocation();
- // console.log('My Location: ', location.pathname);
   if (location && location.pathname) {
     page = location.pathname;
   }
 }
+
 function DesktopMenu(props) {
 
   getPage();
   const [linkStyle, setLinkStyle] = useState("");
 
-  let myTimer = setTimeout(function () {
-    setLinkStyle("state2");
-    clearTimeout(myTimer);
-  }, 300);
+  useEffect(() => {
+    let myTimer = setTimeout( () => {
+      setLinkStyle("state2");
+      clearTimeout(myTimer);
+    }, 300);
+    // let React clear our timeout so we don't have a memory leak
+    return () => clearTimeout(myTimer);
+  });
+
+
 
   return (
     <div className="desktopMenu">

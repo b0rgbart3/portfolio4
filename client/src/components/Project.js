@@ -31,10 +31,8 @@ function Project(props) {
 
   function reactToInfoClick(e) {
     if (!up) {
-      console.log("Not yet hit, so reacting to image.");
       reactToImage(e);
     } else {
-      console.log("reacting.");
       e.stopPropagation();
       e.preventDefault();
 
@@ -78,11 +76,6 @@ function Project(props) {
       // Setting this highlight style -- allows the white circle highlight
       // to animate to a full width that is larger than the containing box
 
-      console.log("");
-      console.log("mouseX:", mouseX);
-      console.log("mouseY:", mouseY);
-      console.log("");
-
       setHighlightStyle({
         left: mouseX - 350 + "px",
         top: mouseY - 350 + "px",
@@ -103,9 +96,6 @@ function Project(props) {
     }, 3);
 
     setUp(false);
-
-    // let imageHeight = projImg.current.height + 8;
-    // let imageContainerHeight = projImgContainer;
 
     if (!hit) {
       // this triggers the info box to animate upwards
