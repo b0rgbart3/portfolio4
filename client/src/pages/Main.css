@@ -190,6 +190,25 @@ p.shieldTitle {
 
 }
 
+
+.state1 {
+  opacity:0;
+}
+
+.state2 {
+  opacity:1;
+}
+
+.shieldContainer.state2{
+ left:0px;
+}
+
+
+.mbutton.state2 {
+  left:0px;
+  opacity:1;
+}
+
 @media only screen and (min-width:750px) {
 
   .Home {
@@ -247,22 +266,4 @@ p.shieldTitle {
     opacity:1;
   }
 
-}
-
-.state1 {
-  opacity:0;
-}
-
-.state2 {
-  opacity:1;
-}
-
-.shieldContainer.state2{
- left:0px;
-}
-
-
-.mbutton.state2 {
-  left:0px;
-  opacity:1;
 }
