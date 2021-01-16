@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { PortfolioProvider } from "./utils/GlobalState";
-import Menu from "./components/Menu"
+import Menu from "./components/MobileMenu"
 import DesktopMenu from "./components/DesktopMenu"
 import Main from "./pages/Main"
 import Projects from "./pages/Projects"
