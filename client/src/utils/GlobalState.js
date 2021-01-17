@@ -3,8 +3,9 @@
    -- originally this was used to keep state
       for the menu - but that has now been refactored
       as a local state
-   -- For now, our Global State simply holds the 
-      Project JSON data
+   -- For now, our Global State is not being used
+   -- but I am leaving the architecture in place
+   -- in case I need it later
 */
 
 import React, { createContext, useReducer, useContext } from "react";

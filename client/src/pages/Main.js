@@ -6,7 +6,7 @@ import express from "../images/shields/express.png";
 import react from "../images/shields/react.png";
 import node from "../images/shields/node.png";
 import sequelize from "../images/shields/sequelize.png";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import Shield from "../components/Shield";
 
 function Main() {
@@ -15,8 +15,31 @@ function Main() {
   const [divStyle, setDivStyle] = useState("state1");
   const [photoStyle, setPhotoStyle] = useState("state1");
   const [stackStyle, setStackStyle] = useState("state1");
-  const [projButtonStyle, setProjButtonStyle] = useState("state1");
+  // const [projButtonStyle, setProjButtonStyle] = useState("state1");
+  let bio = `Passionate about the web, and addicted to learning. I apply the Bauhaus school of design theory to software development with a focus on reducing cognitive friction to create intuitive interfaces. As a digital polyglot, I have the knowledge and understanding of a broad range of creative and web development technologies, which allows me to think in terms of common principles and design systems. I’m currently looking to join a team of engineers who enjoy collaborating to build apps that benefit the people who use them. `;
 
+  bio = `I have a deep knowledge of a broad range of web development technologies and computer science. I also have extensive experience in advertising, animation, marketing and design. I build applications that people find intuitive, and I’m looking to join a team of engineers that enjoy collaborating and value life-long learning.`;
+
+  function BioBlock() {
+    return (
+      <>
+        <div className="hometag">
+          <span className="nobr">Full Stack Developer</span>
+        </div>
+        <div className="homebio">
+          <p>{bio}</p>
+      
+            <Link to="/projects">
+              <div className={"mbutton "}>Projects</div>
+            </Link>
+            <Link to="/resume">
+              <div className={"mbutton "}>resume</div>
+            </Link>
+        
+        </div>
+      </>
+    );
+  }
   useEffect(() => {
     let cardTimer = setTimeout(function () {
       setCardStyle("state2");
@@ -38,16 +61,17 @@ function Main() {
       clearTimeout(stackTimer);
     }, 1500);
 
-    let projButtonTimer = setTimeout(function () {
-      setProjButtonStyle("state2");
-      clearTimeout(projButtonTimer);
-    }, 3200);
+    // let projButtonTimer = setTimeout(function () {
+    //   setProjButtonStyle("state2");
+    //   clearTimeout(projButtonTimer);
+    // }, 3200);
+
     return () => {
       clearTimeout(cardTimer);
       clearTimeout(photoTimer);
       clearTimeout(divTimer);
       clearTimeout(stackTimer);
-      clearTimeout(projButtonTimer);
+      //clearTimeout(projButtonTimer);
     };
   });
 
@@ -61,24 +85,7 @@ function Main() {
             DORITY
           </div>
           <div className="homebody">
-            <div className="hometag">
-              <span className="nobr">Full Stack Developer</span>
-            </div>
-            <div className="homebio">
-              I have a deep knowledge of a broad range of web development
-              technologies and computer science. I also have extensive
-              experience in advertising, animation, marketing and design. I
-              build applications that people find intuitive, and I’m looking to
-              join a team of engineers that enjoy collaborating and value
-              life-long learning.<br></br>
-              <br></br>
-              <Link to="/projects">
-                <div className={"mbutton " + projButtonStyle}>Projects</div>
-              </Link>
-              <Link to="/resume">
-                <div className={"mbutton " + projButtonStyle}>resume</div>
-              </Link>
-            </div>
+            <BioBlock />
           </div>
         </div>
         <div className="homeColumn2">
@@ -97,26 +104,7 @@ function Main() {
           </div>
         </div>
         <div className="homebodyMobile">
-          <div className="hometag">
-            <span className="nobr">Full Stack Developer</span>
-          </div>
-          <div className="homebio">
-            I have a deep knowledge of a broad range of web development
-            technologies and computer science. I also have extensive experience
-            in advertising, animation, marketing and design. I build
-            applications that people find intuitive, and I’m looking to join a
-            team of engineers that enjoy collaborating and value life-long
-            learning.<br></br>
-            <br></br>
-            <Link to="/projects">
-              <div className="mbutton">Projects</div>
-            </Link>
-            <Link to="/resume">
-              <div className="mbutton">resume</div>
-            </Link>
-            <br></br>
-            <br></br>
-          </div>
+          <BioBlock />
           <p className="shieldTitle">Current Development Stack:</p>
           <div className="shieldGroup group">
             <div className="shieldContainer">

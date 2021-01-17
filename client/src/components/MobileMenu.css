@@ -1,67 +1,69 @@
 .MenuPanel {
     position: absolute;
-    margin:0;
-    padding:0;
-    border:none;
-    height:100vh;
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: 100vh;
     box-sizing: border-box;
-    display:inline-block;
+    display: inline-block;
     transition: all .5s;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 }
+
 .Menu {
     position: relative;
-    background-color:rgba(200,200,200,.25);
-    width:300px;
-    height:100vh;
-    box-shadow:2px 2px 8px rgba(0,0,0,.4);
+    background-color: rgba(200, 200, 200, .25);
+    width: 300px;
+    height: 100vh;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .4);
     box-sizing: border-box;
-    background: rgb(44,104,128);
-background: linear-gradient(360deg, rgba(44,104,128,1) 0%, rgba(111,152,168,1) 83%);
-color:black;
+    background: rgb(44, 104, 128);
+    background: linear-gradient(360deg, rgba(44, 104, 128, 1) 0%, rgba(111, 152, 168, 1) 83%);
+    color: black;
 }
 
 .logo {
     font-family: futura-pt, sans-serif;
     font-weight: 600;
-    font-size:50px;
-    text-align:left;
-    line-height:1em;
-    padding-left:28px;
-    padding-top:50px;
+    font-size: 50px;
+    text-align: left;
+    line-height: 1em;
+    padding-left: 28px;
+    padding-top: 50px;
     user-select: none;
     cursor: pointer;
 }
 
 .menuList {
-    list-style:none;
-    text-align:left;
+    list-style: none;
+    text-align: left;
     font-family: futura-pt, sans-serif;
-    font-size:28px;
-    line-height:2em;
+    font-size: 28px;
+    line-height: 2em;
     font-weight: 600;
-    letter-spacing:-1px;
-    padding:0;
-    margin:0;
-    padding-top:20px;
+    letter-spacing: -1px;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
     cursor: pointer;
     user-select: none;
 }
 
 .menuList li {
-    padding-left:30px;
+    padding-left: 30px;
     cursor: pointer;
     user-select: none;
 }
+
 .menuList li:hover {
-    background-color:#7ebcd4;
+    background-color: #7ebcd4;
     cursor: pointer;
     user-select: none;
 }
 
 .menuList li:active {
-    background-color:#8edaf9;
+    background-color: #8edaf9;
     cursor: pointer;
     user-select: none;
 }
@@ -77,67 +79,67 @@ color:black;
 }
 
 .handle {
-    display:inline-block;
+    display: inline-block;
     position: absolute;
-    top:0px;
-    left:300px;
-    width:90px;
-    height:90px;
-    background-color:#6f98a8;
+    top: 0px;
+    left: 300px;
+    width: 90px;
+    height: 90px;
+    background-color: #6f98a8;
     box-sizing: border-box;
-    color:black;
+    color: black;
     vertical-align: top;
     font-family: futura-pt-condensed, sans-serif;
     font-weight: 800;
     font-style: italic;
-    font-size:46px;
+    font-size: 46px;
     letter-spacing: -10px;
-    box-shadow:6px 2px 8px rgba(0,0,0,.4);
-    border-radius:0 8px 8px 0;
+    box-shadow: 6px 2px 8px rgba(0, 0, 0, .4);
+    border-radius: 0 8px 8px 0;
     cursor: pointer;
     user-select: none;
 }
 
 .handle:hover {
-    background-color:#7ebcd4;
+    background-color: #7ebcd4;
     cursor: pointer;
-    user-select:none;
+    user-select: none;
 }
 
 .handle:active {
-    background-color:#84d5f5;
+    background-color: #84d5f5;
     cursor: pointer;
-    user-select:none;
+    user-select: none;
 }
 
 .handle:focus {
     cursor: pointer;
-    user-select:none;
+    user-select: none;
 }
+
 .handle:visited {
     cursor: pointer;
-    user-select:none;
+    user-select: none;
 }
 
 .slashes {
-    width:50px;
-    padding-top:18px;
+    width: 50px;
+    padding-top: 18px;
     user-select: none;
     cursor: pointer;
 }
 
-.m_stage1{
-    left:0;
+.m_stage1 {
+    left: 0;
 }
-.m_stage2{
-    left:-300px;
+
+.m_stage2 {
+    left: -300px;
 }
-/* font-family: futura-pt-bold, sans-serif;
-font-weight: 700;
-font-style: italic; */
+
 
 @media only screen and (min-width:740px) {
     .MenuPanel {
-        display:none;
+        display: none;
     }
 }

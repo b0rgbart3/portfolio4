@@ -1,7 +1,14 @@
-import React from "react";
+// This is a handy way to utilize Materialize layout
+// components inside of a React app.
+// the only page I'm using it on in this app is the
+// 'nomatch.js' page - (the 404).
+// All of my other pages have custom styles that have
+// their own media queries.
+// This pattern is a vestige of my work in Angular.
 
 // Exporting the Container, Row, and Col components from this file
 
+import React from "react";
 // This Container component allows us to use a bootstrap container without worrying about class names
 export function Container({ fluid, children }) {
   return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;

@@ -85,8 +85,20 @@
   font-family: futura-pt, sans-serif;
   line-height:30px;
   padding-top:20px;
-  padding-right:5%;
+  padding-right:12%;
+  padding-bottom:40px;
+  box-sizing: border-box;
+  margin-bottom:20px;
+}
 
+.homebio p {
+  margin-bottom:40px;
+}
+
+.inlineLinks {
+  border:4px solid purple;
+  width:100%;
+  min-height:80px;
 }
 
 .homebodyMobile {
@@ -158,10 +170,8 @@ p.shieldTitle {
   text-align:center;
   margin-right:10px;
   margin-bottom:20px;
-  transition:all .6s;
   position:relative;
-  left:-40px;
-  opacity:0;
+  transition: all 2s;
 }
 
 .mbutton:hover {

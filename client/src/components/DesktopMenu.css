@@ -1,69 +1,67 @@
-
-
 .desktopMenu {
-    margin-bottom:0px;
- 
+    margin-bottom: 0px;
+
 }
 
 .dmenuList {
-    list-style:none;
-    text-align:left;
+    list-style: none;
+    text-align: left;
     font-family: futura-pt, sans-serif;
-    font-size:28px;
-    line-height:2em;
+    font-size: 28px;
+    line-height: 2em;
     font-weight: 500;
-    letter-spacing:-1px;
-    padding:0;
-    margin:0;
-    padding-top:0px;
+    letter-spacing: -1px;
+    padding: 0;
+    margin: 0;
+    padding-top: 0px;
     cursor: pointer;
     user-select: none;
     text-align: center;
-    /* border-bottom:3px solid rgba(120, 151, 166,.2); */
 }
 
 .dmenuList li {
-    padding-left:.5em;
-    padding-right:.5em;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
     cursor: pointer;
     user-select: none;
-    display:inline-block;
-    color:#3e5f70;
-    opacity:.25;
-    position:relative;
-    left:0px;
-    top:-100px;
+    display: inline-block;
+    color: #3e5f70;
+    opacity: .25;
+    position: relative;
+    left: 0px;
+    top: -100px;
     transition: all 1s;
 }
 
 .dmenuList li.state2 {
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     cursor: pointer;
     user-select: none;
-    display:inline-block;
-    color:#3e5f70;
-    opacity:.25;
-    left:0px;
-    top:0;
+    display: inline-block;
+    color: #3e5f70;
+    opacity: .25;
+    left: 0px;
+    top: 0;
 }
 
 .dmenuList li.active {
-    color:black;
-    opacity:1;
+    color: black;
+    opacity: 1;
 }
+
 .dmenuList li:hover {
-    opacity:1;
+    opacity: 1;
     cursor: pointer;
     user-select: none;
 }
 
 .dmenuList li:active {
-color:black;
+    color: black;
     cursor: pointer;
     user-select: none;
 }
@@ -80,6 +78,6 @@ color:black;
 
 @media only screen and (max-width:740px) {
     .desktopMenu {
-        display:none;
+        display: none;
     }
 }

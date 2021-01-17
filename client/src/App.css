@@ -2,63 +2,67 @@
 
 html {
   background-color: #282c34;
-  background-color:#dae4e9;
-  margin:0;
-  padding:0;
+  background-color: #dae4e9;
+  margin: 0;
+  padding: 0;
 
 }
+
 body {
-  margin:0;
-  padding:0;
-  min-height:100vh;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   /* background: rgb(40,44,52); */
   /* background: linear-gradient(142deg, rgba(40,44,52,1) 36%, rgba(27,59,122,1) 100%); */
 }
 
 .medium {
-font-family: futura-pt, sans-serif;
-font-weight: 500;
-font-style: normal;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .book {
   font-family: futura-pt, sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .demi {
   font-family: futura-pt, sans-serif;
-font-weight: 600;
-font-style: normal;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .futBold {
   font-family: futura-pt-bold, sans-serif;
-font-weight: 700;
-font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
 
 header {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size:44px;
+  font-size: 44px;
 }
 
 .App {
   text-align: center;
-  color:black;
-  padding:0;
-  margin:0;
+  color: black;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   position: relative;
 }
-.nobr	{ white-space:nowrap; }
+
+.nobr {
+  white-space: nowrap;
+}
 
 a {
-  text-decoration:none;
-  color:black;
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   user-select: none;
 }
@@ -67,12 +71,15 @@ a {
 /*  The ClearFix by Tony Aslett and Nicholas Gallagher */
 .group:before,
 .group:after {
-content: "";
-display: table; }
+  content: "";
+  display: table;
+}
 
 .group:after {
-clear: both; }
+  clear: both;
+}
 
 .group {
-zoom: 1;
-/* IE6&7 */ }
+  zoom: 1;
+  /* IE6&7 */
+}
