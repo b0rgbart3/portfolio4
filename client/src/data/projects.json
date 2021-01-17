@@ -59,7 +59,6 @@
         "tech": ["Node.js","Express","MySQL","Handlebars"],
         "shields": ["node","express","sql","handlebars"]
     },
-
     {
         "title": "Name List",
         "description": "This app displays a list of names such as an employee directory, and allows you to search for a person based on any keyword filter.  It also allows you to sort the list of names in ascending or descending order of any column, such as first name, last name, phone number, or department.",
@@ -133,7 +132,4 @@
         "tech": ["Php", "Javascript", "MySQL"],
         "shields": ["js", "php", "sql" ]
     }
-
-
-
 ]
