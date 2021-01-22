@@ -3,7 +3,8 @@
 
 .contactButtons {
     text-align: left;
-    padding-bottom:80px;
+    padding-bottom:0px;
+    margin-top:40px;
 }
 .resumeBox {
     background-color:rgb(248,248,248);
@@ -12,8 +13,8 @@
     color:black;
     margin:auto;
     text-align:left;
-    padding-left:20px;
-    padding-right:20px;
+    padding-left:70px;
+    padding-right:70px;
     box-sizing: border-box;
     font-family: futura-pt, sans-serif;
     font-family: 'Rubik', serif;
@@ -23,7 +24,7 @@
     margin-top:0;
     display:inline-block;
     box-sizing: border-box;
-    padding-top:60px;
+    padding-top:40px;
     max-width:1050px;
 }
 
@@ -34,6 +35,10 @@
     column-count:1;
 }
 
+.endorse {
+    margin-top:120px;
+}
+
 .resumeBox h1 {
     font-family: futura-pt, sans-serif;
     font-weight: 500;
@@ -42,8 +47,8 @@
     margin:0;
     padding:0;
     line-height:1em;
-    margin-top:50px;
-    padding-top:40px;
+    margin-top:0px;
+    padding-top:30px;
 }
 
 .resumeBox h2 {
@@ -54,6 +59,7 @@
     margin-bottom:18px;
     font-family: futura-pt, sans-serif;
     font-size:24px;
+    font-weight: 600;
 }
 
 .resumeBox h3 {
@@ -115,7 +121,7 @@
     opacity:1;
 }
 .pdfLink {
-    width:140px;
+
     text-align: center;
     color:#7ebcd4;
     display:inline-block;
@@ -124,12 +130,13 @@
 }
 
 .googleLink {
-    width:140px;
     text-align: center;
     display:inline-block;
     float:right;
     color:#7ebcd4;
     margin-bottom:10px;
+    position:relative;
+    left:20px;
 }
 .docIcon {
     
@@ -141,62 +148,16 @@
   
 }
 
-@media only screen and (min-width:800px) {
-
-    .resumeBox {
-       
-        padding:20px;
-        width:90%;
-        margin:auto;
-        margin-top:20px;
-        padding-left:80px;
-        padding-right:80px;
-        padding-top:60px;
-        box-shadow:0 0 20px #7ebcd4;
-        padding-bottom:80px;
-        margin-bottom:180px;
-
-    }
-
-
-.clientList {
-    /* column-count:2; */
-}
-.livewebsiteList {
-    column-count:2;
+.textLink {
+    color:blue;
+    margin-bottom:58px;
+    display:block;
+   
 }
 
 
-}
-
-@media only screen and (min-width:700px) {
-    .resumeBox {
-        padding-left:40px;
-        padding-right:44px;
-
-    }
-}
+@media only screen and (min-width:740px) {
 
 
-@media only screen and (min-width:1200px) {
-    .resumeBox {
-        padding:20px;
-        margin:auto;
-        margin-top:20px;
-        padding-left:80px;
-        padding-right:80px;
-        padding-top:60px;
-        box-shadow:0 0 20px #7ebcd4;
-        padding-bottom:80px;
-        margin-bottom:180px;
-    }
 
-    .clientList {
-        /* column-count:2; */
-    }
-    .livewebsiteList {
-        column-count:3;
-    }
-    
-    
 }

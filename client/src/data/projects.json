@@ -30,6 +30,16 @@
         "shields": ["react", "redux"]
     },
     {
+        "title": "LightBurst 2.0",
+        "description": "The game consists of a square grid of lights. When the game starts, a random pattern of these lights is switched on. The goal of the puzzle is to switch all the lights off. Originally writen in Objective C, I converted the codebase to Flutter for cross platform compatibility including iOS and Android  ",
+        "images":["lightburst2.jpg"],
+        "live":"",
+        "github":"https://github.com/b0rgbart3/box",
+        "features": [""],
+        "tech": ["Flutter", "Dart"],
+        "shields": ["flutter", "dart"]
+    },
+    {
         "title": "LightBurst",
         "description": "A puzzle game for the iPhone, iPad and any iOS device.  The game consists of a square grid of lights. When the game starts, a random pattern of these lights is switched on. Pressing any of the lights will toggle it and the adjacent lights. The goal of the puzzle is to switch all the lights off.",
         "images":["lightburst.jpg"],

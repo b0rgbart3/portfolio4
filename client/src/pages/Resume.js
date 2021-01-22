@@ -6,6 +6,7 @@ import githubIcon from "../images/icons/github_round.svg";
 import googleDocIcon from "../images/icons/google_doc.svg";
 import pdfDocIcon from "../images/icons/pdf_doc.svg";
 import pdf from '../images/BART_DORITY_resume.pdf';
+import { Link } from "react-router-dom";
 
 function Resume() {
 
@@ -22,7 +23,7 @@ function Resume() {
           <div className="docIcon">
             <img src={googleDocIcon} alt='google_doc_version' />
           </div>
-          Google Doc
+          GoogleDoc
         </div>
       </a>
 
@@ -38,10 +39,10 @@ function Resume() {
           PDF
         </div>
       </a>
-      <h1>BART DORITY</h1>
-      <h2>
-        <span className="nobr">Full Stack Developer</span>
-      </h2>
+      <Link to="/endorsements">
+              <div className="mbutton endorse">endorsements</div>
+            </Link>
+
       <div className="contactButtons">
         <a href="mailto:bartdority@gmail.com" className="resumeLink">
           <div className="emailLinker">
@@ -68,11 +69,19 @@ function Resume() {
             <img src={githubIcon} alt='github' />
           </div>
         </a>
+        
         {/* <div className="emailLinker">
           <img src={textIcon} alt='email_link' />
           <span className="nobr">(415) 503-7044</span>{" "}
         </div> */}
       </div>
+
+
+      <h1>BART DORITY</h1>
+      <h2>
+        <span className="nobr">Full Stack Developer</span>
+      </h2>
+
       {/* <h2>Portfolio</h2>
 <ul>
     <li><a href="https://b0rgbart3.github.io/portfolio/" target="_blank" className="resumeLink">b0rgbart3.github.io/portfolio/ </a></li>

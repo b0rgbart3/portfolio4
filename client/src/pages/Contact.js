@@ -9,16 +9,9 @@ function Contact() {
   const fullname = useRef();
   const email = useRef();
   const message = useRef();
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
   const [errMsg, setErrMsg] = useState("");
   const [sent, setSent] = useState(false);
-
-  useEffect(() => {
-    // Update the document title using the browser API
-    setError(false);
-    setErrMsg("");
-    setSent(false);
-  }, []);
 
   function handleOnSubmit(e) {
     e.preventDefault();
@@ -48,7 +41,11 @@ function Contact() {
               setErrMsg("");
               setSent(true);
             })
-            .catch((err) => console.log(err));
+            .catch((err) => {
+              console.log(err);
+              setError(true);
+              setErrMsg("Unable to send your message.  Please try again later.");
+            });
         }
       }
     }
@@ -63,30 +60,23 @@ function Contact() {
             </div>
           </a>
           ​{" "}
-          <a
-            href="https://www.linkedin.com/in/bart-dority/"
+          <a href="https://www.linkedin.com/in/bart-dority/"
             className="resumeLink"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             <div className="emailLinker">
               <img src={linkedInIcon} alt="linked_in" />
             </div>
           </a>{" "}
-          <a
-            href="https://github.com/b0rgbart3"
+          <a href="https://github.com/b0rgbart3"
             className="resumeLink"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
             <div className="emailLinker">
               <img src={githubIcon} alt="github_icon" />
             </div>
           </a>
-          {/* <div className="emailLinker">
-          <img src={textIcon} alt='email_link' />
-          <span className="nobr">(415) 503-7044</span>{" "}
-        </div> */}
+
         </div>
         <div className="actualForm group">
           {error ? <div className="error">{errMsg} </div> : <div></div>}

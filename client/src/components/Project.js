@@ -170,11 +170,12 @@ function Project(props) {
               onClick={() => gotoGit(props.project.github)}>
               Repo
             </div>
+            {props.project.live ?
             <div className="st_button projectLiveLink"
               onClick={() => gotoLive(props.project.live)}>
               {" "}
               Live Demo
-            </div>
+            </div> : <></> }
           </div>
         </div>
       </div>

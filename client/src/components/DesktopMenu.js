@@ -48,6 +48,11 @@ function DesktopMenu() {
         (   <li className={ 'active ' + linkStyle}>/RESUME</li>):
         (   <li className={ linkStyle}>/RESUME</li>)}
         </Link>
+        {/* <Link to="/endorsements">
+        { page==="/endorsements"?
+        (   <li className={ 'active ' + linkStyle}>/ENDORSEMENTS</li>):
+        (   <li className={ linkStyle}>/ENDORSEMENTS</li>)}
+        </Link> */}
         <Link to="/contact">
         { page==="/contact"?
         (   <li className={ 'active ' + linkStyle}>/CONTACT</li>):

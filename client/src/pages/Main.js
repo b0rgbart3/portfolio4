@@ -35,6 +35,9 @@ function Main() {
             <Link to="/resume">
               <div className={"mbutton "}>resume</div>
             </Link>
+            <Link to="/endorsements">
+              <div className={"mbutton "}>endorsements</div>
+            </Link>
         
         </div>
       </>
