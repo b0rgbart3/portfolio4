@@ -28,6 +28,9 @@ function Menu() {
           <Link to="/projects" onClick={toggleMenu}>
             <li>/PROJECTS</li>
           </Link>
+          <Link to="/endorsements">
+            <li onClick={toggleMenu}>/ENDORSEMENTS</li>
+          </Link>
           <Link to="/resume">
             <li onClick={toggleMenu}>/RESUME</li>
           </Link>

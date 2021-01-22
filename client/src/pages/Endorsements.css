@@ -39,7 +39,7 @@
     margin:0;
     padding:0;
     line-height:1em;
-    margin-top:30px;
+    margin-top:50px;
     padding-top:0px;
 }
 
@@ -66,10 +66,10 @@
 
 
 .endPic {
-    width:140px;
+    width:180px;
     border-radius:50%;
     position:relative;
- 
+    box-shadow:0 0 28px rgb(146, 183, 194);
     left:-10px;
 }
 
@@ -79,6 +79,8 @@
     width:100%;
     padding-right:20px;
     text-align: center;
+    box-sizing: border-box;
+    font-family: futura-pt, sans-serif;
 }
 .source p {
     line-height:1em;
@@ -95,6 +97,7 @@
  margin-top:14px;
  font-size:15px;
  line-height:1.3em;
+ padding-bottom:10px;
 }
 
 .quote {
@@ -107,6 +110,15 @@
     line-height:1.4em;
     padding-left:20px;
     box-sizing: border-box;
+    float:none;
+    width:100%;
+}
+
+.endorsementObject {
+   box-sizing:border-box;
+margin-bottom:24px;
+padding-bottom:24px;
+border-bottom:4px solid rgba(126, 188, 212,.4);
 }
 
 @media only screen and (min-width:740px) {
@@ -116,23 +128,16 @@
         width:23%;
         padding-right:20px;
     }
+    .quote {
+        float:left;
+        width:76%;
+    }
     .endBox {
         padding-left:70px;
         padding-right:70px;
     }
+    .endPic {
+        width:156px;
+    }
 }
 
-@media only screen and (min-width:800px) {
-
-
-
-
-
-}
-
-
-@media only screen and (min-width:1200px) {
-
-
-    
-}
