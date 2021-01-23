@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import "./TechChart.css";
 // import sql from "../images/shields/sql.png";
 // import express from "../images/shields/express.png";
@@ -6,9 +6,10 @@ import "./TechChart.css";
 // import node from "../images/shields/node.png";
 // import sequelize from "../images/shields/sequelize.png";
 import { Link } from "react-router-dom";
-import Shield from "../components/Shield";
 
 function TechChart() {
+  const [cardStyle, setCardStyle] = useState("tcBox");
+  const [chartStyle, setChartStyle] = useState("chart");
   const techObjects = [
     {
     "tech": "React",
@@ -67,13 +68,13 @@ function TechChart() {
     {
         "tech": "Flutter",
         "shield": "flutter",
-        "duration": "1 year",
+        "duration": "3 months",
         "projects": "Light Burst 2.0"  
     },
     {
         "tech": "Dart",
         "shield": "dart",
-        "duration": "1 year",
+        "duration": "3 months",
         "projects": "Light Burst 2.0"   
     },
     {
@@ -103,9 +104,21 @@ function TechChart() {
 
   ];
 
+  useEffect(() => {
+    let cardTimer = setTimeout(function () {
+      setCardStyle("tcBox tcBox2");
+      clearTimeout(cardTimer);
+    }, 100);
+    let chartTimer = setTimeout(function () {
+      setChartStyle("chart chart2");
+      clearTimeout(chartTimer);
+    },800);
+  });
+
 
   return (
-    <div className="tcBox">
+    <div className="homeContainer">
+    <div className={cardStyle}>
      <Link to="/">
       <h1>BART DORITY</h1>
       <h2>
@@ -113,7 +126,8 @@ function TechChart() {
       </h2></Link>
       <br></br>
       <h2 id="endH2">Technical Skills</h2>
-      <div className="tech">
+      <div className={chartStyle}>
+      <div className="chartLabels">
         <div className='techShield'></div>
         <div className='techName label'>Technology</div>
         <div className='techYears label'>Experience</div>
@@ -137,6 +151,8 @@ function TechChart() {
        </div>
         
       ))}
+      </div>
+    </div>
     </div>
   );
 }

@@ -9,19 +9,30 @@
     color:black;
     margin:auto;
     text-align:left;
-    padding-left:50px;
-    padding-right:50px;
+    padding-left:10px;
+    padding-right:10px;
     box-sizing: border-box;
     font-family: futura-pt, sans-serif;
     font-family: 'Rubik', serif;
     box-shadow:0 0 28px rgb(146, 183, 194);
-    padding-bottom:80px;
     margin-bottom:180px;
     margin-top:20px;
     display:inline-block;
     box-sizing: border-box;
-    padding-top:60px;
     max-width:1050px;
+    transition:all .5s;
+    opacity:0;
+    max-height:20px;
+    overflow: hidden;
+    min-height:0px;
+}
+
+.tcBox2 {
+    max-height:2000px;
+    opacity:1;
+    padding-bottom:80px;
+    padding-top:60px;
+    min-height:1000px;
 }
 
 
@@ -58,6 +69,17 @@
     border-bottom:4px solid rgba(126, 188, 212,.4);
 }
 
+.chart {
+    max-height:1px;
+    overflow: hidden;
+    transition: all 2s;
+    opacity:0;
+}
+.chart2 {
+    max-height:2000px;
+    opacity:1;
+}
+
 .tech {
     border-bottom:1px dashed rgb(146, 183, 194);
     width:100%;
@@ -65,7 +87,10 @@
     flex-direction:row;
     align-items:center;
     font-family: futura-pt, sans-serif;
+    transition:all 1s;
+ 
 }
+
 
 .techName {
     display:inline-block;
@@ -88,15 +113,21 @@
     width: 50%;
   
 }
-
+.chartLabels {
+    border-bottom:2px solid rgba(146, 183, 194,.25);;
+}
 .label {
     font-weight:bold;
+    font-size:13px;
 }
 .alt {
     background-color:rgba(126, 188, 212,.25);
 }
 
 @media only screen and (min-width:740px) {
-
+    .tcBox {
+        padding-left:50px;
+        padding-right:50px;
+    }
 }
 

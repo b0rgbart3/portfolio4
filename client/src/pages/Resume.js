@@ -117,7 +117,7 @@ function Resume() {
       <br></br>
       <h2>Technical Skills</h2>
       <p>
-      Javascript, Node.js, React, Angular, Flutter, Dart, Python, Ruby, Ruby on Rails, Java, Objective-C, Type- script, ES6, MySQL, HTML 5, CSS 3, MongoDB, Mongoose, Express, JQuery, Materialize, Sass, Heroku, AWS, X-Code, PHP, WordPress, Custom WordPress Theme development, AJAX, Github, ORM, Handlebars, Bootstrap, JSON, Object Oriented Programming, Problem-solving, RESTful API Design, Require.js, Greensock Animation, Unix, git, npm, VS-Code, Adobe CS Suite, Flash, ColdFusion, and ActionScript.
+      Javascript, Node.js, React, Angular, Flutter, Dart, Python, Ruby, Ruby on Rails, Java, Objective-C, Typescript, ES6, MySQL, HTML 5, CSS 3, MongoDB, Mongoose, Express, JQuery, Materialize, Sass, Heroku, AWS, X-Code, PHP, WordPress, Custom WordPress Theme development, AJAX, Github, ORM, Handlebars, Bootstrap, JSON, Object Oriented Programming, Problem-solving, RESTful API Design, Require.js, Greensock Animation, Unix, git, npm, VS-Code, Adobe CS Suite, Flash, ColdFusion, and ActionScript.
       </p>
 
       {/* React
