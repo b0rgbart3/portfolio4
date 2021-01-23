@@ -28,7 +28,9 @@ function Main() {
         </div>
         <div className="homebio">
           <p>{bio}</p>
-      
+          <Link to="/techchart">
+              <div className={"mbutton "}>Skills</div>
+            </Link>
             <Link to="/projects">
               <div className={"mbutton "}>Projects</div>
             </Link>
@@ -38,9 +40,7 @@ function Main() {
             <Link to="/endorsements">
               <div className={"mbutton "}>endorsements</div>
             </Link>
-            <Link to="/techchart">
-              <div className={"mbutton "}>Technical Skills</div>
-            </Link>
+
         
         </div>
       </>
