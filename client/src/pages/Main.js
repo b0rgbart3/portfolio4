@@ -38,6 +38,9 @@ function Main() {
             <Link to="/endorsements">
               <div className={"mbutton "}>endorsements</div>
             </Link>
+            <Link to="/techchart">
+              <div className={"mbutton "}>Technical Skills</div>
+            </Link>
         
         </div>
       </>
@@ -99,11 +102,11 @@ function Main() {
           <div className={"bartsShields " + stackStyle}>
             <p className="shieldTitle">Current Development Stack:</p>
 
-            <Shield shieldNumber="0" />
-            <Shield shieldNumber="1" />
-            <Shield shieldNumber="2" />
-            <Shield shieldNumber="3" />
-            <Shield shieldNumber="4" />
+            <Shield shieldNumber="0" animate="true" />
+            <Shield shieldNumber="1" animate="true"  />
+            <Shield shieldNumber="2" animate="true"  />
+            <Shield shieldNumber="3" animate="true"  />
+            <Shield shieldNumber="4" animate="true"  />
           </div>
         </div>
         <div className="homebodyMobile">

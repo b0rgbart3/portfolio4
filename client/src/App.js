@@ -9,6 +9,7 @@ import Projects from "./pages/Projects"
 import Resume from "./pages/Resume"
 import Contact from "./pages/Contact"
 import Endorsements from "./pages/Endorsements"
+import TechChart from "./pages/TechChart"
 import NoMatch from "./pages/NoMatch";
 
 // Portfolio Provider is our Global State 
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/endorsements" component={Endorsements} />
+            <Route exact path="/techchart" component={TechChart} />
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/BART_DORITY_resume.pdf" />
             <Route component={NoMatch} />

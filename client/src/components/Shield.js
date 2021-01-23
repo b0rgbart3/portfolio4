@@ -12,13 +12,19 @@ function Shield(props) {
   let shields = [ react, node, express, sql, sequelize ];
   let imageSource = shields[props.shieldNumber];
 
+
   useEffect(() => {
-    let animTimer = setTimeout(function () {
-      setShieldStyle("state2");
-      clearTimeout(animTimer);
-    }, (200 * props.shieldNumber) + 2000);
-    // let React clear our timeout so we don't have a memory leak
-    return () => clearTimeout(animTimer);
+    let animTimer;
+ 
+      console.log("Animating");
+      animTimer = setTimeout(function () {
+        setShieldStyle("state2");
+        clearTimeout(animTimer);
+      }, (200 * props.shieldNumber) + 2000);
+      // let React clear our timeout so we don't have a memory leak
+      return () => clearTimeout(animTimer);
+  
+
   });
 
   return (

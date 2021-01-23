@@ -127,6 +127,7 @@
   margin-bottom:40px;
   transition: all 1s;
   position: relative;
+  border:1px solid red;
 }
 
 .shield {

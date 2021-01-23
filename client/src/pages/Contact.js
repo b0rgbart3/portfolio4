@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState  } from "react";
 import "./Contact.css";
 import API from "../utils/API";
 import emailIcon from "../images/icons/email.svg";

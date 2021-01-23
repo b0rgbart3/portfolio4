@@ -51,10 +51,6 @@ function Endorsements() {
         quote:
           "Bart was a team member that I would instantly pick to work with again. He went above and beyond our boot camp curriculum and introduced new knowledge to our teammates. Bart was our go-to guy if we had any bugs in our code that we couldn't figure out. It was a pleasure working on a group project with him.",
       },
-
-
-
-
       
 
   ];
@@ -74,7 +70,7 @@ function Endorsements() {
         <div className="endorsementObject group" key={index}>
           <div className="source">
             <div className="endPhoto">
-              <img src={photos[eObj.photo]} className="endPic" />
+              <img src={photos[eObj.photo]} className="endPic" alt={eObj.source}/>
             </div>
             <div className="address">
               <strong>{eObj.source}</strong>
