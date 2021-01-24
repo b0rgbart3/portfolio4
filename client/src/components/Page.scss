@@ -1,0 +1,39 @@
+
+@import "../Colors.scss";
+
+.page {
+    background-color:white;
+    max-height:0px;
+    overflow: hidden;
+    transition: all 3s;
+    box-shadow:0 0 28px $shadow-color;
+    box-sizing: border-box;
+    width:100%;
+    margin:auto;
+    max-width:1200px;
+    padding:0;
+    padding-left:4%;
+    padding-right:4%;
+    padding-top:30px;
+    margin-bottom:0px;
+    text-align: left;
+  }
+
+.page2 {
+    max-height:8500px;
+}
+
+.verticalExtender {
+    min-height:1500px;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+@media only screen and (min-width:740px) {
+    .page {
+        margin-bottom:100px;
+        width:90%;
+        padding-top:0px;
+    }
+}

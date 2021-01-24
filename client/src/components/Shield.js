@@ -8,7 +8,7 @@ import sequelize from "../images/shields/sequelize.png";
 
 
 function Shield(props) {
-  const [shieldStyle, setShieldStyle] = useState("state1");
+  const [shieldStyle, setShieldStyle] = useState("hidden");
   let shields = [ react, node, express, sql, sequelize ];
   let imageSource = shields[props.shieldNumber];
 
@@ -16,9 +16,9 @@ function Shield(props) {
   useEffect(() => {
     let animTimer;
  
-      console.log("Animating");
+    //  console.log("Animating");
       animTimer = setTimeout(function () {
-        setShieldStyle("state2");
+        setShieldStyle("visible");
         clearTimeout(animTimer);
       }, (200 * props.shieldNumber) + 2000);
       // let React clear our timeout so we don't have a memory leak

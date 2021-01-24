@@ -1,0 +1,76 @@
+
+
+@import "../Colors.scss";
+
+.chart {
+    max-height:1px;
+    overflow: hidden;
+    transition: all 2s;
+    opacity:0;
+}
+.chart2 {
+    max-height:2000px;
+    opacity:1;
+    padding-bottom:80px;
+}
+
+.tech {
+    border-bottom:1px dashed $button-color;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    font-family: futura-pt, sans-serif;
+    transition:all 1s;
+  text-align: left;
+}
+.title {
+    font-family: futura-pt, sans-serif;
+    font-size:34px;
+    color: $button-color;
+    text-transform:uppercase;
+    font-weight:500;
+    text-align: left;
+    border-bottom:2px solid $button-color;
+    margin-top:18px;
+    margin-bottom:8px;
+}
+
+.techName {
+    display:inline-block;
+    width: 18%;
+    min-width:92px;
+}
+.techShield {
+    display:inline-block;
+    padding-right:20px;
+    min-width:40px;
+}
+.techYears {
+    display:inline-block;
+    width: 18%;
+    min-width:90px;
+  
+}
+.techProject {
+    display:inline-block;
+    width: 50%;
+  
+}
+.chartLabels {
+    padding-top:20px;
+    border-bottom:2px solid rgba(146, 183, 194,.25);;
+}
+.label {
+    font-weight:bold;
+    font-size:13px;
+    text-align:left;
+}
+.alt {
+    background-color:rgba(126, 188, 212,.25);
+}
+
+@media only screen and (min-width:740px) {
+
+}
+

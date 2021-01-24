@@ -1,14 +1,11 @@
 import React, {useEffect, useState} from "react";
-import "./TechChart.css";
-// import sql from "../images/shields/sql.png";
-// import express from "../images/shields/express.png";
-// import react from "../images/shields/react.png";
-// import node from "../images/shields/node.png";
-// import sequelize from "../images/shields/sequelize.png";
-import { Link } from "react-router-dom";
 
-function TechChart() {
-  const [cardStyle, setCardStyle] = useState("tcBox");
+import "./Skills.scss";
+import { Link } from "react-router-dom";
+import Page from "../components/Page";
+import Logo from "../components/Logo";
+
+function Skills() {
   const [chartStyle, setChartStyle] = useState("chart");
   const techObjects = [
     {
@@ -29,6 +26,24 @@ function TechChart() {
       "duration": "15+ years",
       "projects": "All"
       },
+      {
+        "tech": "Flutter",
+        "shield": "flutter",
+        "duration": "3 months",
+        "projects": "Light Burst 2.0"  
+    },
+    {
+        "tech": "Dart",
+        "shield": "dart",
+        "duration": "3 months",
+        "projects": "Light Burst 2.0"   
+    },
+    {
+      "tech": "Python3+",
+      "shield": "python",
+      "duration": "3 months",
+      "projects": "Leet Code Drills"   
+  },
     {
     "tech": "Node",
     "shield": "node",
@@ -66,18 +81,6 @@ function TechChart() {
         "projects": "The Loom" 
     },
     {
-        "tech": "Flutter",
-        "shield": "flutter",
-        "duration": "3 months",
-        "projects": "Light Burst 2.0"  
-    },
-    {
-        "tech": "Dart",
-        "shield": "dart",
-        "duration": "3 months",
-        "projects": "Light Burst 2.0"   
-    },
-    {
         "tech": "Objective C",
         "shield": "objc",
         "duration": "2 years",
@@ -87,7 +90,19 @@ function TechChart() {
         "tech": "PHP",
         "shield": "php",
         "duration": "7 years",
-        "projects": "Jerry Frost.com, DDWorks.org"   
+        "projects": "JerryFrost.com, DDWorks.org"   
+    },
+    {
+      "tech": "Ruby on Rails",
+      "shield": "ruby",
+      "duration": "2 years",
+      "projects": "experimental projects"   
+    },
+    {
+      "tech": "WordPress ",
+      "shield": "wordpress",
+      "duration": "3 years",
+      "projects": "several client websites"   
     },
     {
         "tech": "HTML 5",
@@ -100,34 +115,40 @@ function TechChart() {
         "shield": "css",
         "duration": "15+ years",
         "projects": "All"   
-    }
+    },
+    {
+      "tech": "Sass",
+      "shield": "sass",
+      "duration": "2 years",
+      "projects": "This portfolio, My Google Books"   
+  }
 
   ];
 
   useEffect(() => {
-    let cardTimer = setTimeout(function () {
-      setCardStyle("tcBox tcBox2");
-      clearTimeout(cardTimer);
-    }, 100);
+
     let chartTimer = setTimeout(function () {
       setChartStyle("chart chart2");
       clearTimeout(chartTimer);
-    },800);
+    },200);
   });
 
 
-  return (
-    <div className="homeContainer">
-    <div className={cardStyle}>
+  function pageContent() {
+    return (
+
+      <>
      <Link to="/">
-      <h1>BART DORITY</h1>
-      <h2>
-        <span className="nobr">Full Stack Developer</span>
-      </h2></Link>
-      <br></br>
-      <h2 id="endH2">Technical Skills</h2>
+      <Logo stacked="false"/>
+     </Link>
+<br />
+     <Link to="/endorsements">
+        <div className="mbutton">endorsements</div>
+      </Link>
+
+      <div className='title'>Technical Skills</div>
       <div className={chartStyle}>
-      <div className="chartLabels">
+      <div className="tech chartLabels">
         <div className='techShield'></div>
         <div className='techName label'>Technology</div>
         <div className='techYears label'>Experience</div>
@@ -141,7 +162,7 @@ function TechChart() {
                   className="techShieldIcon"
                   src={require("../images/shields/" +
                     techObj["shield"] +
-                    ".png")} />
+                    ".png")} alt={techObj["tech"]} />
                     {/* <Shield shieldNumber={index} animate="false" /> */}
                     </div>
         <div className="techName">{techObj["tech"]}</div>
@@ -152,10 +173,18 @@ function TechChart() {
         
       ))}
       </div>
-    </div>
-    </div>
+    </>
+
+    )
+  }
+  return (
+    <div className="verticalExtender">
+    <Page content={pageContent()} />
+   </div>
+
+    
   );
 }
 
-export default TechChart;
+export default Skills;
 

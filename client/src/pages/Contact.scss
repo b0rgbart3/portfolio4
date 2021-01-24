@@ -1,0 +1,188 @@
+@import "../Colors.scss";
+
+.Contact {
+}
+
+.contactPageButtons {
+    text-align: left;
+   padding-left:0px;
+   padding-top:60px;
+   margin-top:50px;
+}
+
+.send {
+    float:right;
+    display:inline-block;
+    margin-right:5%;
+}
+.actualForm {
+    border:4px dashed $button-color;
+    border-radius:12px;
+    margin:20px;
+    box-sizing: border-box;
+    width:100%;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:90px;
+    background-color:$tint-color;
+    text-align:left;
+    padding-left:4%;
+    padding-right:5%;
+    box-sizing: border-box;
+    padding-bottom:40px;
+    font-family: futura-pt, sans-serif;
+    font-size:20px;
+}
+
+.myLabel  {
+    font-size:24px;
+    text-transform: uppercase;
+    color: $button-color;
+    font-family: futura-pt, sans-serif;
+    font-weight: 200;
+    top:-30px;
+    left:30px;
+    user-select: none;
+    margin-top:34px;
+    margin-bottom:4px;
+}
+.contactForm input {
+    background-color:white;
+    border:none;
+    border-radius:8px;
+    padding:10px;
+    padding-top:14px;
+    box-sizing: border-box;
+    width:100%;
+    font-size:26px;
+    color:black;
+    border-right:1px solid $button-color;
+    border-bottom:1px solid $button-color;
+    outline:none;
+    font-family: futura-pt, sans-serif;
+}
+
+.contactForm input:hover {
+    outline: 1px dashed $button-color;
+}
+
+.contactForm input:active {
+    outline: 2px dashed $button-active;
+}
+
+.contactForm input:focus {
+
+    outline: 2px dashed $button-active;
+}
+
+.contactForm input:visited {
+  
+}
+
+.contactForm input[type=email] {
+
+}
+
+.contactForm input[type=email]:active {
+
+}
+.contactForm input[type=email]:focus {
+
+}
+
+.contactForm input[type=email] :-internal-autofill-selected {
+   
+}
+
+.contactForm input:-internal-autofill-selected  {
+  
+}
+
+input:-internal-autofill-selected {
+   
+}
+
+/* input:-autofill {
+    background-color:blue;
+} */
+input:-webkit-autofill {
+    /* The following works as the text color for the autofill  */
+  
+    /* The following works as a background for the autofill  */
+  -webkit-box-shadow: 0 0 0px 1000px  rgb(255,255,255) inset;  
+    -webkit-text-fill-color: black;
+
+}
+
+
+.contactForm h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    padding-top:20px;
+    font-size:34px;
+}
+
+textarea {
+    width:100%;
+    max-width:100%; // calc( 100% - 20px);
+    box-sizing: border-box;
+    border:none;
+    font-size:16px;
+    padding:10px;
+    padding-top:14px;
+    font-family: futura-pt, sans-serif;
+    background-color:white;
+    font-size:30px;
+    font-weight: 400;
+    color:black;
+    outline:none;
+    margin-bottom:30px;
+    border-right:1px solid $button-color;
+    border-bottom:1px solid $button-color;
+}
+
+textarea:hover {
+    outline: 2px dashed $button-active;
+   
+}
+
+textarea:active {
+    outline: 2px dashed $button-active;
+
+}
+textarea:focus {
+    outline: 2px dashed $button-active;
+}
+
+.error {
+    background-color:rgb(199, 21, 21);
+    color:white;
+    padding:30px;
+    font-size:21px;
+    font-family: futura-pt, sans-serif;
+    margin-top:20px;
+    margin-bottom:0;
+    border-radius:8px;
+}
+
+.errorField {
+    background-color:pink;
+
+    border-radius:8px;
+    padding:10px;
+    padding-top:1px;
+    margin-top:34px;
+    margin-bottom:10px;
+}
+
+.errorField .myLabel {
+    color:rgb(191, 3, 3);
+}
+
+
+
+@media only screen and (max-width:740px) {
+
+  }

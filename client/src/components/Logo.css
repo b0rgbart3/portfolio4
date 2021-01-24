@@ -1,0 +1,20 @@
+
+.BDlogo {
+    font-size:54px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align:left;
+    margin-top:100px;
+    line-height:1em;
+    margin-bottom:0;
+  }
+
+
+.BDtag {
+  font-size:24px;
+  text-align:left;
+  font-family: futura-pt, sans-serif;
+  margin-top:0px;
+  padding-right:20px;
+}

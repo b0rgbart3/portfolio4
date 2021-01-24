@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+import "./Projects.scss";
 import Project from "../components/Project";
 import { usePortfolioContext } from "../utils/GlobalState";
 

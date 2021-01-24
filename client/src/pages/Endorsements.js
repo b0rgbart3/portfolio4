@@ -1,11 +1,13 @@
 import React from "react";
-import "./Endorsements.css";
+import "./Endorsements.scss";
 
 import kumari from "../images/endorsements/kumari.jpg";
 import goodfriend from "../images/endorsements/goodfriend.jpg";
 import smith from "../images/endorsements/smith.jpg";
 import yoon from "../images/endorsements/yoon.jpg";
 import chenette from "../images/endorsements/chenette.jpg";
+import Page from "../components/Page";
+import Logo from "../components/Logo";
 
 function Endorsements() {
   const photos ={ kumari, goodfriend, smith, yoon, chenette };
@@ -50,20 +52,14 @@ function Endorsements() {
           "October 2, 2020: Bart worked with Stacey in the same group",
         quote:
           "Bart was a team member that I would instantly pick to work with again. He went above and beyond our boot camp curriculum and introduced new knowledge to our teammates. Bart was our go-to guy if we had any bugs in our code that we couldn't figure out. It was a pleasure working on a group project with him.",
-      },
-      
+      },  
 
   ];
 
-  console.log('',photos[1]);
-
+  function pageContent() {
   return (
     <div className="endBox">
-      <h1>BART DORITY</h1>
-      <h2>
-        <span className="nobr">Full Stack Developer</span>
-      </h2>
-      <br></br>
+      <Logo />
       <h2 id="endH2">Endorsements</h2>
 
       {endorseObjects.map((eObj, index) => (
@@ -85,7 +81,13 @@ function Endorsements() {
         
       ))}
     </div>
-  );
+  );}
+  return (
+
+    <Page content={pageContent()} />
+
+ );
+
 }
 
 export default Endorsements;

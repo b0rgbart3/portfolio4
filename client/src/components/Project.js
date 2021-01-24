@@ -112,7 +112,7 @@ function Project(props) {
   useEffect(() => {
     let revealTimer = setTimeout(function () {
       setProjectStyle("finalState");
-    }, 500 + 200 * props.number);
+    }, 1 + 200 * props.number);
 
     // let React clear our timeout so we don't have a memory leak
     return () => clearTimeout(revealTimer);
