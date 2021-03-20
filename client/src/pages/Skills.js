@@ -11,13 +11,13 @@ function Skills() {
     {
     "tech": "React",
     "shield": "react",
-    "duration": "1 year",
+    "duration": "2 years",
     "projects": "ImageShoppr, My Google Bookshelf, SpaceForce"
     },
     {
       "tech": "Redux",
       "shield": "redux",
-      "duration": "1 month",
+      "duration": "1 project",
       "projects": "SpaceForce"
     },    
     {
@@ -101,7 +101,7 @@ function Skills() {
     {
       "tech": "WordPress ",
       "shield": "wordpress",
-      "duration": "3 years",
+      "duration": "4 years",
       "projects": "several client websites"   
     },
     {

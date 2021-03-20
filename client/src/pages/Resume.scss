@@ -17,9 +17,15 @@
     display:inline-block;
     box-sizing: border-box;
     padding-top:40px;
-
+    padding-left:3%;
+    padding-right:5%;
+    width:100%;
 }
 
+.resumeBox h2 {
+    border-bottom:2px solid #333333;
+    padding-bottom:4px;
+}
 .clientList {
     column-count:1;
 }
@@ -148,9 +154,186 @@
    
 }
 
+// .skillset {
+//     display:inline-block;
+//     width:30%;
+//     box-sizing: border-box;
+//     vertical-align: top;
+// }
 
-@media only screen and (min-width:740px) {
+// .skillTable {
+
+//     margin:0;
+//     padding:0;
+// }
+
+// .skillTable .header {
+//     font-weight: bold;
+// }
+// .skillTable td {
+//     padding:4px;
+//     padding-right:10px;
+//     border-bottom:1px solid #dddddd;
+// }
+// .skillTable tr {
+//     margin:0;
+//     padding:0;
+// }
+
+// .skillTable td.years {
+//     padding-right:50px;
 
 
+// }
 
+.skillRow1 {
+    display:grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom:20px;
+}
+
+.skillRow2 {
+    display:grid;
+    grid-template-columns:1fr;
+}
+
+.skillCol {
+    margin-right:14px;
+}
+.skillCol1 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skillCol2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.skillCol2b {
+    display:grid;
+    grid-template-columns: 45% 55%;
+}
+.skillTitle {
+    background-color:#dddddd;
+    padding:4px;
+    font-weight: bold;
+
+}
+.skill {
+    padding-left:4px;
+    border-bottom:1px solid #dddddd;
+    padding-bottom:4px;
+    margin-right:20px;
+}
+.year {
+    border-bottom:1px solid #dddddd;
+    padding-bottom:4px;
+}
+
+.lastrow {
+    margin-top:20px;
+}
+
+.externalpill {
+    margin-left:20px;
+    margin-right:20px;
+    background-color:rgb(61, 163, 186);
+    padding:3px;
+    border-radius:16px;
+    text-transform: uppercase;
+    font-weight:400;
+    color:white;
+    padding-left:14px;
+    padding-right:14px;
+    letter-spacing: .02em;
+}
+
+.project {
+    vertical-align: top;
+    padding-right:0px;
+    box-shadow:0 0 8px #cccccc;
+    border-radius:12px;
+    padding:16px;
+    margin-bottom:20px;
+}
+
+.projects {
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+
+.pbutton {
+    margin:0;
+    display:inline-block;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color:$button-color;
+    padding:6px;
+    padding-left:8px;
+    padding-right:8px;
+    text-transform: uppercase;
+    font-size:18px;
+    color:white;
+    border-radius:8px;
+    user-select:none;
+    cursor:pointer;
+    text-align:center;
+    margin-right:10px;
+    margin-bottom:10px;
+    position:relative;
+    margin-top:14px;
+    min-width:110px;
+  }
+  
+  .pbutton:hover {
+    background-color:$button-hover;
+  }
+  
+  .pbutton:active {
+    border:0;
+    outline:0;
+    background-color:$button-active;
+  }
+  
+  .pbutton:focus {
+    border:0;
+    outline:0;
+    background-color:$button-focus;
+  
+  }
+  .pbutton.visible{
+    left:0px;
+    opacity:1;
+  }
+
+@media only screen and (min-width:950px) {
+
+    .skillRow1 {
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .skillRow2 {
+        display:grid;
+        grid-template-columns: 55% 45%;
+    }
+    .lastrow {
+        margin-top:0px;
+    }
+
+    .resumeBox {
+     
+    }
+
+    .project {
+        vertical-align: top;
+        padding-right:20px;
+    }
+
+    .projects {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2%;
+    }
 }
