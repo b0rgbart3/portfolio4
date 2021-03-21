@@ -9,6 +9,10 @@ import pdf from '../images/BART_DORITY_resume.pdf';
 import { Link } from "react-router-dom";
 import Page from "../components/Page";
 import Logo from "../components/Logo";
+import DDWorksLogo from "../images/ddworks_logo.jpg";
+import UCB from "../images/ucb2.jpg";
+import CCSF from "../images/ccsf.png";
+import Pratt from "../images/pratt.jpg";
 
 function Resume() {
 
@@ -143,7 +147,7 @@ function Resume() {
 <div className='skillRow1'>
 <div className='skillCol'>
       <div className='skillTitle'>Platforms</div>
-      <div class='skillCol2'>
+      <div className='skillCol2'>
       <div className='skill'>WordPress</div>
         <div className='year'>4 years</div>
         <div className='skill'>React</div>
@@ -212,7 +216,7 @@ function Resume() {
           <div className='skill'>JSON</div>
           <div className='skill'>Markdown</div>
           <div className='skill'>Unix</div>
-          <div className='skill'>GIT</div>
+          <div className='skill'>git</div>
           <div className='skill'>npm</div>
           <div className='skill'>VS-Code</div>
           <div className='skill'>Adobe CS</div>
@@ -225,22 +229,31 @@ function Resume() {
 <br></br>
 
 <h2>Experience</h2>
-<p>Self Employed Full Stack Developer at Dority Design Works, San Francisco, CA, 2005 – Current
+
+<div className='experience'>
+  <div className='logoBox'>
+  <a href='https://ddworks.org'>
+    <img src={DDWorksLogo} /></a>
+  </div>
+  <div className='worksBox'>
+
+  <p><strong>Self Employed Full Stack Developer</strong>, <span className='nobr'>San Francisco, CA, 2005 – Current</span>
 <br></br>
-<strong><a href='https://ddworks.org'>https://ddworks.org</a></strong></p>
+<strong></strong></p>
 <p>
-As a small business owner, I design, build and maintain my client’s websites. I build mobile-friendly, data-driven websites and mobile apps with responsive layouts and restful API’s, hosted on cloud based services including Heroku and AWS. I have very satisfied and long term clients, and I was awarded a Silver Caddy award for the Jeep Liberty website.  
+As an independant contractor, I design, build and maintain my client’s websites. I build mobile-friendly, data-driven websites and mobile apps with responsive layouts and restful API’s.  These projects are hosted on DreamHost, Heroku and AWS cloud platforms. I have very satisfied and long term clients, and my work received a Silver Caddy award for the Jeep Liberty website, and an IACP award in the New Media and Broadcast category for the Jacques Pépin website.
 </p>
+  </div>
+</div>
 
-<p>
+<div className='clientlist'>
 <strong>Abbreviated Client List</strong>
+  <ul className='clients'>
 
-  <ul>
     <li>
-      Rick Crane & the SF Long Term Care Coordinating Council, San
-      Francisco, CA
+      Rick Crane Consulting, San Francisco, CA
     </li>
-    <li>KQED, Interactive Department, San Francisco, CA</li>
+    <li>KQED - Interactive, San Francisco, CA</li>
     <li> Willow Kelly, Charlottesville, VA</li>
     <li>Jane Meredith, Author, Sydney, Australia</li>
     <li>Jerry Frost, Artist, San Francisco, CA</li>
@@ -257,12 +270,12 @@ As a small business owner, I design, build and maintain my client’s websites. 
     <li>Grey Advertising, San Francisco, CA</li>
  
   </ul>
-</p>
+</div>
 
-<h2>Projects:</h2>
-<div class='projects'>
-<div class='project'>
-<strong>ImageShoppr:</strong>
+<h2>Recent Projects:</h2>
+<div className='projects'>
+<div className='project'>
+<div className='projectTitle'>ImageShoppr</div>
 <br></br>Makes shopping a fast, fun and social experience. It uses the Google A.I. Vision API to scan an image and identify multiple products.  It then uses the Rainforest API to find those products on Amazon.   You can also connect with your friends and find out if they bought similar items. This project features a responsive layout, a global state object, and React Hooks.
 <br></br>
 <strong>Technologies used:</strong> React, Javascript, Node, Express, Materialize, Mongoose, HTML5, and CSS3 hosted on Heroku with MySQL database on CloudAtlas. 
@@ -271,30 +284,30 @@ As a small business owner, I design, build and maintain my client’s websites. 
 <a href='https://github.com/b0rgbart3/ImageShoppr'  className='pbutton'>Github</a>
 </div>
 
-<div class='project'><strong>MiddleGround:</strong> 
+<div className='project'><div className='projectTitle'>MiddleGround</div> 
 <br></br>
 Searches, filters, and displays social media posts from a range of news organizations so users can see how different topics are trending across the political spectrum, and get a broader range of news perspectives in a single interface. <br></br>
 <strong>Technologies used:</strong> Node, Express, Axios, Handlebars, Javascript, HTML5, CSS3, the NY Times API, the News.org API and the Google Fact Check API hosted on Heroku.<br></br>
 <a href='https://fast-cliffs-31437.herokuapp.com/' className='pbutton'>live website</a>
-<a href='https://github.com/b0rgbart3/Some_Middle_Ground'  className='pbutton'>code on github</a></div>
+<a href='https://github.com/b0rgbart3/Some_Middle_Ground'  className='pbutton'>github</a></div>
 
-<div class='project'>
-<strong>The Loom:</strong><br></br>
+<div className='project'>
+<div className='projectTitle'>The Loom</div><br></br>
 A Content Management System for an online University.  Features include:User authentication, registration, an administration dashboard, instant messaging and the ability to upload various content formats including video and pdfs. <br></br>
 <strong>Technologies used:</strong> Angular 2+, Sass, Materialize, Node, Express, HTML 5, and CSS 3.  Hosted on Heroku with a MongoDB database on CloudAtlas and assets stored in an s3 bucket on AWS.  <br></br><strong>Client:</strong> Reclaiming Collective, San Francisco, CA.<br></br>
  <a href='https://thawing-mountain-56615.herokuapp.com/' className='pbutton'>live website</a>
-<a href='https://github.com/b0rgbart3/Loom2' className='pbutton'>code on github</a><br></br>
+<a href='https://github.com/b0rgbart3/Loom2' className='pbutton'>github</a><br></br>
 </div>
-<div class='project'><strong>
-Jerry Frost:</strong> <br></br>
+<div className='project'><div className='projectTitle'>
+Jerry Frost</div> <br></br>
 Portfolio website featuring a mobile friendly responsive layout, a catalog of images, an administration dashboard for uploading images and allows the user and administrator to sort the images by title, date, or category. <br></br>
 <strong>Technologies used:</strong> PHP 7, HTML 5, CSS 3, Javascript and MySQL, hosted on DreamHost. <br></br>
 <strong>Client:</strong> Jerry Frost, Artist, San Francisco, CA<br></br>
 <a href='https://jerryfrost.com/' className='pbutton'>live website</a>
-<a href='https://github.com/b0rgbart3/jerryfrost' className='pbutton'>code on github</a>
+<a href='https://github.com/b0rgbart3/jerryfrost' className='pbutton'>github</a>
 </div>
-<div class='project'><strong>
-Willow Kelly:</strong> <br></br>
+<div className='project'><div className='projectTitle'>
+Willow Kelly</div> <br></br>
 Brochure website featuring a mobile friendly responsive layout and a contact form. <br></br>
 <strong>
 Technologies used:</strong> PHP 7, HTML 5, CSS 3, and Javascript. 
@@ -302,8 +315,8 @@ Technologies used:</strong> PHP 7, HTML 5, CSS 3, and Javascript.
 <br></br>
 <a href='http://willowkelly.com' className='pbutton'>live website</a>
 </div>
-<div class='project'><strong>
-Jane Meredith:</strong> <br></br>
+<div className='project'><div className='projectTitle'>
+Jane Meredith</div> <br></br>
 Brochure website featuring a mobile friendly responsive layout and an image slider that highlights recently published books.
 <br></br> 
 <strong>
@@ -311,27 +324,38 @@ Technologies used:</strong>  PHP 7, HTML 5, CSS 3 and Javascript.  <br></br>
 <strong>Client:</strong> Jane Meredith, Author, Sydney, Australia
 <br></br>
 <a href='https://janemeredith.com/' className='pbutton'>Live website</a>
-<a href='https://github.com/b0rgbart3/jane_meredith' className='pbutton'>code on github</a>
+<a href='https://github.com/b0rgbart3/jane_meredith' className='pbutton'>github</a>
 </div>
-<div class='project'>
-<strong>LightBurst:</strong> <br></br>
+<div className='project'>
+<div className='projectTitle'>LightBurst</div> <br></br>
 iOS mobile app: a fun graphic puzzle-style game.<br></br>
 <strong>
 Technologies used:</strong> Objective C, and X-Code. 
 <br></br>
 <a href='https://github.com/b0rgbart3/LightBurst' className='pbutton'>More Info</a>
-<a href='https://github.com/b0rgbart3/LightBurst' className='pbutton'>Code on github</a></div>
+<a href='https://github.com/b0rgbart3/LightBurst' className='pbutton'>github</a></div>
 </div>
 
 <h2>Education</h2>
+<div className='education'>
+<div className='edLogos'>
+      <img src={UCB} />
+      <br></br>
+      <img src={CCSF} />
+      <br></br>
+      <img src={Pratt} />
+</div>
+<div>
 <ul>
 <li>
-Certificate in Full Stack Web Development and Coding UC Berkeley Extension Coding Bootcamp</li>
+Professional Certificate in Full Stack Web Development and Coding<br></br>UC Berkeley Extension Coding Bootcamp</li>
 <li>
-Certificate in iPhone Programming, City College of San Francisco</li>
+Professional Certificate in iPhone Programming<br></br> City College of San Francisco</li>
 <li>
-Bachelor of Fine Arts in Computer Graphics, Pratt Institute, School of Art and Design, Brooklyn NY</li>
+Bachelor of Fine Arts in Computer Graphics<br></br>Pratt Institute, School of Art and Design, Brooklyn NY</li>
 </ul>
+</div>
+</div>
 </div>
     )
   }

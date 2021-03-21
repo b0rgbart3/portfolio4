@@ -26,15 +26,13 @@
     border-bottom:2px solid #333333;
     padding-bottom:4px;
 }
-.clientList {
-    column-count:1;
-}
+
 .livewebsiteList {
     column-count:1;
 }
 
 .endorse {
-    margin-top:120px;
+    margin-top:80px;
 }
 
 .resumeBox h1 {
@@ -250,10 +248,12 @@
 .project {
     vertical-align: top;
     padding-right:0px;
-    box-shadow:0 0 8px #cccccc;
+    box-shadow:0 0 8px $button-color;
     border-radius:12px;
     padding:16px;
     margin-bottom:20px;
+    font-size:17px;
+    line-height: 1.5em;
 }
 
 .projects {
@@ -269,7 +269,7 @@
     font-weight: 500;
     font-style: normal;
     background-color:$button-color;
-    padding:6px;
+    padding:4px;
     padding-left:8px;
     padding-right:8px;
     text-transform: uppercase;
@@ -307,6 +307,62 @@
     opacity:1;
   }
 
+  .projectTitle {
+      color:$button-darker;
+      border-bottom:2px solid $button-darker;
+      padding-bottom:0;
+      padding-top:14px;
+  }
+  .clientlist {
+     
+      margin-left:0%;
+      margin-bottom:20px;
+  }
+
+  .experience {
+      display:grid;
+      grid-template-columns: 30% auto;
+      column-gap:10px;
+  }
+
+  .logoBox {
+     
+  }
+
+  .logoBox img {
+      width:100%;
+  }
+
+  .education {
+      display:grid;
+      grid-template-columns: 100px auto;
+  }
+  .education ul {
+      list-style: none;
+  }
+  .education ul li {
+    margin-bottom:10px;
+    min-height:70px;
+  }
+
+  .edLogos {
+      width:100px;
+  }
+
+  .edLogos img {
+      width:100%;
+  }
+
+  @media only screen and (min-width: 680px) {
+    .clientlist {
+        margin-left:30%;
+    }
+
+    .clients {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+  }
 @media only screen and (min-width:950px) {
 
     .skillRow1 {
@@ -326,14 +382,30 @@
      
     }
 
+    .clientlist {
+     
+        margin-left:0%;
+    }
+
+    .clients {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .project {
         vertical-align: top;
-        padding-right:20px;
+        padding-right:30px;
     }
 
     .projects {
         display:grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 2%;
+    }
+
+    .experience {
+        display:grid;
+        grid-template-columns: 160px auto;
+        column-gap:10px;
     }
 }
