@@ -17,7 +17,7 @@ import Pratt from "../images/pratt.jpg";
 function Resume() {
 
   function pageContent() {
-    return (
+    return ( 
 <div className="resumeBox">
 
 <a
@@ -163,7 +163,7 @@ function Resume() {
 </div>
 <div className='skillCol'>
       <div className='skillTitle'>Libraries</div>
-          <div className='skill'>Matrialize</div>
+          <div className='skill'>Materialize</div>
           <div className='skill'>Bootstrap</div>
           <div className='skill'>JQuery</div>
           <div className='skill'>Greensock</div>
