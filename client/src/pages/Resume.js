@@ -91,7 +91,7 @@ function Resume() {
     Develops and writes code that is clean, agile, and object oriented
   </li>
   <li>
-  Team driven collaborator
+  Team oriented collaborator
   </li>
   <li>Background in computer science and always learning new technologies</li>
   <li>
@@ -112,11 +112,11 @@ function Resume() {
 <div className='skillTitle'>Programming Languages</div>
 <div className='skillCol2'>
         <div className='skill'>Javascript</div>
-        <div className='year'>15 years</div>
-        <div className='skill'>PHP</div>
         <div className='year'>5 years</div>
+        <div className='skill'>PHP</div>
+        <div className='year'>3 years</div>
         <div className='skill'>ES6</div>
-        <div className='year'>4 years</div>
+        <div className='year'>1 year</div>
         <div className='skill'>Ruby</div>
         <div className='year'>1 year</div>
      
@@ -135,9 +135,9 @@ function Resume() {
       <div className='skillTitle'>Databases</div>
       <div className='skillCol1'>
       <div className='skill'>MySQL</div>
-      <div className='year'>5 years</div>
+      <div className='year'>3 years</div>
       <div className='skill'>MongoDB</div>
-      <div className='year'>2 years</div>
+      <div className='year'>1 years</div>
       <div className='skill'>PostgreSQL</div>
       <div className='year'>1 year</div>
       </div>
@@ -149,11 +149,11 @@ function Resume() {
       <div className='skillTitle'>Platforms</div>
       <div className='skillCol2'>
       <div className='skill'>WordPress</div>
-        <div className='year'>4 years</div>
+        <div className='year'>2 years</div>
         <div className='skill'>React</div>
-        <div className='year'>2 years</div>
+        <div className='year'>1 year</div>
         <div className='skill'>Angular</div>
-        <div className='year'>2 years</div>
+        <div className='year'>1 year</div>
         <div className='skill'>Flutter</div>
         <div className='year'>1 year</div>
         <div className='skill'>Ruby on Rails</div>
